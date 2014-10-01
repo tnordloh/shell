@@ -1,0 +1,7 @@
+[user]
+	name = Timothy Nordloh
+	email = tnordloh@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/tim/.gitignore_global
