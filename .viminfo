@@ -8,21 +8,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/status
+~MSle0~/gshead
 
 # Last Substitute Search Pattern:
-~MSle0~&\?\? 
+~MSle0&\?\? 
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
+:w
 :wq
 :%s/\?\? //g
 :tabe ./.bashrc
 :qa!
-:w
 :help tabe
 :te
 :tabe ./lib/chess/path_director.rb
@@ -39,6 +39,7 @@ $
 :Gstatus
 
 # Search String History (newest to oldest):
+?/gshead
 ? \?\? 
 ?/status
 ?/execute
@@ -58,7 +59,6 @@ $
 ?/puts
 ?/square:
 ?/disc
-?/any
 
 # Expression History (newest to oldest):
 
@@ -68,26 +68,20 @@ $
 
 # Registers:
 "0	LINE	0
-	alias gc='git commit'
-""1	BLOCK	2
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
+	alias gshead="gs |head -n 1 |awk '{ print $2 }'"
+""1	LINE	0
+	alias gshead2="gs |head -n 1 |awk '{ print \$2 }'"
 "2	LINE	0
-	?? .viminfo
+	#    }
 "3	LINE	0
-	?? .gitignore_global
+	#     gshead 
 "4	LINE	0
-	?? .gitconfig
+	#gitstatus() {
 "5	LINE	0
-	?? .emacs.d/
-"6	BLOCK	2
+	#export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
+"6	LINE	0
+	export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
+"7	BLOCK	2
 	?? 
 	?? 
 	?? 
@@ -97,16 +91,10 @@ $
 	?? 
 	?? 
 	?? 
-	?? 
-	?? 
-	?? 
-"7	LINE	0
-	:set statusline=%f         " Path to the file
-	:set statusline+=\ -\      " Separator
 "8	LINE	0
-	set statusline=%{fugitive#statusline()}
+	?? .viminfo
 "9	LINE	0
-	    @board=Chess::Board.new()
+	?? .gitignore_global
 "g	CHAR	0
 	924
 <tjkk:1gtgtyygtjkkkkkkkkkkkkkkkkkkkkkp:wgtjddkgTyygtpgtpkdd:w/Elemhhjjjjj/ElemiGED€kb€kb€kbREXLM::jjhhhhhhhhhh.jhkkkllcwMLjjjhhhhhhkllcwMLjjhhhhcwREXMLuiREXML::nnnnngtdddd:wqjjjllllllllliREXML::nnnn:wgtjjjjjlllllllll.nn.nnnn:w:13kjgt:w:21gt:21iREXML:::wkkkk€kBjjjkkgtkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkjkocheck_next_c€kbitel€kbm_lee€kbvel(my_peek,itemhhhhhhhhhhhdwxllllim€kb,my_peek:wjjjjjjjkjkkkkkkkkjjjjjjjjjjjjjjjjjjjjkkkjjkkkkkkkkkj9kjjjjjjjjjdodef check_next_item(item,peekkkkkkkkkkkkkkkkkkjjkkkjjjkkjjjjjjjjjjjjjjjjjjjjjkkkjhhhhhhhhhhhhhkkkkkkkkkkkkkkkkkkkkkkkjjjjjddjjjjjjjjjjjjjjjjjddddkkkkkkkkkkkkkkkkkklllllljlllllllllllkkljjlllllllixx€kb€kbllhxxif€kbig€kbfjhi  jhhhh   hhi  lllllllxxxxxxxxxxxxxxxxxxjhhhhhhi  kjoed€kbnd:wkkkkkkkkkkkkkkkkkkjjjjjjjjkjjjkkkkllllllllllllllljjjjjjjjjjjjjjjjjjjjjjjjjjj:wjjjkkkkkkk
@@ -115,27 +103,37 @@ $
 "j	CHAR	0
 	j
 "-	CHAR	0
-	 
+	;
 
 # File marks:
-'0  1  0  ~/.gitignore
-'1  16  0  ~/.gitignore
-'2  15  12  ~/.gitignore
-'3  8  0  ~/.gitignore
-'4  1  0  ~/.bashrc
-'5  57  16  ~/.vimrc
-'6  54  17  ~/.vimrc
-'7  34  52  ~/code/knight_moves/lib/chess/path_director.rb
-'8  14  6  ~/.vimrc
-'9  43  14  ~/.vimrc
+'0  28  0  ~/.bashrc
+'1  27  42  ~/.bashrc
+'2  1  0  ~/.bashrc
+'3  29  0  ~/.bashrc
+'4  3  0  /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
+'5  1  0  ~/code/knight_moves/.bashrc
+'6  26  6  ~/.bashrc
+'7  58  0  ~/.vimrc
+'8  29  44  ~/.bashrc
+'9  1  0  ~/.gitignore
 
 # Jumplist (newest first):
+-'  28  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  27  42  ~/.bashrc
+-'  22  0  ~/.bashrc
+-'  29  0  ~/.bashrc
+-'  3  0  /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
+-'  1  0  /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
+-'  1  0  ~/code/knight_moves/.bashrc
+-'  26  6  ~/.bashrc
+-'  58  0  ~/.vimrc
+-'  5  0  ~/.vimrc
+-'  1  0  ~/.vimrc
 -'  1  0  ~/.gitignore
 -'  16  0  ~/.gitignore
 -'  15  12  ~/.gitignore
 -'  8  0  ~/.gitignore
--'  1  0  ~/.bashrc
--'  1  0  ~/.vimrc
 -'  57  16  ~/.vimrc
 -'  2  0  ~/.vimrc
 -'  54  17  ~/.vimrc
@@ -184,14 +182,11 @@ $
 -'  1  0  ~/code/knight_moves/lib/chess/square.rb
 -'  3  0  ~/code/knight_moves/lib/chess/path.rb
 -'  4  0  ~/code/knight_moves/lib/chess/board.rb
--'  28  26  ~/.bashrc
--'  29  0  ~/.bashrc
 -'  3  0  ~/.bashrc
--'  27  24  ~/.bashrc
 -'  10  3  /private/etc/profile
 -'  1  0  /private/etc/profile
--'  19  17  ~/.bashrc
--'  6  0  ~/.bashrc
+-'  18  17  ~/.bashrc
+-'  5  0  ~/.bashrc
 -'  4  9  ~/.bashrc
 -'  8  0  /private/etc/profile
 -'  5  6  ~/code/knight_moves/lib/chess/bishop.rb
@@ -216,37 +211,68 @@ $
 -'  27  0  ~/code/knight_moves/lib/chess/board.rb
 -'  29  8  ~/code/knight_moves/lib/chess/board.rb
 -'  30  6  ~/code/knight_moves/lib/chess/board.rb
--'  32  25  ~/code/knight_moves/lib/chess/knight.rb
--'  34  6  ~/code/knight_moves/lib/chess/knight.rb
--'  23  30  ~/code/knight_moves/lib/chess/knight.rb
--'  36  10  ~/code/knight_moves/lib/chess/knight.rb
--'  1  0  ~/code/knight_moves/test/test_string.rb
--'  2  0  ~/code/knight_moves/lib/chess/path.rb
--'  46  12  ~/code/knight_moves/lib/chess/path.rb
--'  45  6  ~/code/knight_moves/lib/chess/path.rb
--'  13  6  ~/code/knight_moves/lib/chess/path.rb
--'  49  8  ~/code/knight_moves/lib/chess/path.rb
--'  19  10  ~/code/knight_moves/lib/chess/path.rb
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	"	1	0
-	^	16	1
-	.	16	0
-	+	1	3
-	+	14	0
+> ~/.bashrc
+	"	28	0
+	^	27	43
+	.	28	0
+	+	19	51
+	+	21	17
+	+	24	20
+	+	25	17
+	+	33	23
+	+	34	0
+	+	33	8
+	+	22	23
+	+	5	9
+	+	5	0
+	+	4	9
+	+	5	67
+	+	5	0
+	+	4	8
+	+	18	13
+	+	33	0
+	+	30	24
+	+	33	0
+	+	31	26
+	+	23	26
+	+	32	44
+	+	26	6
+	+	5	0
+	+	29	0
+	+	29	0
+	+	27	47
+	+	33	0
+	+	33	87
+	+	33	10
+	+	29	0
+	+	29	0
+	+	29	8
+	+	29	10
+	+	33	54
+	+	29	0
+	+	29	0
+	+	29	0
+	+	24	0
+	+	28	43
+	+	27	42
+	+	29	0
+	+	28	0
+
+> /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
+	"	3	0
+	^	3	1
+	.	3	0
+	+	1	25
 	+	3	0
-	+	15	13
-	+	25	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	25	0
-	+	16	0
+
+> ~/code/knight_moves/.bashrc
+	"	1	0
 
 > ~/.vimrc
-	"	57	16
+	"	58	0
 	^	39	34
 	.	40	0
 	+	60	0
@@ -282,30 +308,20 @@ $
 	+	39	34
 	+	40	0
 
-> ~/.bashrc
+> ~/.gitignore
 	"	1	0
-	^	24	27
-	.	24	26
-	+	20	51
-	+	22	17
-	+	25	20
-	+	26	17
-	+	30	23
-	+	31	0
-	+	30	8
-	+	23	23
-	+	6	9
-	+	6	0
-	+	4	9
-	+	5	67
-	+	6	0
-	+	4	8
-	+	19	13
-	+	30	0
-	+	28	24
-	+	30	0
-	+	29	26
-	+	24	26
+	^	16	1
+	.	16	0
+	+	1	3
+	+	14	0
+	+	3	0
+	+	15	13
+	+	25	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	25	0
+	+	16	0
 
 > /usr/local/Cellar/vim/7.4.335/share/vim/vim74/doc/tabpage.txt
 	"	72	34
@@ -3445,49 +3461,4 @@ $
 	"	1	0
 
 > ~/code/time_tracker/category.rb
-	"	1	0
-
-> ~/code/time_tracker/lib/TimeTracker/category.rb
-	"	1	0
-	^	19	71
-	.	10	0
-	+	1	0
-	+	5	15
-	+	9	10
-	+	18	11
-	+	12	0
-	+	18	13
-	+	9	0
-	+	10	17
-	+	9	19
-	+	10	60
-	+	7	7
-	+	10	6
-	+	10	0
-	+	10	9
-	+	10	45
-	+	10	38
-	+	13	42
-	+	14	4
-	+	14	4
-	+	14	4
-	+	15	4
-	+	14	0
-	+	13	0
-	+	14	11
-	+	13	10
-	+	14	0
-	+	13	0
-	+	14	0
-	+	17	0
-	+	18	0
-	+	10	75
-	+	10	66
-	+	10	74
-	+	19	67
-	+	18	22
-	+	19	71
-	+	10	0
-
-> ~/code/time_tracker/scratch/db_test4.rb
 	"	1	0
