@@ -48,6 +48,7 @@ set statusline+=%L                " Total lines
 """"""""""""
 "add search clear option
 map <Space> :noh<cr>
+hi Comment    cterm=bold ctermfg=black ctermbg=yellow    gui=NONE guifg=blue
 
 let mapleader=","
 
@@ -57,3 +58,4 @@ nnoremap <S-h> gT
 nnoremap <S-l> gt
 
 autocmd Filetype ruby source ~/.Vim/ruby-macros.vim
+

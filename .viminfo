@@ -8,57 +8,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/gshead
+~MSle0~/count
 
 # Last Substitute Search Pattern:
-~MSle0&\?\? 
+~MSle0&joker_position
 
 # Last Substitute String:
-$
+$find_position
 
 # Command Line History (newest to oldest):
-:wq
-:q!
-:Q!
 :q
 :w
-:Q
-:%s/\?\? //g
-:tabe ./.bashrc
+:q!
+:colorscheme default
+:wq!
 :qa!
-:help tabe
-:te
-:tabe ./lib/chess/path_director.rb
-:Git add 
-:set statusline="howdy"
-:set statusline=x
-:help statusline
-:set
-:set statusline=%f
-:set statusline="hello"
-:set statusline=""
+:qa
+:hi Comment    cterm=bold ctermfg=black ctermbg=yellow    gui=NONE guifg=blue
+:hi Comment    cterm=bold ctermfg=gray ctermbg=yellow    gui=NONE guifg=blue
+:hi Comment    cterm=bold ctermfg=seagreen    gui=NONE guifg=blue
+:hi Comment    cterm=bold ctermfg=gray    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=gray    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=violet    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=orange    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=lightbrown    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=brown    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=lightblue    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=lightgreen    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=blue    gui=NONE guifg=blue
+:hi Comment    cterm=NONE ctermfg=DarkRed     gui=NONE guifg=blue
 
 # Search String History (newest to oldest):
-?/gshead
-? \?\? 
-?/status
-?/execute
-?/sta
-?/find
-?/ret
-?/val
-?/from
-?/boa
-?/chang
-?/chant
-?/to 
-?/act
-?/BISHjkjkgt4g
-?/BISH
-?/p 
+?/count
+?/{
+?/ 
+? joker_position
+?/joker_position
+? cipher_text
+?/move
+?/count_
+?/move_joker_
+?/m
+?/to_le
+?/41
 ?/puts
-?/square:
-?/disc
+?/p 
+?/trip
+? \<if\>
+?/path
+?/if
+? )
+? (
 
 # Expression History (newest to oldest):
 
@@ -68,168 +68,558 @@ $
 
 # Registers:
 "0	LINE	0
-	/usr/local/sbin
-""1	LINE	0
-	/usr/localbin/sbin
+	      if deck == nil 
+	        @deck = (1..52).to_a << :JOKER_A << :JOKER_B
+	      else
+	        @deck=deck
+	      end
+"1	LINE	0
+	      p @deck
 "2	LINE	0
-	alias gshead2="gs |head -n 1 |awk '{ print \$2 }'"
+	        cipher_string
 "3	LINE	0
-	#    }
+	    
 "4	LINE	0
-	#     gshead 
+	
 "5	LINE	0
-	#gitstatus() {
+	    def to_letter number
+	      number == 26 ? "Z" : (number % 26 - 1 + "A".ord()).chr
+	    end
+	
 "6	LINE	0
-	#export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
+	      end
 "7	LINE	0
-	export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
-"8	BLOCK	2
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
-	?? 
+	        @deck=deck
+"8	LINE	0
+	      else
 "9	LINE	0
-	?? .viminfo
+	        @deck = (1..52).to_a << :JOKER_A << :JOKER_B
+"a	LINE	0
+	module SolitaireCipher
+	  class Deck
+	
+	end
 "g	CHAR	0
 	924
 <tjkk:1gtgtyygtjkkkkkkkkkkkkkkkkkkkkkp:wgtjddkgTyygtpgtpkdd:w/Elemhhjjjjj/ElemiGED€kb€kb€kbREXLM::jjhhhhhhhhhh.jhkkkllcwMLjjjhhhhhhkllcwMLjjhhhhcwREXMLuiREXML::nnnnngtdddd:wqjjjllllllllliREXML::nnnn:wgtjjjjjlllllllll.nn.nnnn:w:13kjgt:w:21gt:21iREXML:::wkkkk€kBjjjkkgtkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkjkocheck_next_c€kbitel€kbm_lee€kbvel(my_peek,itemhhhhhhhhhhhdwxllllim€kb,my_peek:wjjjjjjjkjkkkkkkkkjjjjjjjjjjjjjjjjjjjjkkkjjkkkkkkkkkj9kjjjjjjjjjdodef check_next_item(item,peekkkkkkkkkkkkkkkkkkjjkkkjjjkkjjjjjjjjjjjjjjjjjjjjjkkkjhhhhhhhhhhhhhkkkkkkkkkkkkkkkkkkkkkkkjjjjjddjjjjjjjjjjjjjjjjjddddkkkkkkkkkkkkkkkkkklllllljlllllllllllkkljjlllllllixx€kb€kbllhxxif€kbig€kbfjhi  jhhhh   hhi  lllllllxxxxxxxxxxxxxxxxxxjhhhhhhi  kjoed€kbnd:wkkkkkkkkkkkkkkkkkkjjjjjjjjkjjjkkkkllllllllllllllljjjjjjjjjjjjjjjjjjjjjjjjjjj:wjjjkkkkkkk
 "i	CHAR	0
 	
 "j	CHAR	0
-	j
-"-	CHAR	0
-	/
+	kj
+"k	CHAR	0
+	kj
+"q	CHAR	0
+	jkj
+""-	CHAR	0
+	:
 
 # File marks:
-'0  27  51  ~/.bashrc
-'1  28  0  ~/.bashrc
-'2  2  0  /private/etc/paths
-'3  18  28  ~/.bashrc
-'4  1  0  /private/etc/paths
-'5  3  0  /private/etc/profile
-'6  1  0  /private/etc/bashrc
-'7  1  0  /private/etc/profile
-'8  7  0  /private/etc/paths
-'9  1  0  /private/etc/path
+'0  51  0  ~/.vimrc
+'1  23  0  /usr/share/vim/vim73/colors/default.vim
+'2  33  0  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+'3  1  2  ~/code/solitaire_cipher/spec/letter_convert_spec.rb
+'4  1  0  ~/code/solitaire_cipher/spec/letter_convert.rb
+'5  8  65  ~/code/solitaire_cipher/spec/letter_convert.rb
+'6  38  32  ~/code/toll_free/lib/toll_free/dictionary.rb
+'7  1  0  ~/code/toll_free/spec/read_dic_spec.rb
+'8  1  0  ~/code/toll_free/lib/toll_free/words.rb
+'9  1  0  ~/code/1_800/lib/read_dictionary.rb
 
 # Jumplist (newest first):
--'  27  51  ~/.bashrc
--'  1  0  ~/.bashrc
--'  28  0  ~/.bashrc
--'  2  0  /private/etc/paths
--'  1  0  /private/etc/paths
--'  18  28  ~/.bashrc
--'  3  0  /private/etc/profile
--'  1  0  /private/etc/profile
--'  1  0  /private/etc/bashrc
--'  7  0  /private/etc/paths
--'  1  0  /private/etc/path
--'  1  0  ~/.rbenv/shims/ruby
--'  1  0  ~/code/time_tracker/bin/time_report
--'  39  21  ~/.bashrc
--'  2  0  ~/.bashrc
--'  31  0  ~/.bashrc
--'  22  0  ~/.bashrc
--'  32  0  ~/.bashrc
--'  3  0  /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
--'  1  0  /private/var/folders/vj/hyml20m96fb16c16bxlvyhj80000gn/T/bash-fc-1412177174
--'  1  0  ~/code/knight_moves/.bashrc
--'  26  6  ~/.bashrc
--'  58  0  ~/.vimrc
--'  5  0  ~/.vimrc
+-'  51  0  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  1  0  ~/.gitignore
--'  16  0  ~/.gitignore
--'  15  12  ~/.gitignore
--'  8  0  ~/.gitignore
--'  57  16  ~/.vimrc
--'  2  0  ~/.vimrc
--'  54  17  ~/.vimrc
--'  34  52  ~/code/knight_moves/lib/chess/path_director.rb
--'  5  0  ~/code/knight_moves/lib/chess/constants.rb
--'  1  0  ~/code/knight_moves/lib/chess/constants.rb
--'  14  6  ~/.vimrc
--'  43  14  ~/.vimrc
--'  39  14  ~/.vimrc
--'  9  26  ~/code/knight_moves/lib/chess/constants.rb
--'  37  0  ~/.vimrc
--'  8  0  ~/code/knight_moves/lib/chess/constants.rb
--'  12  5  ~/code/knight_moves/lib/chess/constants.rb
--'  50  0  ~/.vimrc
--'  10  0  ~/code/knight_moves/lib/chess/board.rb
--'  1  0  ~/code/knight_moves/lib/chess/board.rb
--'  38  15  ~/.vimrc
--'  7  0  ~/code/knight_moves/lib/chess/path_builder.rb
--'  1  0  ~/code/knight_moves/lib/chess/path_builder.rb
--'  27  0  ~/code/knight_moves/lib/chess/path_builder.rb
--'  36  38  ~/.vimrc
--'  8  0  ~/code/knight_moves/lib/chess/square.rb
--'  11  34  ~/code/knight_moves/test/test_square.rb
--'  9  1  ~/code/knight_moves/bin/findpath.rb
--'  8  62  ~/code/knight_moves/bin/findpath.rb
--'  5  71  ~/code/knight_moves/bin/findpath.rb
--'  4  21  ~/code/knight_moves/bin/findpath.rb
--'  1  0  ~/code/knight_moves/bin/find_path_bishop.rb
--'  2  0  ~/code/knight_moves/bin/find_path_bishop.rb
--'  38  0  ~/code/knight_moves/lib/chess/board.rb
--'  2  2  ~/code/knight_moves/lib/chess/board.rb
--'  5  0  ~/code/knight_moves/lib/chess.rb
--'  8  2  ~/code/knight_moves/test/test_path_builder.rb
--'  18  32  ~/code/knight_moves/test/test_path_builder.rb
--'  1  0  ~/code/knight_moves/test/test_board.rb
--'  64  21  ~/code/knight_moves/lib/chess/path.rb
--'  54  6  ~/code/knight_moves/lib/chess/path.rb
--'  57  41  ~/code/knight_moves/lib/chess/path.rb
--'  56  20  ~/code/knight_moves/lib/chess/path.rb
--'  28  24  ~/code/knight_moves/lib/chess/path.rb
--'  8  2  ~/code/knight_moves/lib/chess/board.rb
--'  13  0  ~/code/knight_moves/lib/chess/board.rb
--'  10  0  ~/code/knight_moves/lib/chess/path.rb
--'  1  5  ~/code/knight_moves/lib/chess/path.rb
--'  32  0  ~/code/knight_moves/lib/chess/path.rb
--'  1  0  ~/code/knight_moves/lib/chess/square.rb
--'  3  0  ~/code/knight_moves/lib/chess/path.rb
--'  4  0  ~/code/knight_moves/lib/chess/board.rb
--'  3  0  ~/.bashrc
--'  10  3  /private/etc/profile
--'  5  0  ~/.bashrc
--'  4  9  ~/.bashrc
--'  8  0  /private/etc/profile
--'  5  6  ~/code/knight_moves/lib/chess/bishop.rb
--'  1  0  ~/code/knight_moves/lib/chess/bishop.rb
--'  17  6  ~/code/knight_moves/lib/chess/board.rb
--'  32  20  ~/code/knight_moves/lib/chess/board.rb
--'  18  20  ~/code/knight_moves/lib/chess/board.rb
--'  28  8  ~/code/knight_moves/lib/chess/board.rb
--'  15  6  ~/code/knight_moves/lib/chess/board.rb
--'  11  6  ~/code/knight_moves/lib/chess/board.rb
--'  14  20  ~/code/knight_moves/lib/chess/board.rb
--'  3  19  ~/code/knight_moves/lib/chess/board.rb
--'  7  21  ~/code/knight_moves/lib/chess/board.rb
--'  25  8  ~/code/knight_moves/lib/chess/board.rb
--'  77  0  ~/code/RomanNumerals/lib/roman_numerals/roman_numeral.rb
--'  1  0  ~/code/RomanNumerals/lib/roman_numerals/roman_numeral.rb
--'  60  0  ~/code/RomanNumerals/lib/roman_numerals/roman_numeral.rb
--'  24  4  ~/code/knight_moves/lib/chess/board.rb
+-'  23  0  /usr/share/vim/vim73/colors/default.vim
+-'  1  0  /usr/share/vim/vim73/colors/default.vim
+-'  33  0  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  9  21  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  10  13  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  24  14  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  8  31  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  13  4  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  14  75  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  19  6  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  20  0  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  16  46  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  35  27  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  4  0  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  1  16  ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+-'  11  4  ~/code/solitaire_cipher/spec/cipher_spec.rb
+-'  1  0  ~/code/solitaire_cipher/spec/cipher_spec.rb
+-'  10  22  ~/code/solitaire_cipher/spec/deck_spec.rb
+-'  11  6  ~/code/solitaire_cipher/spec/deck_spec.rb
+-'  9  27  ~/code/solitaire_cipher/spec/deck_spec.rb
+-'  7  6  ~/code/solitaire_cipher/spec/deck_spec.rb
+-'  13  6  ~/code/solitaire_cipher/lib/solitaire_cipher/letter_map.rb
+-'  9  63  ~/code/solitaire_cipher/lib/solitaire_cipher/letter_map.rb
+-'  8  13  ~/code/solitaire_cipher/lib/solitaire_cipher/letter_map.rb
+-'  1  0  ~/code/solitaire_cipher/spec/letter_convert_spec.rb
+-'  7  0  ~/code/solitaire_cipher/spec/letter_convert_spec.rb
+-'  1  0  ~/code/solitaire_cipher/spec/letter_convert.rb
+-'  8  65  ~/code/solitaire_cipher/spec/letter_convert.rb
+-'  38  32  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  29  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  7  24  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  31  10  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  42  6  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  20  9  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  4  6  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  19  30  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  15  19  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  25  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  43  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  8  28  ~/code/toll_free/spec/dictionary_spec.rb
+-'  1  22  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  38  6  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  40  2  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  18  2  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  17  4  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  26  6  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  36  0  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  9  0  ~/code/toll_free/spec/find_words_spec.rb
+-'  1  0  ~/code/toll_free/spec/find_words_spec.rb
+-'  1  0  ~/code/toll_free/spec/read_dic_spec.rb
+-'  1  0  ~/code/toll_free/lib/toll_free/words.rb
+-'  16  3  ~/code/toll_free/lib/toll_free/digit.rb
+-'  6  8  ~/code/toll_free/lib/toll_free/digit.rb
+-'  3  40  ~/code/toll_free/spec/digit_spec.rb
+-'  1  0  ~/code/toll_free/spec/digit_spec.rb
+-'  1  0  ~/code/1_800/lib/read_dictionary.rb
+-'  6  6  ~/code/1_800/spec/read_dic_spec.rb
+-'  1  2  ~/code/1_800/spec/read_dic_spec.rb
+-'  1  0  /usr/share/dict/words
+-'  22  0  /usr/share/vim/vim73/colors/default.vim
+-'  14  0  /usr/share/vim/vim73/colors/README.txt
+-'  1  0  /usr/share/vim/vim73/colors/README.txt
+-'  6  0  ~/code/solitaire_cipher/spec/letter_convert_spec.rb
+-'  1  0  ~/code/solitaire_cipher/spec/letter_convert.rb
+-'  8  65  ~/code/solitaire_cipher/spec/letter_convert.rb
+-'  38  32  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  29  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  7  24  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  31  10  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  42  6  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  20  9  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  4  6  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  19  30  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  15  19  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  25  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  43  4  ~/code/toll_free/lib/toll_free/dictionary.rb
+-'  8  28  ~/code/toll_free/spec/dictionary_spec.rb
+-'  1  22  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  38  6  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  40  2  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  18  2  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  17  4  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  26  6  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  36  0  ~/code/toll_free/lib/toll_free/find_words.rb
+-'  9  0  ~/code/toll_free/spec/find_words_spec.rb
+-'  1  0  ~/code/toll_free/spec/find_words_spec.rb
+-'  1  0  ~/code/toll_free/spec/read_dic_spec.rb
+-'  1  0  ~/code/toll_free/lib/toll_free/words.rb
+-'  16  3  ~/code/toll_free/lib/toll_free/digit.rb
+-'  6  8  ~/code/toll_free/lib/toll_free/digit.rb
+-'  3  40  ~/code/toll_free/spec/digit_spec.rb
+-'  1  0  ~/code/toll_free/spec/digit_spec.rb
+-'  1  0  ~/code/1_800/lib/read_dictionary.rb
+-'  6  6  ~/code/1_800/spec/read_dic_spec.rb
+-'  1  2  ~/code/1_800/spec/read_dic_spec.rb
+-'  1  0  /usr/share/dict/words
 
 # History of marks within files (newest to oldest):
 
+> ~/.vimrc
+	"	51	0
+	^	51	77
+	.	51	0
+	+	62	0
+	+	62	0
+	+	60	50
+	+	35	19
+	+	52	0
+	+	50	19
+	+	49	0
+	+	55	17
+	+	36	38
+	+	36	0
+	+	38	15
+	+	37	0
+	+	42	48
+	+	40	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	39	14
+	+	45	34
+	+	43	0
+	+	44	0
+	+	45	0
+	+	43	14
+	+	55	17
+	+	59	0
+	+	58	16
+	+	43	25
+	+	44	25
+	+	45	24
+	+	39	34
+	+	40	0
+	+	61	0
+	+	51	0
+
+> ~/code/solitaire_cipher/spec/letter_convert_spec.rb
+	"	1	6
+	^	4	9
+	.	4	8
+	+	1	0
+	+	14	0
+	+	8	0
+	+	13	47
+	+	13	0
+	+	13	0
+	+	8	43
+	+	10	20
+	+	9	0
+	+	10	76
+	+	10	82
+	+	10	32
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	2
+	+	8	58
+	+	8	0
+	+	7	0
+	+	7	0
+	+	12	0
+	+	10	62
+	+	10	60
+	+	10	57
+	+	11	0
+	+	10	33
+	+	11	36
+	+	10	42
+	+	11	55
+	+	10	18
+	+	4	8
+
+> /usr/share/vim/vim73/colors/default.vim
+	"	23	0
+	^	22	77
+	.	22	0
+	+	22	0
+	+	22	0
+
+> ~/code/solitaire_cipher/lib/solitaire_cipher/letter_map.rb
+	"	12	11
+	^	5	21
+	.	8	11
+	+	8	52
+	+	8	0
+	+	8	11
+	+	9	63
+	+	2	0
+	+	7	0
+	+	8	0
+	+	14	0
+	+	8	4
+	+	8	4
+	+	8	4
+	+	8	4
+	+	8	4
+	+	8	4
+	+	8	40
+	+	9	27
+	+	10	34
+	+	11	30
+	+	8	0
+	+	12	26
+	+	4	32
+	+	5	20
+	+	8	11
+
+> ~/code/solitaire_cipher/spec/deck_spec.rb
+	"	6	0
+	^	10	40
+	.	10	39
+	+	7	45
+	+	7	45
+	+	7	45
+	+	7	42
+	+	7	3
+	+	7	47
+	+	7	0
+	+	7	0
+	+	7	4
+	+	7	0
+	+	7	36
+	+	7	0
+	+	15	0
+	+	7	0
+	+	7	28
+	+	7	0
+	+	7	41
+	+	7	54
+	+	7	36
+	+	7	14
+	+	7	10
+	+	7	0
+	+	7	28
+	+	7	24
+	+	7	9
+	+	7	32
+	+	7	47
+	+	7	0
+	+	7	5
+	+	7	0
+	+	7	27
+	+	7	0
+	+	7	0
+	+	7	9
+	+	7	0
+	+	7	0
+	+	7	33
+	+	7	18
+	+	7	35
+	+	7	14
+	+	7	26
+	+	7	38
+	+	7	30
+	+	7	31
+	+	12	0
+	+	13	0
+	+	12	0
+	+	7	0
+	+	8	0
+	+	12	0
+	+	9	57
+	+	9	90
+	+	9	90
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	9	27
+	+	9	60
+	+	9	93
+	+	9	34
+	+	12	0
+	+	11	6
+	+	9	42
+	+	10	32
+	+	10	8
+	+	11	0
+	+	10	25
+	+	11	0
+	+	10	17
+	+	10	6
+	+	10	22
+	+	11	0
+	+	10	22
+	+	7	28
+	+	7	27
+	+	7	27
+	+	7	0
+	+	7	19
+	+	7	39
+	+	7	0
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	35
+	+	7	0
+	+	7	0
+	+	10	22
+	+	9	46
+	+	10	39
+
+> ~/code/solitaire_cipher/lib/solitaire_cipher/deck.rb
+	"	24	5
+	^	42	6
+	.	42	5
+	+	41	0
+	+	40	49
+	+	41	0
+	+	40	6
+	+	13	39
+	+	12	52
+	+	13	0
+	+	13	62
+	+	13	0
+	+	12	0
+	+	8	0
+	+	44	0
+	+	43	4
+	+	44	0
+	+	43	10
+	+	43	0
+	+	43	0
+	+	26	0
+	+	16	0
+	+	27	0
+	+	37	0
+	+	16	0
+	+	27	0
+	+	16	0
+	+	16	0
+	+	39	53
+	+	40	0
+	+	25	0
+	+	22	61
+	+	22	0
+	+	36	0
+	+	41	0
+	+	16	0
+	+	35	6
+	+	35	29
+	+	35	43
+	+	36	41
+	+	35	28
+	+	36	0
+	+	35	22
+	+	36	49
+	+	35	0
+	+	23	23
+	+	24	0
+	+	23	12
+	+	22	0
+	+	44	0
+	+	44	0
+	+	6	29
+	+	6	29
+	+	6	0
+	+	44	0
+	+	34	54
+	+	35	0
+	+	36	0
+	+	36	0
+	+	35	30
+	+	16	26
+	+	16	0
+	+	6	19
+	+	16	0
+	+	12	19
+	+	13	65
+	+	12	6
+	+	13	47
+	+	18	0
+	+	5	25
+	+	5	66
+	+	5	71
+	+	5	64
+	+	5	71
+	+	6	0
+	+	5	25
+	+	6	0
+	+	16	0
+	+	7	0
+	+	33	19
+	+	24	13
+	+	23	10
+	+	9	17
+	+	10	16
+	+	12	17
+	+	5	21
+	+	19	22
+	+	18	27
+	+	32	24
+	+	39	17
+	+	34	18
+	+	33	18
+	+	39	13
+	+	18	25
+	+	19	21
+	+	39	54
+	+	41	0
+	+	41	12
+	+	25	0
+	+	41	0
+	+	36	0
+	+	41	0
+	+	42	5
+
+> ~/code/solitaire_cipher/spec/cipher_spec.rb
+	"	22	0
+	^	17	5
+	.	16	4
+	+	27	0
+	+	1	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	3	47
+	+	11	0
+	+	7	33
+	+	11	0
+	+	11	0
+	+	11	219
+	+	11	0
+	+	8	46
+	+	9	41
+	+	11	0
+	+	9	10
+	+	10	53
+	+	5	28
+	+	9	37
+	+	10	46
+	+	13	0
+	+	24	0
+	+	13	13
+	+	15	41
+	+	20	17
+	+	15	64
+	+	18	38
+	+	22	6
+	+	18	0
+	+	19	5
+	+	20	5
+	+	19	43
+	+	20	36
+	+	14	23
+	+	19	6
+	+	20	16
+	+	16	64
+	+	17	50
+	+	15	4
+	+	16	4
+	+	17	4
+	+	15	4
+	+	16	4
+
+> ~/.irbrc
+	"	1	0
+	.	1	27
+	+	1	36
+	+	2	122
+	+	2	0
+	+	1	27
+
 > ~/.bashrc
-	"	27	51
-	^	27	52
-	.	27	51
+	"	1	0
+	^	27	31
+	.	27	30
 	+	19	51
 	+	21	17
 	+	24	20
 	+	25	17
-	+	36	23
-	+	40	0
-	+	36	8
+	+	37	23
+	+	42	0
+	+	37	8
 	+	22	23
 	+	5	9
 	+	5	0
@@ -238,40 +628,1440 @@ $
 	+	5	0
 	+	4	8
 	+	18	13
-	+	36	0
-	+	33	24
-	+	36	0
-	+	34	26
+	+	37	0
+	+	34	24
+	+	37	0
+	+	35	26
 	+	23	26
-	+	35	44
+	+	36	44
 	+	26	6
 	+	5	0
-	+	32	0
-	+	32	0
-	+	28	47
-	+	36	0
-	+	36	87
-	+	36	10
-	+	32	0
-	+	32	0
-	+	32	8
-	+	32	10
-	+	36	54
-	+	32	0
-	+	32	0
-	+	32	0
+	+	33	0
+	+	33	0
+	+	29	47
+	+	37	0
+	+	37	87
+	+	37	10
+	+	33	0
+	+	33	0
+	+	33	8
+	+	33	10
+	+	37	54
+	+	33	0
+	+	33	0
+	+	33	0
 	+	24	0
-	+	31	43
-	+	28	42
+	+	32	43
+	+	29	42
+	+	33	0
 	+	32	0
-	+	31	0
-	+	39	21
-	+	29	45
-	+	30	54
+	+	41	21
+	+	30	45
+	+	31	54
 	+	18	28
-	+	27	12
+	+	28	12
+	+	29	0
+	+	28	51
+	+	38	54
+	+	37	0
+	+	38	20
+	+	38	97
+	+	38	0
+	+	27	30
+
+> ~/code/solitaire_cipher/lib/solitaire_cipher/cipher.rb
+	"	33	0
+	^	26	3
+	.	26	2
+	+	19	0
+	+	35	0
+	+	35	0
+	+	35	18
+	+	35	0
+	+	35	6
+	+	35	0
+	+	19	21
+	+	35	0
+	+	16	21
+	+	13	11
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	40
+	+	16	0
+	+	13	14
+	+	14	43
+	+	14	16
+	+	14	47
+	+	14	111
+	+	14	27
+	+	14	113
+	+	14	33
+	+	14	84
+	+	13	42
+	+	14	15
+	+	14	69
+	+	14	17
+	+	14	69
+	+	16	0
+	+	14	42
+	+	13	0
+	+	14	87
+	+	14	89
+	+	16	0
+	+	14	38
+	+	14	69
+	+	14	57
+	+	17	0
+	+	14	42
+	+	16	0
+	+	17	0
+	+	35	0
+	+	18	0
+	+	13	10
+	+	14	13
+	+	18	76
+	+	19	0
+	+	18	78
+	+	19	0
+	+	14	74
+	+	15	0
+	+	18	13
+	+	13	10
+	+	13	0
+	+	14	6
+	+	13	17
+	+	13	61
+	+	14	63
+	+	18	66
+	+	35	0
+	+	14	0
 	+	28	0
+	+	13	0
+	+	21	10
+	+	27	0
+	+	14	6
+	+	18	6
+	+	9	36
+	+	11	0
+	+	9	23
+	+	28	13
+	+	18	11
+	+	14	11
+	+	8	31
+	+	9	40
+	+	23	0
+	+	22	0
+	+	27	0
+	+	31	8
+	+	7	0
+	+	18	65
+	+	14	62
+	+	8	42
+	+	23	24
+	+	28	21
+	+	30	56
+	+	10	14
+	+	10	17
+	+	10	13
+	+	9	20
+	+	10	30
+	+	10	9
+	+	9	21
+	+	10	0
+	+	9	21
+	+	10	0
+	+	26	2
+
+> ~/code/solitaire_cipher/spec/interface_spec.rb
+	"	15	30
+	^	15	31
+	.	15	30
+	+	1	0
+	+	4	41
+	+	4	6
+	+	4	0
+	+	4	24
+	+	4	0
+	+	4	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	5	23
+	+	7	22
+	+	14	0
+	+	14	0
+	+	13	0
+	+	20	0
+	+	14	13
+	+	10	63
+	+	11	22
+	+	11	23
+	+	12	0
+	+	11	44
+	+	7	13
+	+	14	13
+	+	10	32
+	+	19	0
+	+	11	0
+	+	10	37
+	+	11	18
+	+	19	0
+	+	10	67
+	+	10	33
+	+	11	18
+	+	10	33
+	+	8	0
+	+	11	18
+	+	9	0
+	+	11	22
+	+	12	0
+	+	8	11
+	+	9	12
+	+	10	41
+	+	11	27
+	+	8	0
+	+	19	0
+	+	15	0
+	+	10	35
+	+	17	42
+	+	18	26
+	+	15	30
+
+> ~/code/toll_free/lib/toll_free.rb
+	"	6	0
+	^	13	0
+	.	6	47
+	+	1	42
+	+	3	47
+	+	6	47
+	+	7	74
+	+	7	86
+	+	8	71
+	+	9	75
+	+	9	107
+	+	10	158
+	+	18	0
+	+	16	2
+	+	6	47
+	+	7	0
+	+	10	11
+	+	8	49
+	+	9	0
+	+	8	70
+	+	10	40
+	+	10	0
+	+	4	14
+	+	6	0
+	+	7	0
+	+	6	0
+	+	6	0
+	+	1	37
+	+	3	0
+	+	2	37
+	+	10	0
+	+	8	48
+	+	10	26
+	+	10	14
+	+	14	0
+	+	12	16
+	+	10	0
+	+	8	58
+	+	14	0
+	+	12	17
+	+	14	0
+	+	12	17
+	+	9	0
+	+	6	0
+	+	15	0
+	+	5	0
+	+	17	0
+	+	13	0
+	+	8	60
+	+	10	39
+	+	6	47
+
+> ~/code/toll_free/spec/interface_spec.rb
+	"	4	0
+	^	28	32
+	.	28	46
+	+	26	30
+	+	5	17
+	+	7	33
+	+	9	63
+	+	10	48
+	+	26	20
+	+	8	0
+	+	26	0
+	+	9	43
+	+	11	0
+	+	26	0
+	+	3	34
+	+	26	28
+	+	27	0
+	+	26	11
+	+	27	11
+	+	9	21
+	+	7	37
+	+	9	16
+	+	27	0
+	+	30	0
+	+	27	30
+	+	30	0
 	+	27	51
+	+	30	0
+	+	26	0
+	+	26	21
+	+	9	0
+	+	8	3
+	+	7	2
+	+	8	2
+	+	8	2
+	+	9	2
+	+	10	2
+	+	11	2
+	+	26	2
+	+	26	2
+	+	26	2
+	+	27	2
+	+	30	2
+	+	7	2
+	+	8	2
+	+	8	2
+	+	9	2
+	+	10	2
+	+	11	2
+	+	8	0
+	+	26	2
+	+	26	2
+	+	26	2
+	+	27	2
+	+	30	2
+	+	26	66
+	+	27	26
+	+	27	0
+	+	27	13
+	+	27	25
+	+	26	64
+	+	27	11
+	+	27	11
+	+	19	30
+	+	21	68
+	+	25	0
+	+	26	0
+	+	19	22
+	+	13	28
+	+	15	64
+	+	27	55
+	+	28	46
+	+	29	36
+	+	27	45
+	+	30	0
+	+	26	63
+	+	29	39
+	+	27	54
+	+	28	43
+	+	29	33
+	+	27	16
+	+	27	39
+	+	31	0
+	+	27	0
+	+	9	0
+	+	9	0
+	+	25	0
+	+	19	0
+	+	13	0
+	+	7	0
+	+	32	0
+	+	9	0
+	+	24	0
+	+	18	0
+	+	12	0
+	+	6	0
+	+	8	6
+	+	14	6
+	+	20	6
+	+	27	58
+	+	28	29
+	+	27	57
+	+	28	46
+
+> ~/code/solitaire_cipher/lib/solitaire_cipher.rb
+	"	7	0
+	^	3	22
+	.	3	21
+	+	1	40
+	+	2	0
+	+	4	0
+	+	9	0
+	+	4	29
+	+	9	17
+	+	12	0
+	+	6	0
+	+	12	0
+	+	6	60
+	+	7	0
+	+	11	0
+	+	12	0
+	+	11	60
+	+	6	4
+	+	11	4
+	+	3	15
+	+	4	0
+	+	15	0
+	+	14	0
+	+	16	0
+	+	4	33
+	+	9	33
+	+	3	21
+
+> ~/code/solitaire_cipher/bin/cipher
+	"	16	39
+	^	16	40
+	.	16	39
+	+	2	0
+	+	5	0
+	+	7	0
+	+	10	10
+	+	18	0
+	+	11	31
+	+	12	5
+	+	13	0
+	+	12	24
+	+	13	23
+	+	11	45
+	+	16	48
+	+	15	10
+	+	16	31
+	+	3	17
+	+	4	0
+	+	11	41
+	+	16	49
+	+	3	35
+	+	16	0
+	+	17	0
+	+	16	0
+	+	17	0
+	+	16	51
+	+	11	48
+	+	16	39
+
+> ~/code/toll_free/bin/find_number
+	"	7	0
+	^	6	0
+	.	6	0
+	+	3	17
+	+	1	1
+	+	17	4
+	+	15	0
+	+	4	0
+	+	1	21
+	+	13	27
+	+	16	39
+	+	13	35
+	+	8	24
+	+	12	2
+	+	17	0
+	+	16	0
+	+	11	0
+	+	7	36
+	+	11	36
+	+	16	73
+	+	13	46
+	+	13	0
+	+	13	0
+	+	13	10
+	+	13	13
+	+	7	16
+	+	13	43
+	+	13	0
+	+	13	0
+	+	8	0
+	+	8	0
+	+	14	0
+	+	18	0
+	+	6	0
+
+> /usr/local/Cellar/vim/7.4.335/share/vim/vim74/doc/syntax.txt
+	"	4423	35
+
+> /usr/share/vim/vim73/colors/desert.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/README.txt
+	"	14	0
+
+> /usr/share/vim/vim73/colors/blue.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/darkblue.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/delek.vim
+	"	1	0
+	.	42	1
+	+	42	1
+
+> /usr/share/vim/vim73/colors/elflord.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/evening.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/koehler.vim
+	"	1	0
+
+> /usr/share/vim/vim73/colors/morning.vim
+	"	1	0
+
+> ~/code/solitaire_cipher/lib/solitair_cipher/letter_map.rb
+	"	7	28
+	^	7	29
+	.	7	28
+	+	4	33
+	+	6	7
+	+	8	0
+	+	6	22
+	+	8	0
+	+	7	28
+
+> ~/code/solitaire_cipher/spec/letter_convert.rb
+	"	1	0
+	^	9	66
+	.	9	65
+	+	2	0
+	+	4	51
+	+	12	0
+	+	6	34
+	+	7	46
+	+	8	74
+	+	9	65
+
+> ~/code/toll_free/spec/digit_spec.rb
+	"	21	2
+	^	22	0
+	.	22	0
+	+	6	6
+	+	5	24
+	+	6	46
+	+	7	34
+	+	8	34
+	+	3	40
+	+	8	17
+	+	18	33
+	+	21	0
+	+	19	34
+	+	21	0
+	+	20	31
+	+	3	39
+	+	7	27
+	+	19	27
+	+	5	23
+	+	11	0
+	+	18	31
+	+	20	33
+	+	11	12
+	+	16	30
+	+	16	53
+	+	16	50
+	+	16	56
+	+	16	46
+	+	16	0
+	+	14	59
+	+	15	43
+	+	14	20
+	+	15	4
+	+	16	0
+	+	14	21
+	+	7	0
+	+	7	0
+	+	13	6
+	+	10	0
+	+	17	0
+	+	22	0
+
+> ~/code/toll_free/spec/find_words_spec.rb
+	"	7	40
+	^	14	31
+	.	7	0
+	+	3	44
+	+	5	27
+	+	6	30
+	+	16	0
+	+	6	37
+	+	6	62
+	+	6	0
+	+	6	38
+	+	1	0
+	+	6	0
+	+	16	52
+	+	16	0
+	+	16	0
+	+	6	9
+	+	6	44
+	+	6	49
+	+	6	0
+	+	6	0
+	+	6	38
+	+	6	80
+	+	6	94
+	+	6	72
+	+	6	0
+	+	6	55
+	+	6	5
+	+	6	38
+	+	6	36
+	+	6	0
+	+	6	17
+	+	6	0
+	+	6	50
+	+	6	17
+	+	6	0
+	+	6	17
+	+	6	65
+	+	6	0
+	+	6	0
+	+	6	37
+	+	6	26
+	+	6	27
+	+	6	0
+	+	6	27
+	+	6	47
+	+	6	42
+	+	9	0
+	+	6	46
+	+	9	1
+	+	7	0
+	+	8	51
+	+	7	46
+	+	8	58
+	+	6	34
+	+	6	107
+	+	6	4
+	+	6	21
+	+	6	0
+	+	6	7
+	+	6	0
+	+	8	0
+	+	7	44
+	+	11	45
+	+	15	0
+	+	12	0
+	+	12	0
+	+	13	26
+	+	14	51
+	+	7	43
+	+	12	43
+	+	14	62
+	+	14	57
+	+	14	57
+	+	8	72
+	+	8	77
+	+	8	71
+	+	8	8
+	+	8	0
+	+	8	72
+	+	8	43
+	+	8	78
+	+	8	63
+	+	8	64
+	+	6	45
+	+	6	48
+	+	14	58
+	+	14	52
+	+	14	56
+	+	6	0
+	+	8	49
+	+	9	0
+	+	8	54
+	+	14	37
+	+	14	22
+	+	14	50
+	+	15	0
+	+	14	43
+	+	7	45
+	+	8	56
+	+	12	45
+	+	14	0
+	+	7	0
+
+> ~/code/toll_free/lib/toll_free/find_words.rb
+	"	10	73
+	^	10	74
+	.	10	73
+	+	11	13
+	+	17	11
+	+	17	51
+	+	17	24
+	+	36	0
+	+	17	2
+	+	11	0
+	+	9	0
+	+	7	81
+	+	17	2
+	+	21	56
+	+	17	36
+	+	21	25
+	+	21	0
+	+	24	21
+	+	25	87
+	+	38	11
+	+	38	43
+	+	38	10
+	+	25	88
+	+	38	0
+	+	25	95
+	+	25	83
+	+	25	84
+	+	25	65
+	+	25	65
+	+	25	65
+	+	17	24
+	+	8	18
+	+	3	35
+	+	25	65
+	+	25	79
+	+	27	20
+	+	28	23
+	+	33	41
+	+	35	41
+	+	36	0
+	+	25	58
+	+	35	20
+	+	38	0
+	+	17	57
+	+	25	40
+	+	17	24
+	+	25	0
+	+	33	0
+	+	30	67
+	+	35	41
+	+	30	0
+	+	33	10
+	+	33	0
+	+	32	30
+	+	32	0
+	+	14	48
+	+	15	14
+	+	17	24
+	+	17	32
+	+	17	53
+	+	18	0
+	+	25	14
+	+	25	70
+	+	26	0
+	+	25	70
+	+	29	29
+	+	13	0
+	+	35	26
+	+	32	51
+	+	25	70
+	+	21	21
+	+	17	18
+	+	14	27
+	+	15	59
+	+	10	45
+	+	9	39
+	+	9	67
+	+	4	0
+	+	7	0
+	+	13	0
+	+	20	0
+	+	24	0
+	+	38	0
+	+	29	0
+	+	23	0
+	+	19	0
+	+	12	0
+	+	6	0
+	+	37	0
+	+	39	0
+	+	41	0
+	+	24	26
+	+	15	57
+	+	9	46
+	+	9	77
+	+	10	0
+	+	32	26
+	+	27	29
+	+	25	59
+	+	17	18
+	+	7	30
+	+	15	70
+	+	10	73
+
+> ~/code/toll_free/spec/dictionary_spec.rb
+	"	15	4
+	^	6	0
+	.	18	15
+	+	3	44
+	+	7	36
+	+	8	57
+	+	7	31
+	+	10	0
+	+	8	0
+	+	8	6
+	+	5	28
+	+	8	55
+	+	10	0
+	+	8	59
+	+	10	27
+	+	8	53
+	+	7	22
+	+	8	4
+	+	10	0
+	+	9	4
+	+	8	16
+	+	9	47
+	+	12	0
+	+	13	0
+	+	12	30
+	+	14	28
+	+	15	26
+	+	17	60
+	+	18	78
+	+	15	0
+	+	19	0
+	+	9	29
+	+	8	0
+	+	9	52
+	+	14	52
+	+	20	52
+	+	8	0
+	+	9	48
+	+	14	48
+	+	20	48
+	+	21	45
+	+	23	0
+	+	16	0
+	+	11	0
+	+	6	0
+	+	18	15
+
+> ~/code/toll_free/lib/toll_free/dictionary.rb
+	"	38	32
+	^	33	39
+	.	33	39
+	+	15	16
+	+	15	0
+	+	15	27
+	+	15	0
+	+	15	0
+	+	15	10
+	+	15	26
+	+	15	15
+	+	15	0
+	+	18	36
+	+	20	14
+	+	18	15
+	+	42	0
+	+	27	10
+	+	15	0
+	+	7	24
+	+	29	22
+	+	17	21
+	+	41	0
+	+	30	10
+	+	41	0
+	+	15	0
+	+	36	12
+	+	38	43
+	+	40	0
+	+	40	0
+	+	40	35
+	+	18	35
+	+	41	0
+	+	42	0
+	+	44	0
+	+	46	0
+	+	30	31
+	+	30	33
+	+	36	21
+	+	38	56
+	+	36	0
+	+	38	19
+	+	36	19
+	+	38	37
+	+	40	38
+	+	38	0
+	+	30	0
+	+	18	64
+	+	40	0
+	+	38	62
+	+	30	63
+	+	40	0
+	+	30	36
+	+	30	8
+	+	30	23
+	+	36	44
+	+	36	12
+	+	36	12
+	+	30	0
+	+	39	39
+	+	30	0
+	+	36	0
+	+	31	11
+	+	39	10
+	+	36	0
+	+	30	0
+	+	18	15
+	+	19	14
+	+	39	0
+	+	37	0
+	+	38	39
+	+	19	14
+	+	20	0
+	+	21	14
+	+	19	14
+	+	18	20
+	+	19	14
+	+	18	6
+	+	19	14
+	+	20	0
+	+	19	19
+	+	20	0
+	+	19	6
+	+	20	0
+	+	22	0
+	+	21	19
+	+	22	0
+	+	21	6
+	+	22	0
+	+	29	0
+	+	4	33
+	+	15	38
+	+	35	19
+	+	29	35
+	+	15	0
+	+	29	0
+	+	29	40
+	+	15	48
+	+	29	0
+	+	8	0
+	+	23	64
+	+	29	0
+	+	32	37
+	+	33	39
+	o	1	0
+
+> ~/code/toll_free/spec/lookup_word_spec.rb
+	"	1	0
+	.	9	0
+	+	1	0
+	+	9	0
+
+> ~/code/toll_free/spec/words_spec.rb
+	"	10	46
+	^	13	0
+	.	9	46
+	+	15	0
+	+	1	0
+	+	1	39
+	+	1	25
+	+	1	23
+	+	1	43
+	+	1	36
+	+	1	0
+	+	1	35
+	+	12	0
+	+	1	48
+	+	1	38
+	+	1	22
+	+	11	26
+	+	11	26
+	+	11	26
+	+	6	22
+	+	3	39
+	+	4	44
+	+	11	33
+	+	11	53
+	+	9	43
+	+	11	55
+	+	12	0
+	+	11	28
+	+	11	30
+	+	12	0
+	+	11	27
+	+	9	40
+	+	9	89
+	+	11	64
+	+	9	113
+	+	9	50
+	+	9	49
+	+	10	0
+	+	9	47
+	+	7	0
+	+	13	0
+	+	11	64
+	+	10	66
+	+	9	46
+
+> ~/code/toll_free/lib/toll_free/word_finder.rb
+	"	1	0
+
+> ~/code/toll_free/lib/toll_free/words_from_letters.rb
+	"	14	8
+	^	17	55
+	.	13	0
+	+	5	45
+	+	6	44
+	+	16	62
+	+	14	76
+	+	12	11
+	+	13	30
+	+	14	69
+	+	13	0
+	+	12	0
+	+	35	39
+	+	12	5
+	+	13	5
+	+	14	5
+	+	16	17
+	+	19	5
+	+	20	5
+	+	4	0
+	+	10	0
+	+	35	0
+	+	35	0
+	+	35	0
+	+	10	41
+	+	14	55
+	+	14	46
+	+	23	32
+	+	23	16
+	+	14	40
+	+	14	20
+	+	23	29
+	+	16	93
+	+	14	0
+	+	14	13
+	+	19	29
+	+	19	0
+	+	14	10
+	+	20	33
+	+	7	0
+	+	24	31
+	+	24	23
+	+	24	32
+	+	24	31
+	+	25	0
+	+	14	10
+	+	14	69
+	+	14	10
+	+	27	0
+	+	28	17
+	+	27	11
+	+	28	20
+	+	10	0
+	+	24	21
+	+	14	69
+	+	16	35
+	+	19	0
+	+	16	36
+	+	18	0
+	+	23	6
+	+	23	6
+	+	23	6
+	+	23	0
+	+	9	34
+	+	23	3
+	+	23	0
+	+	35	0
+	+	26	0
+	+	22	0
+	+	8	0
+	+	31	21
+	+	32	43
+	+	33	17
+	+	20	14
+	+	18	25
+	+	15	0
+	+	12	36
+	+	13	61
+	+	14	25
+	+	16	0
+	+	18	24
+	+	24	43
+	+	28	0
+	+	24	0
+	+	12	35
+	+	34	0
+	+	36	0
+	+	13	23
+	+	13	32
+	+	17	40
+	+	32	6
+	+	33	0
+	+	6	30
+	+	7	0
+	+	6	30
+	+	4	55
+	+	18	24
+	+	16	35
+	+	17	40
+	+	14	0
+	+	13	60
+	+	17	26
+	+	13	0
+
+> ~/code/toll_free/spec/words_from_letters.rb
+	"	7	47
+	^	8	65
+	.	8	64
+	+	1	0
+	+	3	0
+	+	5	34
+	+	8	13
+	+	7	45
+	+	8	39
+	+	8	13
+	+	8	15
+	+	8	16
+	+	9	0
+	+	8	27
+	+	8	64
+
+> ~/code/toll_free/spec/words_from_letters_spec.rb
+	"	10	0
+	^	7	0
+	.	7	0
+	+	9	62
+	+	11	66
+	+	8	64
+	+	11	11
+	+	11	12
+	+	11	0
+	+	11	56
+	+	11	56
+	+	11	27
+	+	4	52
+	+	9	24
+	+	10	49
+	+	11	52
+	+	11	52
+	+	11	4
+	+	11	4
+	+	11	4
+	+	11	4
+	+	11	21
+	+	12	25
+	+	12	25
+	+	14	55
+	+	14	0
+	+	14	42
+	+	14	42
+	+	12	21
+	+	14	0
+	+	13	17
+	+	14	22
+	+	11	10
+	+	11	0
+	+	11	20
+	+	12	17
+	+	14	27
+	+	15	0
+	+	16	26
+	+	15	13
+	+	17	33
+	+	20	37
+	+	35	0
+	+	11	0
+	+	12	0
+	+	21	0
+	+	25	15
+	+	24	17
+	+	25	26
+	+	32	0
+	+	27	27
+	+	28	24
+	+	32	4
+	+	29	0
+	+	31	0
+	+	30	28
+	+	25	31
+	+	26	7
+	+	25	27
+	+	32	6
+	+	26	26
+	+	27	29
+	+	30	46
+	+	34	40
+	+	22	54
+	+	34	52
+	+	33	35
+	+	34	60
+	+	33	36
+	+	22	53
+	+	9	0
+	+	9	0
+	+	38	0
+	+	36	0
+	+	19	0
+	+	7	0
+
+> ~/code/toll_free/lib/toll_free/digit.rb
+	"	29	0
+	^	30	0
+	.	30	0
+	+	6	21
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	8	8
+	+	9	8
+	+	10	8
+	+	11	8
+	+	12	8
+	+	13	8
+	+	14	8
+	+	15	0
+	+	8	20
+	+	9	20
+	+	12	22
+	+	13	20
+	+	14	22
+	+	10	20
+	+	11	20
+	+	14	23
+	+	22	14
+	+	5	19
+	+	25	6
+	+	6	6
+	+	25	24
+	+	2	12
+	+	19	26
+	+	23	40
+	+	6	16
+	+	19	28
+	+	22	0
+	+	19	0
+	+	25	16
+	+	24	54
+	+	25	6
+	+	23	6
+	+	24	33
+	+	25	0
+	+	19	28
+	+	24	0
+	+	19	0
+	+	6	20
+	+	3	0
+	+	17	0
+	+	21	0
+	+	26	0
+	+	28	0
+	+	30	0
+
+> /usr/share/dict/words
+	"	1	0
+
+> ~/code/toll_free/.git/MERGE_MSG
+	"	1	0
+
+> ~/code/toll_free/conf/words
+	"	48045	0
+	.	1	0
+	+	2	0
+	+	2	0
+	+	9	0
+	+	10	0
+	+	25	0
+	+	33	0
+	+	41	0
+	+	42	0
+	+	52	0
+	+	104	0
+	+	17079	0
+	+	28147	0
+	+	48046	0
+	+	58940	0
+	+	67674	0
+	+	74532	0
+	+	81391	0
+	+	90416	0
+	+	99213	0
+	+	100853	0
+	+	103132	0
+	+	109414	0
+	+	122028	0
+	+	128806	0
+	+	136653	0
+	+	161112	0
+	+	162262	0
+	+	171931	0
+	+	197091	0
+	+	210055	0
+	+	226440	0
+	+	229878	0
+	+	233820	0
+	+	234203	0
+	+	234872	0
+	+	1	0
+
+> ~/code/toll_free/conf/dictionary
+	"	4	1
+	^	5	2
+	.	5	1
+	+	5	1
+
+> ~/code/toll_free/spec/read_dic_spec.rb
+	"	1	0
+
+> ./lib/toll_free/lookup.rb
+	"	1	0
+
+> /usr/local/Cellar/vim/7.4.335/share/vim/vim74/doc/help.txt
+	"	221	1
+
+> /usr/local/Cellar/vim/7.4.335/share/vim/vim74/doc/filetype.txt
+	"	603	0
+
+> ~/code/toll_free/spec/words.rb
+	"	1	0
+
+> ~/code/toll_free/lib/toll_free/words.rb
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	12
+	+	1	30
+	+	1	0
+	+	1	0
+
+> ~/code/1_800/spec/read_dic_spec.rb
+	"	5	29
+	^	5	30
+	.	5	29
+	+	1	26
+	+	3	49
+	+	6	46
+	+	7	52
+	+	8	42
+	+	9	18
+	+	10	0
+	+	6	0
+	+	5	29
+
+> ~/code/1_800/lib/read_dictionary.rb
+	"	1	0
+
+> ~/code/1_800/spec/read_dic.rb
+	"	1	0
+
+> ~/code/1_800/lib/dictionary.rb
+	"	1	0
+
+> ~/code/time_tracker/lib/time_tracker/report.rb
+	"	1	0
+	^	17	149
+	.	17	148
+	+	7	6
+	+	6	0
+	+	57	0
+	+	4	0
+	+	5	68
+	+	17	76
+	+	31	42
+	+	38	39
+	+	5	0
+	+	12	0
+	+	17	0
+	+	5	0
+	+	18	20
+	+	17	86
+	+	38	20
+	+	5	34
+	+	37	0
+	+	37	17
+	+	36	17
+	+	37	0
+	+	38	28
+	+	37	29
+	+	36	5
+	+	37	0
+	+	36	16
+	+	39	25
+	+	38	10
+	+	39	8
+	+	38	21
+	+	38	23
+	+	35	24
+	+	36	11
+	+	36	0
+	+	37	0
+	+	38	0
+	+	39	0
+	+	38	8
+	+	36	0
+	+	17	109
+	+	17	0
+	+	5	0
+	+	12	0
+	+	17	0
+	+	57	0
+	+	48	28
+	+	44	33
+	+	50	18
+	+	51	46
+	+	44	0
+	+	53	25
+	+	54	8
+	+	51	6
+	+	48	6
+	+	54	8
+	+	44	35
+	+	44	35
+	+	44	9
+	+	51	40
+	+	46	9
+	+	46	9
+	+	46	17
+	+	47	0
+	+	57	0
+	+	47	0
+	+	47	23
+	+	48	14
+	+	51	34
+	+	54	8
+	+	43	22
+	+	44	17
+	+	44	18
+	+	44	19
+	+	44	19
+	+	44	28
+	+	44	32
+	+	44	32
+	+	43	19
+	+	47	19
+	+	50	21
+	+	53	10
+	+	50	10
+	+	47	10
+	+	44	18
+	+	44	20
+	+	44	20
+	+	51	28
+	+	44	0
+	+	44	33
+	+	44	0
+	+	46	35
+	+	57	0
+	+	56	4
+	+	47	0
+	+	48	8
+	+	51	8
+	+	54	8
+	+	57	0
+	+	17	150
+	+	16	39
+	+	17	148
 
 > /private/etc/paths
 	"	2	0
@@ -378,43 +2168,6 @@ $
 
 > ~/code/knight_moves/.bashrc
 	"	1	0
-
-> ~/.vimrc
-	"	58	0
-	^	39	34
-	.	40	0
-	+	60	0
-	+	60	0
-	+	59	50
-	+	35	19
-	+	51	0
-	+	50	19
-	+	49	0
-	+	54	17
-	+	36	38
-	+	36	0
-	+	38	15
-	+	37	0
-	+	42	48
-	+	40	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	39	14
-	+	45	34
-	+	43	0
-	+	44	0
-	+	45	0
-	+	43	14
-	+	54	17
-	+	58	0
-	+	57	16
-	+	43	25
-	+	44	25
-	+	45	24
-	+	39	34
-	+	40	0
 
 > ~/.gitignore
 	"	1	0
@@ -1961,1520 +3714,3 @@ $
 	+	1	28
 	+	3	0
 	+	2	29
-
-> ~/code/time_tracker/install/database_initializer.rb
-	"	1	0
-	^	1	38
-	.	12	0
-	+	13	55
-	+	14	59
-	+	18	29
-	+	19	64
-	+	9	0
-	+	8	0
-	+	1	29
-	+	12	0
-
-> ~/code/time_tracker/lib/time_tracker/database.rb
-	"	14	54
-	^	14	55
-	.	14	54
-	+	32	6
-	+	54	0
-	+	53	0
-	+	45	0
-	+	49	2
-	+	49	0
-	+	39	0
-	+	34	0
-	+	30	0
-	+	29	0
-	+	56	10
-	+	55	0
-	+	57	0
-	+	49	0
-	+	58	0
-	+	61	0
-	+	49	0
-	+	40	0
-	+	44	0
-	+	40	15
-	+	42	15
-	+	6	42
-	+	22	0
-	+	7	18
-	+	8	19
-	+	7	14
-	+	6	2
-	+	22	4
-	+	5	29
-	+	5	0
-	+	10	11
-	+	11	37
-	+	11	37
-	+	11	56
-	+	16	0
-	+	17	19
-	+	11	7
-	+	18	37
-	+	18	35
-	+	18	87
-	+	18	82
-	+	18	27
-	+	19	21
-	+	19	37
-	+	19	35
-	+	19	87
-	+	19	69
-	+	19	0
-	+	11	58
-	+	18	0
-	+	11	34
-	+	11	19
-	+	11	36
-	+	16	10
-	+	11	29
-	+	11	12
-	+	26	66
-	+	11	0
-	+	16	0
-	+	11	0
-	+	11	40
-	+	16	0
-	+	11	0
-	+	26	0
-	+	11	19
-	+	23	0
-	+	37	0
-	+	42	29
-	+	9	20
-	+	11	17
-	+	11	16
-	+	11	0
-	+	12	0
-	+	11	0
-	+	13	53
-	+	14	54
-
-> ~/code/time_tracker/lib/time_tracker/category.rb
-	"	1	0
-	^	16	18
-	.	16	17
-	+	12	0
-	+	1	35
-	+	1	35
-	+	2	0
-	+	1	33
-	+	11	33
-	+	12	78
-	+	11	28
-	+	12	61
-	+	13	0
-	+	11	0
-	+	11	0
-	+	20	0
-	+	2	0
-	+	3	0
-	+	12	0
-	+	12	0
-	+	10	0
-	+	8	0
-	+	4	0
-	+	14	0
-	+	18	0
-	+	20	0
-	+	10	0
-	+	6	28
-	+	16	29
-	+	12	69
-	+	6	17
-	+	12	17
-	+	16	17
-
-> ~/code/time_tracker/lib/time_tracker/report.rb
-	"	1	33
-	^	55	5
-	.	56	0
-	+	12	32
-	+	16	106
-	+	5	0
-	+	7	6
-	+	6	0
-	+	56	0
-	+	4	0
-	+	5	68
-	+	16	76
-	+	30	42
-	+	37	39
-	+	5	0
-	+	12	0
-	+	16	0
-	+	5	0
-	+	17	20
-	+	16	86
-	+	37	20
-	+	5	34
-	+	36	0
-	+	36	17
-	+	35	17
-	+	36	0
-	+	37	28
-	+	36	29
-	+	35	5
-	+	36	0
-	+	35	16
-	+	38	25
-	+	37	10
-	+	38	8
-	+	37	21
-	+	37	23
-	+	34	24
-	+	35	11
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	37	8
-	+	35	0
-	+	16	109
-	+	16	0
-	+	5	0
-	+	12	0
-	+	16	0
-	+	56	0
-	+	47	28
-	+	43	33
-	+	49	18
-	+	50	46
-	+	43	0
-	+	52	25
-	+	53	8
-	+	50	6
-	+	47	6
-	+	53	8
-	+	43	35
-	+	43	35
-	+	43	9
-	+	50	40
-	+	45	9
-	+	45	9
-	+	45	17
-	+	46	0
-	+	56	0
-	+	46	0
-	+	46	23
-	+	47	14
-	+	50	34
-	+	53	8
-	+	42	22
-	+	43	17
-	+	43	18
-	+	43	19
-	+	43	19
-	+	43	28
-	+	43	32
-	+	43	32
-	+	42	19
-	+	46	19
-	+	49	21
-	+	52	10
-	+	49	10
-	+	46	10
-	+	43	18
-	+	43	20
-	+	43	20
-	+	50	28
-	+	43	0
-	+	43	33
-	+	43	0
-	+	45	35
-	+	56	0
-	+	55	4
-	+	46	0
-	+	47	8
-	+	50	8
-	+	53	8
-	+	56	0
-
-> ~/code/time_tracker/temp
-	"	1	0
-	^	3	191
-	.	3	191
-	+	1	509
-	+	3	191
-
-> ~/code/time_tracker/lib/time_tracker/database2.rb
-	"	12	31
-	^	12	34
-	.	12	31
-	+	7	14
-	+	11	0
-	+	12	31
-
-> ~/code/time_tracker/lib/cli/report.rb
-	"	11	0
-	^	25	182
-	.	25	181
-	+	26	54
-	+	26	0
-	+	26	0
-	+	25	23
-	+	23	40
-	+	25	10
-	+	24	0
-	+	25	194
-	+	26	0
-	+	25	0
-	+	25	198
-	+	24	33
-	+	25	6
-	+	25	192
-	+	25	0
-	+	23	0
-	+	23	0
-	+	23	13
-	+	23	18
-	+	23	0
-	+	23	45
-	+	24	0
-	+	25	15
-	+	31	30
-	+	32	43
-	+	31	26
-	+	32	30
-	+	34	15
-	+	31	61
-	+	37	0
-	+	32	32
-	+	34	0
-	+	34	19
-	+	34	17
-	+	34	0
-	+	34	21
-	+	34	0
-	+	34	0
-	+	34	12
-	+	35	31
-	+	31	38
-	+	34	60
-	+	31	48
-	+	34	0
-	+	35	0
-	+	37	0
-	+	31	6
-	+	37	0
-	+	23	0
-	+	25	0
-	+	25	8
-	+	25	15
-	+	18	0
-	+	17	0
-	+	12	15
-	+	25	10
-	+	25	75
-	+	25	0
-	+	36	0
-	+	25	0
-	+	25	31
-	+	25	52
-	+	25	189
-	+	25	0
-	+	20	31
-	+	29	0
-	+	5	0
-	+	4	0
-	+	9	0
-	+	15	0
-	+	19	0
-	+	28	0
-	+	38	0
-	+	8	44
-	+	8	104
-	+	7	35
-	+	7	35
-	+	8	0
-	+	7	46
-	+	7	82
-	+	8	6
-	+	8	6
-	+	7	48
-	+	7	49
-	+	8	0
-	+	7	57
-	+	7	19
-	+	7	0
-	+	5	15
-	+	7	61
-	+	7	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	25	42
-	+	25	205
-	+	25	0
-	+	25	205
-	+	25	20
-	+	25	181
-
-> ~/code/time_tracker/lib/time_tracker.rb
-	"	5	38
-	^	2	39
-	.	2	0
-	+	3	39
-	+	5	37
-	+	4	35
-	+	1	0
-	+	2	39
-	+	2	0
-
-> ~/code/time_tracker/lib/web/category_interface.rb
-	"	7	29
-	^	9	36
-	.	9	30
-	+	18	0
-	+	3	25
-	+	17	0
-	+	18	0
-	+	1	41
-	+	17	23
-	+	4	17
-	+	17	0
-	+	4	0
-	+	4	37
-	+	12	7
-	+	4	6
-	+	13	0
-	+	12	14
-	+	13	24
-	+	13	24
-	+	16	0
-	+	15	0
-	+	13	28
-	+	14	14
-	+	1	33
-	+	4	16
-	+	14	11
-	+	13	19
-	+	14	22
-	+	13	0
-	+	14	22
-	+	15	15
-	+	7	0
-	+	8	15
-	+	7	16
-	+	8	7
-	+	10	31
-	+	9	57
-	+	10	22
-	+	8	17
-	+	9	46
-	+	8	42
-	+	7	37
-	+	8	47
-	+	3	47
-	+	4	11
-	+	5	12
-	+	4	0
-	+	8	56
-	+	13	6
-	+	9	43
-	+	14	19
-	+	9	30
-
-> ~/code/time_tracker/lib/web/report_interface.rb
-	"	1	0
-	^	6	30
-	.	6	29
-	+	1	0
-	+	3	13
-	+	13	8
-	+	13	14
-	+	17	8
-	+	14	20
-	+	17	0
-	+	14	20
-	+	14	18
-	+	13	0
-	+	3	39
-	+	14	38
-	+	17	0
-	+	14	0
-	+	17	41
-	+	17	0
-	+	17	22
-	+	17	42
-	+	17	24
-	+	17	0
-	+	17	53
-	+	17	20
-	+	17	22
-	+	17	11
-	+	17	0
-	+	17	40
-	+	17	0
-	+	17	35
-	+	14	12
-	+	17	0
-	+	17	1
-	+	17	0
-	+	14	7
-	+	14	22
-	+	16	0
-	+	14	33
-	+	14	17
-	+	15	0
-	+	14	23
-	+	15	17
-	+	17	0
-	+	14	0
-	+	17	37
-	+	15	14
-	+	14	0
-	+	15	13
-	+	14	27
-	+	17	0
-	+	14	21
-	+	16	18
-	+	15	21
-	+	20	34
-	+	20	16
-	+	20	0
-	+	19	29
-	+	20	0
-	+	15	44
-	+	4	0
-	+	13	15
-	+	13	0
-	+	8	0
-	+	7	21
-	+	9	21
-	+	14	21
-	+	9	30
-	+	5	0
-	+	7	0
-	+	6	29
-
-> ~/code/time_tracker/bin/webapp.rb
-	"	1	0
-	^	29	12
-	.	34	0
-	+	40	43
-	+	39	2
-	+	40	21
-	+	4	27
-	+	39	44
-	+	40	21
-	+	43	3
-	+	49	36
-	+	49	26
-	+	49	21
-	+	49	3
-	+	49	3
-	+	49	0
-	+	49	0
-	+	49	18
-	+	49	0
-	+	49	2
-	+	49	2
-	+	44	0
-	+	45	0
-	+	46	18
-	+	45	0
-	+	44	2
-	+	49	0
-	+	45	0
-	+	44	1
-	+	45	0
-	+	3	39
-	+	44	7
-	+	46	21
-	+	27	0
-	+	35	46
-	+	27	7
-	+	35	27
-	+	27	48
-	+	38	0
-	+	37	0
-	+	42	0
-	+	49	0
-	+	48	0
-	+	49	0
-	+	20	0
-	+	26	3
-	+	32	19
-	+	30	0
-	+	28	23
-	+	31	5
-	+	33	4
-	+	30	3
-	+	32	3
-	+	30	74
-	+	23	37
-	+	22	44
-	+	23	0
-	+	22	17
-	+	9	32
-	+	11	0
-	+	11	0
-	+	9	30
-	+	10	0
-	+	49	0
-	+	16	0
-	+	21	0
-	+	19	0
-	+	8	44
-	+	9	19
-	+	8	44
-	+	22	2
-	+	23	67
-	+	22	9
-	+	49	16
-	+	51	0
-	+	52	0
-	+	50	2
-	+	53	0
-	+	58	0
-	+	63	0
-	+	62	0
-	+	57	0
-	+	53	19
-	+	58	20
-	+	63	19
-	+	55	17
-	+	61	17
-	+	66	17
-	+	54	36
-	+	59	35
-	+	64	34
-	+	60	0
-	+	65	0
-	+	66	0
-	+	61	0
-	+	54	29
-	+	59	29
-	+	64	29
-	+	28	0
-	+	35	47
-	+	29	11
-	+	28	0
-	+	34	0
-
-> ~/code/time_tracker/lib/web/views/add_entry.erb
-	"	1	0
-	^	6	37
-	.	6	36
-	+	12	17
-	+	11	6
-	+	12	0
-	+	13	0
-	+	6	36
-
-> ~/code/time_tracker/lib/web/views/categories_form.erb
-	"	1	0
-
-> ~/code/time_tracker/lib/cli/category.rb
-	"	1	0
-	^	6	50
-	.	6	49
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	9
-	+	3	38
-	+	1	0
-	+	5	0
-	+	9	0
-	+	5	0
-	+	8	0
-	+	10	0
-	+	6	0
-	+	2	7
-	+	5	0
-	+	3	31
-	+	6	37
-	+	6	43
-	+	4	0
-	+	6	49
-
-> ~/code/time_tracker/lib/cli/time_entry.rb
-	"	1	0
-	.	4	0
-	+	3	17
-	+	4	0
-	+	1	32
-	+	4	0
-	+	3	20
-	+	4	17
-	+	4	10
-	+	3	12
-	+	4	0
-	+	4	23
-	+	4	10
-	+	4	0
-
-> ~/code/time_tracker/blank
-	"	1	0
-	^	7	135
-	.	7	134
-	+	6	68
-	+	1	0
-	+	2	3
-	+	3	3
-	+	4	3
-	+	5	3
-	+	6	3
-	+	5	22
-	+	6	50
-	+	7	120
-	+	7	24
-	+	7	134
-
-> ~/code/time_tracker/lib/web/views/layout.erb
-	"	1	0
-
-> ~/code/time_tracker/conf/options
-	"	1	0
-	^	2	0
-	.	2	0
-	+	1	0
-	+	1	28
-	+	1	0
-	+	1	0
-	+	1	36
-	+	1	15
-	+	1	27
-	+	2	0
-
-> ~/code/time_tracker/lib/time_tracker/settings.rb
-	"	1	0
-	^	17	0
-	.	16	0
-	+	14	24
-	+	16	55
-	+	1	12
-	+	15	0
-	+	16	6
-	+	15	18
-	+	14	34
-	+	12	0
-	+	12	17
-	+	12	37
-	+	12	13
-	+	12	0
-	+	17	0
-	+	16	0
-
-> ~/code/time_tracker/bin/time_cat
-	"	1	0
-	^	2	28
-	.	2	28
-	+	1	18
-	+	2	39
-	+	7	0
-	+	5	22
-	+	7	17
-	+	7	14
-	+	7	20
-	+	7	10
-	+	7	18
-	+	7	8
-	+	2	7
-	+	5	25
-	+	5	45
-	+	7	0
-	+	7	0
-	+	5	4
-	+	4	0
-	+	5	31
-	+	6	47
-	+	6	11
-	+	6	11
-	+	7	0
-	+	6	55
-	+	6	18
-	+	6	0
-	+	5	1
-	+	6	41
-	+	5	6
-	+	2	28
-
-> ~/code/time_tracker/lib/cli.rb
-	"	1	0
-	^	3	30
-	.	3	29
-	+	1	18
-	+	2	34
-	+	2	32
-	+	3	29
-
-> ~/code/time_tracker/lib/time_tracker/time_entries.rb
-	"	1	0
-	^	12	26
-	.	12	25
-	+	10	0
-	+	8	35
-	+	7	8
-	+	8	0
-	+	14	0
-	+	14	0
-	+	8	19
-	+	11	0
-	+	13	0
-	+	13	0
-	+	12	0
-	+	9	4
-	+	9	22
-	+	12	25
-
-> ~/code/time_tracker/lib/time_tracker/database_initializer.rb
-	"	8	17
-	^	8	47
-	.	8	47
-	+	21	102
-	+	9	91
-	+	9	0
-	+	8	54
-	+	8	28
-	+	8	55
-	+	8	44
-	+	8	0
-	+	9	0
-	+	21	0
-	+	8	47
-
-> ~/code/time_tracker/.git/COMMIT_EDITMSG
-	"	1	0
-
-> ~/code/time_tracker/lib/time_entries.rb
-	"	7	0
-	^	7	38
-	.	8	0
-	+	7	37
-	+	8	0
-
-> ~/code/time_tracker/ar.rb
-	"	5	46
-	^	3	16
-	.	5	46
-	+	2	20
-	+	4	0
-	+	1	18
-	+	5	62
-	+	6	50
-	+	5	49
-	+	6	53
-	+	5	61
-	+	2	15
-	+	3	15
-	+	5	46
-
-> /usr/local/Cellar/ruby/2.1.2_2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.5/README.rdoc
-	"	92	0
-
-> ~/code/time_tracker/bin/time_tracker
-	"	9	7
-	^	11	64
-	.	11	64
-	+	15	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	13	48
-	+	13	0
-	+	13	51
-	+	13	33
-	+	13	78
-	+	13	29
-	+	13	49
-	+	13	0
-	+	6	0
-	+	13	0
-	+	6	33
-	+	9	17
-	+	4	27
-	+	6	7
-	+	9	41
-	+	8	0
-	+	9	18
-	+	13	0
-	+	10	0
-	+	12	3
-	+	11	40
-	+	7	13
-	+	7	14
-	+	8	0
-	+	7	38
-	+	11	64
-
-> ~/code/time_tracker/lib/time_tracker/database
-	"	1	0
-
-> ~/code/time_tracker/lib/web.rb
-	"	1	0
-	^	2	30
-	.	2	29
-	+	1	18
-	+	2	29
-
-> ~/code/time_tracker/bin/test
-	"	1	0
-	^	2	53
-	.	2	53
-	+	2	19
-	+	2	25
-	+	2	0
-	+	2	31
-	+	2	6
-	+	2	0
-	+	2	36
-	+	2	36
-	+	2	0
-	+	2	0
-	+	2	50
-	+	4	35
-	+	3	0
-	+	4	0
-	+	1	21
-	+	5	3
-	+	2	53
-
-> ~/code/time_tracker/lib/web/views/index.erb
-	"	2	0
-	.	4	0
-	+	1	0
-	+	3	0
-	+	4	0
-
-> ~/code/time_tracker/lib/web/views/report_form.erb
-	"	1	0
-	.	7	0
-	+	1	14
-	+	7	0
-	+	1	33
-	+	3	0
-	+	5	0
-	+	3	22
-	+	5	29
-	+	3	31
-	+	1	0
-	+	1	3
-	+	2	0
-	+	4	0
-	+	1	0
-	+	7	0
-
-> ~/code/time_tracker/lib/web/views/report_data.erb
-	"	1	0
-	^	7	10
-	.	7	9
-	+	1	0
-	+	1	0
-	+	7	9
-
-> ~/code/time_tracker/bin/webapp
-	"	1	0
-	^	15	1
-	.	25	0
-	+	26	18
-	+	26	8
-	+	26	0
-	+	26	12
-	+	26	17
-	+	26	28
-	+	26	19
-	+	26	10
-	+	26	26
-	+	26	16
-	+	26	17
-	+	26	48
-	+	26	42
-	+	26	77
-	+	26	2
-	+	26	0
-	+	1	18
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	7
-	+	26	6
-	+	26	0
-	+	26	17
-	+	26	28
-	+	26	19
-	+	26	10
-	+	26	26
-	+	26	16
-	+	26	48
-	+	26	57
-	+	26	0
-	+	2	17
-	+	6	28
-	+	7	19
-	+	9	10
-	+	10	26
-	+	16	16
-	+	20	17
-	+	21	48
-	+	22	42
-	+	24	77
-	+	25	2
-	+	10	0
-	+	17	0
-	+	13	0
-	+	17	0
-	+	13	11
-	+	21	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-
-> ~/code/time_tracker/views/index.erb
-	"	1	0
-	^	9	29
-	.	2	0
-	+	1	0
-	+	1	1
-	+	1	1
-	+	1	1
-	+	1	1
-	+	1	2
-	+	1	2
-	+	1	4
-	+	1	2
-	+	1	6
-	+	1	10
-	+	1	3
-	+	1	6
-	+	12	10
-	+	7	24
-	+	7	21
-	+	3	36
-	+	7	24
-	+	10	0
-	+	7	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	7	0
-	+	10	0
-	+	8	37
-	+	9	0
-	+	10	0
-	+	9	28
-	+	2	0
-
-> ~/code/time_tracker/views/hello_form.erb
-	"	1	0
-	^	17	2
-	.	10	0
-	+	18	14
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	7	0
-	+	9	0
-	+	8	0
-	+	7	2
-	+	18	0
-	+	17	1
-	+	15	1
-	+	14	1
-	+	13	1
-	+	12	1
-	+	11	1
-	+	10	1
-	+	5	0
-	+	10	0
-
-> ~/code/time_tracker/views/layout.erb
-	"	1	0
-	^	13	6
-	.	13	6
-	+	17	10
-	+	3	22
-	+	7	0
-	+	6	14
-	+	12	3
-	+	15	8
-	+	12	0
-	+	6	19
-	+	11	3
-	+	13	7
-	+	6	18
-	+	13	6
-
-> ~/code/time_tracker/views/html_form.erb
-	"	1	0
-	^	9	11
-	.	9	11
-	+	9	11
-
-> ~/code/time_tracker/static/howdy.html
-	"	1	0
-	^	3	7
-	.	3	6
-	+	4	7
-	+	3	6
-
-> ~/code/time_tracker/Rakefile
-	"	1	0
-	^	7	3
-	.	4	0
-	+	1	23
-	+	3	25
-	+	4	21
-	+	5	47
-	+	7	2
-	+	4	0
-
-> ~/code/time_tracker/views/add_entry.erb
-	"	1	0
-	^	1	19
-	.	1	18
-	+	1	0
-	+	3	0
-	+	3	24
-	+	3	2
-	+	3	0
-	+	4	9
-	+	8	5
-	+	4	44
-	+	6	0
-	+	8	36
-	+	4	20
-	+	1	18
-
-> ~/code/time_tracker/views/categories_form.erb
-	"	1	15
-	^	4	49
-	.	4	48
-	+	2	30
-	+	8	13
-	+	8	6
-	+	2	7
-	+	8	0
-	+	2	3
-	+	3	0
-	+	3	26
-	+	4	18
-	+	5	0
-	+	1	14
-	+	3	0
-	+	4	0
-	+	1	14
-	+	3	25
-	+	4	48
-
-> ~/code/time_tracker/lib/web/add_category.erb
-	"	1	0
-	^	4	16
-	.	4	15
-	+	1	26
-	+	1	0
-	+	4	48
-	+	3	25
-	+	4	15
-
-> ~/code/time_tracker/views/add_category.erb
-	"	1	0
-
-> ~/code/time_tracker/bin/app
-	"	1	0
-
-> ~/code/lab1-datalab-handout/bits.c
-	"	164	27
-	^	164	28
-	.	164	27
-	+	153	10
-	+	153	11
-	+	153	10
-	+	153	7
-	+	153	24
-	+	153	6
-	+	153	1
-	+	153	0
-	+	144	9
-	+	153	1
-	+	153	1
-	+	153	5
-	+	143	0
-	+	153	19
-	+	153	7
-	+	143	1
-	+	153	21
-	+	153	0
-	+	153	0
-	+	143	1
-	+	141	1
-	+	143	3
-	+	143	17
-	+	153	0
-	+	145	17
-	+	153	9
-	+	145	13
-	+	147	13
-	+	145	2
-	+	147	2
-	+	145	3
-	+	147	15
-	+	143	0
-	+	147	26
-	+	147	28
-	+	147	2
-	+	147	0
-	+	147	0
-	+	153	10
-	+	146	19
-	+	153	9
-	+	147	20
-	+	153	11
-	+	147	0
-	+	150	3
-	+	149	3
-	+	150	17
-	+	151	16
-	+	153	9
-	+	148	8
-	+	149	9
-	+	150	8
-	+	151	8
-	+	149	2
-	+	150	2
-	+	151	2
-	+	149	1
-	+	150	1
-	+	151	1
-	+	152	16
-	+	153	11
-	+	163	27
-	+	168	12
-	+	163	5
-	+	164	27
-	+	168	16
-	+	164	27
-
-> ~/code/lab1-datalab-handout/btest.c
-	"	159	0
-
-> ~/code/lab1-datalab-handout/README
-	"	112	0
-
-> ~/code/time_tracker/lib/TimeTracker/database_initializer.rb
-	"	1	0
-	^	36	102
-	.	36	102
-	+	10	18
-	+	1	7
-	+	8	30
-	+	3	0
-	+	4	0
-	+	13	14
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	38
-	+	15	64
-	+	23	20
-	+	24	4
-	+	25	0
-	+	26	0
-	+	25	8
-	+	13	0
-	+	44	0
-	+	13	0
-	+	15	67
-	+	13	17
-	+	8	6
-	+	10	6
-	+	13	16
-	+	15	41
-	+	35	14
-	+	15	0
-	+	36	0
-	+	36	0
-	+	11	14
-	+	36	84
-	+	24	12
-	+	14	12
-	+	25	11
-	+	36	6
-	+	15	6
-	+	16	83
-	+	16	133
-	+	16	145
-	+	16	181
-	+	16	82
-	+	16	83
-	+	16	133
-	+	16	145
-	+	16	164
-	+	22	0
-	+	16	128
-	+	16	133
-	+	22	0
-	+	16	113
-	+	19	96
-	+	17	70
-	+	18	58
-	+	19	78
-	+	21	59
-	+	20	59
-	+	19	58
-	+	18	57
-	+	19	57
-	+	20	57
-	+	21	57
-	+	23	25
-	+	17	19
-	+	18	19
-	+	19	19
-	+	20	19
-	+	21	19
-	+	36	0
-	+	33	16
-	+	32	12
-	+	33	24
-	+	31	24
-	+	33	26
-	+	36	35
-	+	36	16
-	+	8	73
-	+	36	66
-	+	36	39
-	+	36	65
-	+	36	65
-	+	37	0
-	+	36	63
-	+	9	6
-	+	10	6
-	+	38	22
-	+	40	26
-	+	43	0
-	+	39	12
-	+	40	8
-	+	43	0
-	+	41	10
-	+	42	7
-	+	40	55
-	+	42	12
-	+	27	15
-	+	29	17
-	+	36	102
-
-> ~/code/time_tracker/lib/TimeTracker/report.rb
-	"	1	0
-	^	36	63
-	.	18	74
-	+	18	0
-	+	19	0
-	+	20	1
-	+	21	0
-	+	9	8
-	+	10	35
-	+	29	6
-	+	11	0
-	+	29	6
-	+	11	45
-	+	10	16
-	+	12	35
-	+	11	44
-	+	18	28
-	+	19	44
-	+	18	12
-	+	19	12
-	+	10	16
-	+	13	0
-	+	12	36
-	+	13	37
-	+	18	12
-	+	19	12
-	+	18	28
-	+	19	44
-	+	18	44
-	+	29	54
-	+	23	0
-	+	25	53
-	+	23	14
-	+	25	70
-	+	16	0
-	+	18	43
-	+	19	32
-	+	20	52
-	+	16	20
-	+	18	74
-	+	19	74
-	+	18	68
-	+	19	68
-	+	18	0
-	+	18	14
-	+	18	14
-	+	18	20
-	+	18	85
-	+	19	85
-	+	18	0
-	+	12	47
-	+	13	45
-	+	20	34
-	+	31	20
-	+	32	69
-	+	37	6
-	+	34	20
-	+	38	8
-	+	37	0
-	+	32	19
-	+	34	15
-	+	32	139
-	+	36	27
-	+	37	17
-	+	37	8
-	+	36	24
-	+	32	73
-	+	32	73
-	+	34	0
-	+	32	59
-	+	37	0
-	+	40	33
-	+	36	25
-	+	37	0
-	+	36	0
-	+	41	127
-	+	36	49
-	+	41	6
-	+	40	4
-	+	43	4
-	+	36	8
-	+	40	29
-	+	43	4
-	+	41	6
-	+	36	8
-	+	41	34
-	+	42	25
-	+	42	23
-	+	42	28
-	+	43	0
-	+	42	44
-	+	32	107
-	+	33	89
-	+	36	0
-	+	37	0
-	+	35	60
-	+	36	62
-	+	2	0
-	+	11	0
-	+	10	20
-	+	18	57
-	+	19	74
-	+	18	74
-
-> ~/code/time_tracker/lib/TimeTracker/settings.rb
-	"	1	0
-	^	20	89
-	.	21	0
-	+	22	22
-	+	23	22
-	+	6	25
-	+	20	46
-	+	8	23
-	+	19	55
-	+	20	86
-	+	20	0
-	+	20	89
-	+	21	0
-
-> ~/code/time_tracker/lib/TimeTracker/time_entry.rb
-	"	1	0
-	.	14	0
-	+	1	0
-	+	1	0
-	+	2	0
-	+	1	37
-	+	6	47
-	+	19	0
-	+	10	66
-	+	18	10
-	+	18	0
-	+	18	8
-	+	8	37
-	+	17	0
-	+	9	65
-	+	10	66
-	+	9	10
-	+	10	81
-	+	10	91
-	+	18	0
-	+	9	63
-	+	9	6
-	+	10	72
-	+	10	72
-	+	4	0
-	+	19	0
-	+	6	6
-	+	9	6
-	+	8	4
-	+	5	4
-	+	7	4
-	+	8	5
-	+	17	4
-	+	5	4
-	+	6	6
-	+	7	4
-	+	8	4
-	+	17	4
-	+	8	26
-	+	9	6
-	+	9	6
-	+	10	72
-	+	10	72
-	+	6	6
-	+	9	11
-	+	10	75
-	+	10	75
-	+	10	75
-	+	10	66
-	+	10	75
-	+	10	82
-	+	10	81
-	+	10	94
-	+	10	97
-	+	10	66
-	+	10	24
-	+	10	24
-	+	11	0
-	+	10	22
-	+	16	108
-	+	11	6
-	+	16	36
-	+	16	9
-	+	16	108
-	+	16	101
-	+	16	54
-	+	16	47
-	+	17	0
-	+	16	0
-	+	16	0
-	+	12	23
-	+	16	114
-	+	15	67
-	+	16	0
-	+	13	0
-	+	15	52
-	+	9	0
-	+	15	0
-	+	15	0
-	+	14	0
