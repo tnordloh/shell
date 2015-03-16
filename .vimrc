@@ -7,6 +7,8 @@ set nocompatible                  " Changes other options.
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
+set cursorline                    "add line highlight for cursor
+
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 set ruler                         " Show cursor position.
@@ -26,11 +28,13 @@ set hlsearch                      " Highlight matches.
 
 set nobackup                      " Don't backup before overwriting a file.
 set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location.
+set directory=$HOME/.vim/tmp//  " Keep swap files in one location.
 
 set tabstop=2                     " Global tab width.
 set shiftwidth=2                  " And again, related.
 set expandtab                     " Use spaces instead of tabs.
+
+set visualbell t_vb=  "turn off flashing when top/bottom of file is reached 
 
 set fileformats=unix
 execute pathogen#infect()
@@ -48,14 +52,18 @@ set statusline+=%L                " Total lines
 """"""""""""
 "add search clear option
 map <Space> :noh<cr>
+"set comment highlighting
 hi Comment    cterm=bold ctermfg=black ctermbg=yellow    gui=NONE guifg=blue
 
 let mapleader=","
-
+"set appropriate column marker, for style purposes
 set colorcolumn=81
-
+"switch between tabs using shift-h, and shift-l
 nnoremap <S-h> gT
 nnoremap <S-l> gt
 
 autocmd Filetype ruby source ~/.Vim/ruby-macros.vim
 
+command Reqm :normal irequire 'minitest/autorun<ESC>
+command Rr :normal iRequire relative ' <ESC>
+"reload vimrc with :so $MYVIMRC

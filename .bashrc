@@ -13,9 +13,10 @@ export HISTFILESIZE=1500
 export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a'  # write previous line as prompt is displayed
 export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
 
 # Path
-export PATH="/Users/tim/bin:$PATH"
+export PATH="~/.rbenv/shims:/Users/tim/bin:/Users/tim/scratch/cli/todo/bin:$PATH"
 
 alias ga='git add'
 alias gaa='git add --all'
@@ -26,16 +27,26 @@ alias gs='git status -sb'
 alias v='vim'
 alias i='irb -r irb/completion'
 alias gshead="git remote -v |head -1 | awk '{print \$2}'"
+alias r='ruby'
 #alias gshead="gs |head -n 1 |awk '{ print \$2 }'"
 alias tt="~/code/time_tracker/bin/time_tracker add_entry"
 alias trl="~/code/time_tracker/bin/time_report last_day"
 
 
-echo "screen split: Ca-S"
-echo "screen activate: Ca-c"
-echo "screen, toggle between windows: Ca-tab"
-#export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;32m\] `gshead` \[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
+#echo "screen split: Ca-S"
+#echo "screen activate: Ca-c"
+#echo "screen, toggle between windows: Ca-tab"
+export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;32m\] `gshead` \[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
 export PS1='\[\e[1;31m\]`gshead`\[\e[m\]\[\e[1;33m\] \w \[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
 
 
 eval "$(rbenv init -)"
+function get_todo_commands()
+{
+  if [ -z $2 ] ; then
+    COMPREPLY=(`todo help -c`)
+  else
+    COMPREPLY=(`todo help -c $2`)
+  fi
+}
+complete -F get_todo_commands todo

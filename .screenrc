@@ -1,1 +1,3 @@
 shell -$SHELL
+# don't use a visual bell
+vbell off
