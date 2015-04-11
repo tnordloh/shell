@@ -28,7 +28,7 @@ alias v='vim'
 alias i='irb -r irb/completion'
 alias gshead="git remote -v |head -1 | awk '{print \$2}'"
 alias r='ruby'
-#alias gshead="gs |head -n 1 |awk '{ print \$2 }'"
+alias gshead="gs |head -n 1 |awk '{ print \$2 }'"
 alias tt="~/code/time_tracker/bin/time_tracker add_entry"
 alias trl="~/code/time_tracker/bin/time_report last_day"
 
