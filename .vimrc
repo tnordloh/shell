@@ -7,11 +7,14 @@ set nocompatible                  " Changes other options.
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-set cursorline                    "add line highlight for cursor
+"set cursorline                    "add line highlight for cursor
+"set cursorline
+"autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg
+"autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
-set ruler                         " Show cursor position.
+"set ruler                         " Show cursor position.
 
 set backspace=indent,eol,start    " Intuitive backspacing.
 
@@ -66,4 +69,9 @@ autocmd Filetype ruby source ~/.Vim/ruby-macros.vim
 
 command Reqm :normal irequire 'minitest/autorun<ESC>
 command Rr :normal iRequire relative ' <ESC>
+
+map <C-n> :NERDTreeToggle<CR>
+
+au InsertLeave * hi Cursor guibg=red
+au InsertEnter * hi Cursor guibg=green
 "reload vimrc with :so $MYVIMRC
