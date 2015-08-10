@@ -1,8 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/tim/code'
-let g:netrw_dirhist_2='/Users/tim/code/perl_examples'
-let g:netrw_dirhist_3='/Users/tim/code/perl_examples/bin'
-let g:netrw_dirhist_4='/Users/tim/.Vim/temp'
-let g:netrw_dirhist_5='/Users/tim/.Vim'
-let g:netrw_dirhist_6='/Users/tim/.rbenv'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/tim/.rbenv'
+let g:netrw_dirhist_2='/Users/tim/exercism/ruby/raindrops'
+let g:netrw_dirhist_3='/Users/tim/scratch/faster_csv'
+let g:netrw_dirhist_4='/Users/tim/scratch/rails/rconfsubmissions/app/views/about'
+let g:netrw_dirhist_5='/Users/tim/.rbenv'

@@ -66,12 +66,25 @@ nnoremap <S-h> gT
 nnoremap <S-l> gt
 
 autocmd Filetype ruby source ~/.Vim/ruby-macros.vim
+autocmd BufRead,BufNewFile *.mpdv    set filetype=mpdv
 
 command Reqm :normal irequire 'minitest/autorun<ESC>
 command Rr :normal iRequire relative ' <ESC>
 
 map <C-n> :NERDTreeToggle<CR>
 
-au InsertLeave * hi Cursor guibg=red
-au InsertEnter * hi Cursor guibg=green
-"reload vimrc with :so $MYVIMRC
+"xmpfilter stuff
+
+nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+"automatically load ctags on file write
+autocmd BufWritePost * call system("ctags -R")
+
+set runtimepath+=/Users/tim/mpd_plugin
+set runtimepath+=/Users/tim/mpd_plugin/mpc

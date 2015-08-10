@@ -8,152 +8,89 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/search_
+~MSle0~/temp
 
 # Last Substitute Search Pattern:
-~MSle0& '
+~MSle0&points
 
 # Last Substitute String:
-$ FIELD_HANDLER.new('
+$move_score
 
 # Command Line History (newest to oldest):
-:q!
+:quit
+:wq!
 :q
+:!ls
 :wq
-:1
-:WQ
 :w
+:76
 :qa
-:tabe ~/.bashrc
-:tabe ./RakeFile
-:vsp ./spec/docket_spec.rb
-:tabe ./data/polidori
-:vsp ./Rakefile
-:red
-:tabe ./rakelib/clean3.rake
-:tabe ./Rakefile
-:2
-:vsp ./spec/docket_bot_spec.rb
-:tabe
-:```
-:tabe ./lib/colorado_docket/docket_bot.rb
+:Q
+:q!
+:e!
+:e
+:tabe ./bin/play
+:tabe ./lib/anagrammatic/translator.rb
+:tabe ./solutions/0.json
+:w ./solutions/aleister_crowley_ei.json
+:w ./solutions/lotsa_eis.json
+:w ./solutions/aliester.json
+:ls
+:tabe ./solutions/2.json
 
 # Search String History (newest to oldest):
-?/search_
-?/fill_in
-?/search_fie
-?/fieldsjjkkk
-?/field
-?/field=
-?/require
-?/county
-?/iname
-?/usr/bin/en
-?/@county
-?/county1
-?/county-
-?/split
-?/sending
-?/@client
-?/roste
-?/from_
-? \<p\>
-?/Iq
+?/temp
+?/PS1
+?/resc
+?/problem
+?/def problem
+?/e\!
+?/e!
+?/lei
+?/lie
+?/b
+?/ari
+?/def make_
+?/def read
+?/make
+?/makeH
+?/def move
+?/def cells
+?/def valid?
+?/def try_mo
+?//
 
 # Expression History (newest to oldest):
+=35*6
+=35+6
 
 # Input Line History (newest to oldest):
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	    p field
-""1	LINE	0
-	directory = BASE_DIR
+""0	LINE	0
+	      @power_word_value = Hash.new(300)
+"1	LINE	0
+	>>>>>>> fc0deebe39ddc61c7dc06a26b3ccf55ecf2cd1df
 "2	LINE	0
-	    
+	[{"problemId":0,"seed":0,"tag":"sup mom","solution":"ppppppppppmglw'nafhaaaaaaaaaaaaaa"}]
 "3	LINE	0
-	    
+	=======
 "4	LINE	0
-	BASE_DIR =  "/usr/local/mrads"
-	directory = BASE_DIR
-	
-	BIN_DIR = File.join(BASE_DIR,"bin")
-	file BIN_DIR do |t| mkdir t.name end
-	
-	LIB_DIR = File.join(BASE_DIR,"lib")
-	file LIB_DIR do |t| mkdir t.name end
-	
-	task :copy_bin => BIN_DIR do
-	  FileUtils.cp_r Dir.glob("bin/*"),BIN_DIR
-	end
-	
-	task :copy_lib => LIB_DIR do
-	  FileUtils.cp_r "lib",BASE_DIR
-	end
+	<<<<<<< HEAD
 "5	LINE	0
-	    FileUtils.cp_r "lib",BASE_DIRx
+	    private
 "6	LINE	0
-	BASE_DIR =  "/usr/local/mrads"
-	directory = BASE_DIR
-	
-	BIN_DIR = File.join(BASE_DIR,"bin")
-	file BIN_DIR do |t| mkdir t.name end
-	
-	LIB_DIR = File.join(BASE_DIR,"lib")
-	file LIB_DIR do |t| mkdir t.name end
-	
-	task :copy_bin => BIN_DIR do
-	  puts "copying bin"
-	  FileList['bin/**'].each do |f|
-	    cp f,BIN_DIR
-	  end
-	end
-	
-	task :copy_lib => LIB_DIR do
-	  puts "copying lib base"
-	  directory_list = ["lib"]
-	  while directory_list.size > 0 do
-	    p curdir = File.join(directory_list.pop , "*")
-	    FileList[curdir].each do |f|
-	      if File.directory?(f)
-	        directory =  File.join(BASE_DIR,f)
-	        mkdir File.join(directory) unless File.exists?(directory)
-	        directory_list << f
-	      else
-	        cp f,File.join(BASE_DIR,f)
-	      end
-	    end
-	  end
-	  puts "copying lib/mrads"
-	  FileList['lib/mrads/*'].each do |f|
-	    if File.directory?(f)
-	      mkdir File.join(BASE_DIR,f) unless File.exists?(directory)
-	    else
-	      cp f,File.join(LIB_DIR,'mrads')
-	    end
-	  end
-	end
-	
-	task :deploy => LIB_DIR do
-	  Rake::Task["copy_lib"].invoke
-	  Rake::Task["copy_bin"].invoke
-	end
-	
-	task :del_lib do
-	  rm_rf LIB_DIR
-	end
-	
+	>>>>>>> 8e894b8bf6ab70b61839ee549786e0cc94d80c91
 "7	LINE	0
-	  require './lib/colorado_docket/docket.rb'
+	=======
 "8	LINE	0
-	end
+	[{"problemId":0,"seed":0,"tag":"manual:0:0:13","solution":"aaaaaaaaaaaaaaaalaapppalbakkbdlbdlklbbabapppppppaaaaaaaaaaa"}]
 "9	LINE	0
-	  task :console do
-"a	LINE	0
-	    cards=  %w[Ah Kh Qh Jh Th 4s 8d]
-	    cards=  %w[2c 2s 3h 3d 3c 4s 9d]
+	<<<<<<< HEAD
+"a	CHAR	0
+	w
 "g	CHAR	0
 	924
 <tjkk:1gtgtyygtjkkkkkkkkkkkkkkkkkkkkkp:wgtjddkgTyygtpgtpkdd:w/Elemhhjjjjj/ElemiGED€kb€kb€kbREXLM::jjhhhhhhhhhh.jhkkkllcwMLjjjhhhhhhkllcwMLjjhhhhcwREXMLuiREXML::nnnnngtdddd:wqjjjllllllllliREXML::nnnn:wgtjjjjjlllllllll.nn.nnnn:w:13kjgt:w:21gt:21iREXML:::wkkkk€kBjjjkkgtkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkjkocheck_next_c€kbitel€kbm_lee€kbvel(my_peek,itemhhhhhhhhhhhdwxllllim€kb,my_peek:wjjjjjjjkjkkkkkkkkjjjjjjjjjjjjjjjjjjjjkkkjjkkkkkkkkkj9kjjjjjjjjjdodef check_next_item(item,peekkkkkkkkkkkkkkkkkkjjkkkjjjkkjjjjjjjjjjjjjjjjjjjjjkkkjhhhhhhhhhhhhhkkkkkkkkkkkkkkkkkkkkkkkjjjjjddjjjjjjjjjjjjjjjjjddddkkkkkkkkkkkkkkkkkklllllljlllllllllllkkljjlllllllixx€kb€kbllhxxif€kbig€kbfjhi  jhhhh   hhi  lllllllxxxxxxxxxxxxxxxxxxjhhhhhhi  kjoed€kbnd:wkkkkkkkkkkkkkkkkkkjjjjjjjjkjjjkkkkllllllllllllllljjjjjjjjjjjjjjjjjjjjjjjjjjj:wjjjkkkkkkk
@@ -163,15 +100,18 @@ $ FIELD_HANDLER.new('
 	1961
 <reirequire_relag€kbtive ./secret_santa/person€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbsecret_santa/assign_santas""hhhhhhhhhhhhhhhhhhhhhhhhhhhhhli""yyplllllllllllllllllllllllllllllllllcwread_data:womodule Secret_santa€kb€kb€kb€kb€kb€kbSantadef self.get_sa€kb€kb€kb€kb€kb€kbget_santassantas = read_€kb€kb€kb€kb€kbSecretSanta::read_data€kb€kb€kb€kb€kb€kb€kb€kb€kbHLreuaread€kb€kb€kb€kbReadData.new(HHLLyypxxxxxxxxxiklcwpeoplejhhhhhLLLLkcwdatajllllllllllcwAssignSantaslllllllhlidata.santashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhisecret_santas -€kb= :wHHLLosecret_sangas.€kb€kb€kb€kbtas.valid_permutations€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kbpowwib€kb€kb€kb€kbssibilitei€kb€kbies = :wop€kbpossibilities[rand(0...x.size:wkkkkxas:wjkjkoSecretSanta.get_santas:wjjjjhhhhhhhhhhhhhhhhiputs €kb€kb€kb€kb :wkkkoputs "tod €kb€kb€kb€kbgot data:wyypddjkpllllllxxxxxxxxigot secret santas:wyypujoputs "gog possibilities:wyyjpllllllxxxxxxxxxxxxxxxxxipui€kb€kbicked one posi€kbsibility:wkkkkkkkkjjjjjjjhhxipossibilitei€kb€kbies:wjkkkkkkjjjjhhhhhhddkkddkkddkjjjjddkllliuts:wHHHjjjjjjjjjo €kbdef to_skjo"#{first €kb_name€kr€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kb@lllllllllllli, €kb€kb @{@last€kb€kb€kb€kb€kb€kb€kb€kr€kb#{@last_name€kr, #{ema€kb€kb€kb@email:wLjjjjjjjjjjjjjkjjjjjjkklLLjjkkhhhxxxxifinal_entry =ofinal_entry.each |entryla doendkoentry[€kb€kb€kb€kb€kb€kr€kb€kb"entry€kb€kb€kb€kb€kb#{entry[0€kr€kr entry[1]€kb€kb€kb€kb€kb€kb€kb€kb#{entry[1:wjkkkkjjjkhhhhhhhhhhhhhhhjkjddkop final_entry:wkkop final_entry:wkjjjkhhhhhhhhhhhhdddddd:wkkjofinal_entry.each {en€kb€kb|entyr€kb€kbry€kri €kb€kb puts final€kb€kb€kb€kb€kbentry:wli[0:whhhhhhhhhhhllllli"xllllllllli ""hlientry[1:whhhhhhhhhhhhhhhhhhhhllllli#{€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr}lli#{€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr}:whhhhhhhhhhhi is assigned to €kb:w€kuw
 "j	CHAR	0
-	6869
-<kkkjhjhhjllllxxxxxxxx:wllcwtr:whhx:wkjhhhhhhcaajkcwall:wkjllllllla.to_a:wLLjklllllllllla.each {"e€kb€kb€kr€kb"€kb€kr€kb|e€kr pxxxxxxxxxxxxaeach {|e€kr puts e.name:wkjjklhhhhxxxxhxime€kb€kb.methods:wkjhhhhhhhlcwto_s:wkjhhhcwvalue:whhhhcwmethods:wkjhhhhhhcwinse€kbpect:wkjyypklllllllllllllllllllllllllllllllllllllllllllllllllikop e.methodsjjdd:wklllllllllllllllli:wkkyypllllcwtext:wkkkjjjhllxxxxxxxxxaa€kb fields = E€kbe.all("HHLLlitd:wofi€kbdddkkjofields.each ("€kr€kr€kr€kb€kb€kb€kb{|f€kr f.text:wkjhhhhhipu€kbuts :wkkdd:wkkjjjjdd:wkjHHjkkjHjjjkkkkjkjllllllllllllllllllllllllllljllllllllllla.join(",:wkjkjhhhhhhhhhhhhhhhhhhhkkjHjjHjjkkkjLLHHLLHjlllllllllLLlla.each {|f€kr LHHLHLi fiek€kble€kbdHLa.all("T€kbtr€kbdlllllhhhhhhhhhhhhhhhhhhhhhlilllllllllllllllllllllicwe€kb€kb€kbcwulcwendkklllllllllllllllllllllllllllllcwdo=G:wjkJllllllhilllllllllllllllllHLa.€kb€kb.each {"hhhhhhhhhhhhhhhhhhhhhklllllllllllllllllllllllllllllllhxirowjhhhhhhhhhhhhhhhhhhhhhhhhcwrowllllllllllllllllllxxi |€kr hhlifieldllliLHHLlifiel.€kbd.textlla.join(",,€kb:whhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhklllllllllllcwmap:wLLjjkkkjjkddddkoputs e:wLjkjhhhhhkjhhhhlllllllllllllllllllllllli :wkhhhhhhhhhhhhhlcweah€kbch:wjjkkjhhhhhhhhhhhhhhhhhhhhhhhhhhhlllllllllllllllllllllllkjhhhhhhhhhhhhhhhhhhhhhiputs :wLLhhhhllllllHjkkHjjkkllllllllllllllllllllllkhhhhjhhhhhhhhhhhhhhhhhhhhhjkhxxxxxkoputs "row:€kr p tr€kb€kb€kbrow€kb€kb€kb row.to_s:w\hhhxxxxite€kb€kblatext:wjkjllllllllllllllllllllillllllllllkhhhhhhhHLJhhhhhhhhhhhhhhhhhhhhhhhhhhhhhip :wkjlllllllllllllllllllllllllhhhhhhhhhhhhhhhhhhhhhhllllllllLLuuuHjkHjjkklllllllllllllllllhhhhhllllllllhillllllllllllikkjlllip :wkkkyyjjpi  lllllllcwcolumn:wkjja.to_s:wjkkkkjjjjkkkkjjjkkhhcwmap:wjjxxxxxx:wjkkkkkddjkddxxjjllxx:wkkkkjjjjjkkkklllllllllllllllllllljkcwmap:wLLjjjkkkkjjkHjHjjdd:wkklllljjjkkkLLjjjkkkkkjjjddkddkoputs e:wHjjkkHjjjjjjkkkkkkkkjjkkkjjjjjkkkkjjjjjjjjkkjjjjjkkkkkkkkkkkjjjkkjjos€kbjyykkjpxxxxxxxxidocek€kb€kbe€kbket = @sessionlllllllllllllllllllxxxxxxxxxxxxxxoheader = docket.shift:wjkkkdd:wjjxxxxxxxxxxxxxxxxxxxxxxxidocket:wkllllllllllllllllllllla.all(td€kb€kb"d€kbtd€kr€kr.to_a:wjkopy€kbuts "hear€kbder:€kr€kl #{header:wkkjjkjl.hhhhhhhhhhlllllkllllllllllllllllllla.map( |f€kr€kr€kb€kb€kb€kb€kb€kb {|f€kr f.text:wjkkjhhhhhhhhhhhhhhhhhhhhhhhhhhjhhhcw:wkjjjhhhhhhlito_alxxxxxxxxxxxxxxxxa_ajjkddddklllllllllllllllllllllla.zip(headerjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhiHash[lxllllllllllllllllllllllllllllllla]:wLLjkkjhHHjkllllllllljklkjjjkkkjlkjkorow = row.all("td€kr€kr.map {|field€kr field.textj:wjkkkkjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjlxxxxxxxxxxxxxxxxxxxxxxxllllllxi.zip(row:wjkkkjkkkjjjjjkkkjjjkjkkkkkkjjjjjkkkkkkkkkkkjjjjjjjjjjjjko'€kb€kr€kbit "can get the docket for a county:wjjjjkklla doendkkkkkLLjkkkHHjjjjjkkjodocket/€kb.county="Denver Countykjodoek€kb€kbcketkkjjjjjkkkkoHsah€kb€kb€kbahs€kb€kbsh = L€kb€kb€kb€kb€kb€kb€kb€kball = Hash.newjjkhhhhhhlllllllla.locations.each do endkjjjjkkkkkjokllllllllllllllllllllllla|locationjlli      l€kball.mergekkhhhhhlcwarrayjjhhhhhkklrAjjxxxxxxa + all + docket.doe€kbcket(location:wjoputs all.ziz€kb€kb€kbsize:wddkllllllllllllllllllxx:wkkkjkoputs :€kb"teggint€kb€kb€kb€kb€kb€kb€kb€kb€krgetting location €kb: #{location:wlla"lx:wkjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhr=:wkk:25:25llllllllhcwlocations:wjjjjjjjjkkkkkkkkkhhcwlocations:wkjjjjjjjjjjjjjjjjjjkjjjjjjjkkou€kbputs "selectiong c€kb€kb€kb€kb€kbng county #{@county:wkkkkkkkkkkjjjkjkkoc = Struct.ne€kb€kb€kb.new(:namehhhhhhhhhhhhhhhhhhhhxxiCountyStructjkojlllllllllllllki   cs = Coun€kbunt€kb€kb€kbuntyStruct.new("Denver County:wjjjkhhhhhhhhhi.name:wjjkkkkkkjhxxxxxxxicounty.name:wjjjkkkkkjjjkjkkkkjjjhhhhhhhhhhhhhhhxxxxxxxxxxxxxxxics:wkkjjjkkjjjjjj/def countykkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkjjjjjkkkkkkjkjjj/cas€kbn set ajkjkkkkkjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjllllllllljjjjjjjjjjjjjjjjjjjjjjjkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkjjjjjlllllllllkkkkjjjhhhhjjjjjhhkhhhh€ku€ku€ku€ku€ku€ku€ku€kuI#:wkkkkkkjkddddjlkllllllllllllllllxxiD€kb"Denver County:wjjjjkkkkjlllllllllllllllkkjjxxxxx:wkkkjlllllli.name:wjhxxxxx:wkkjjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhxjjkxjxjxjxjxjxjxjx:wjjdd:wkj/header:jkkkkkkkkjjkkjkkkkkkkkkkkkjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjkkjjjjjjkodef refreshkkkkkkkkkkkjjkoDOCKET = 'http://www.courts.state.co.us/Courts/Docket.cfm'lllxxx:wjjjkjddjhllllllllllllllllcwDOCKET:wjjjjjkkkkkkkkjoself.refreshj2ddjjjjp:wjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkoself.refresh:wkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkdd:wjjdd:wkkkkkkkosleep(10:wjjkkjjjjjjlllllllllxxxxxxxxxxxxxaall.each€kb€kb€kb€kbeach {|entrh€kb€kbry€kri€kb€kb€kb€kb  koputskllllllljjkxxxxap entry:wkkkkdd:wkkjjjjjxxlllllla.€kb[d€kb"Datelllla.€kb == nilhhhhhhhhhhhhhhhhhhhi(lxllllllllllllllllllllla).must_be(false:wkkjjjkkjhhhhhhhhhhhhhhhhhhhhhhhhhhhhlllllllllllllllllllllcwq€kbequal:wkjhhhhhhhi#:wLLjjjkkjjkkddddddkod.body:wkhhhhhhdd:wkkjjjjkHHjk/bodyjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkLLkjiputs :wkjkHHjjjjjjjjjjjjjodef ddddkddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkko@fields = {:wjjjjjodef field*(€kb€kb(€kr€kr€kr€kb€klha€kb€kbname,valuejkkjofields[name€kr = value:wkkjjjodef clear_fieldskjofields.clar€kb€kbear:wkkkkkkkkkkkkhhhhjjjjjjjjjjjjkkjddddddjjkkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkjjjjjllllllllllllli=jjjkodef fieldskjo@fields.each {name,€kb€kb€kb€kb€kb |name,value€kr @session.fill_in(nam€kb€kbi€kbname€kb€kb€kb€kban€kbme, :with=> value:wjjjjjjjkkjkLjkkLHHjkkkkkkkjjkkkkkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh€kd€kd€kd€kd€kd€kd€kd€kd€kdI#:wkkkkjodef inputskokddjo@session.all("input:wjkllla.jkxjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjkkkkkkkkkkjjjjjjj/inputsj/kkkjjjlllllllllllllllllllllll:wjoit "can te€kb€kbg€kbget all the input fieldalla doendkodocket.inputslhhhhhhhhhhhhhllhlllhhhllllllllllllllla.classhhhhhhhhhhhhhhhhhhhliputs :wllllllllllllllhhhhhhhhhhhhhhhhhhxxxxxllllllllllllllcweach { |i llli puts in€kb.name:wkjhhhcwe€kbtext:wkjhhhcwid:wkjhhxxxi:wkjhhhhxxx:wkkjjljjjjjjjjjjjjjkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkjli.text:whhhhxxxxx:wkkkkkjjjjji.path:wkkjjjkli.meth€kb€kb€kb€kb€kb.class:wa	
+	jk€kb€kb
 "k	CHAR	0
-	2246
-<kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkdddddddddddd:wjjllllxx``:wklllllllllllllllllllllllllllllllla.split(/\s+/€kr.to_€kb€kb€kb€kbhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhcwfiart€kb€kb€kbrst_name,last_hame:wjjjjjjjkkklkkkhhhhcwfia€kbrstna€kb€kb_name:wjkkkkkL:tabe ./li	co			docket.rbjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjkkkkHHjjjjjjjjkkkkkjjjjjjjHjjjjjjjjjjjjjjjjjjjokkk:wLLLjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkHHHkkkkkkkkkkkkkkkkjjjjjjjjjjjkkkkkkkkkkkjjjjjjjjkkkkkjjkkkkkjjjjodef initializesears€kbch_sessions = {jjjjjjjkkkosearch_sessions[commanddd:wLjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjkllllllllllllllllllllimessage.from, :wLHHjjkkkkllllllllllifrom, :wkkkhhhhhhhhhhhhhhh@hli@jjjosession = @search+s€kb€kb__€kbse€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€klxxxxxxjkxxxxllllllllllllassions €kb[from€kr€kr€kr ||= €kr€kr€kb€kbColoradoDocket::Docket.new:wkkkkkkkkkkjjkkkorequire_relative 'docket:wjjjjjjjjjjjjkjjkkjjkkjjjjjjjjjjjjjjjjjkkkkkkkjkhhhhhhhjjjjhhhhcwdocket:wkkkkkkkkkkkjjjjjkkjjjjjjjjla(fromjkoS2ea€kb€kb€kb€kb@search_sessoi€kb€kbions[from€kr.dockethhhhhkhhhhhhhhhhhcwcountiesjjklllllllllllllllhcwcounties:wjjjjjkkkkjddkllkkkkkkkkkkkkkjjocounties(from:wkllllllllllllla +:wkkkjjjjjjjjjjjjjjjjjjjjkkkkLjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhlllllllllllllllllllllllllllllllllllllllllllllllllxxxxxxxxxxxxxxxxxxxxxxxxxxx:wjjkkjjjkkllllllllllllllimessagelxxxxxxxxxxxx:wHjkkkkkkkkkkkkkkkkkhhhhhhhhhhhhhxxxxxxxxxxxxximessagejlimessage.f€kb:wjhhhhlhlhhhhhhhhcwma€kbessage.body:wkkjjkkhhhhhhhjjlllllllllllllllllllllllllllllllllllllhcwmee€kbssage.bi€kbody:wjkjkhhhhhhhhhhjhhhhhhhhhhhhhcwmessage:wli.body:wjkjjjhhhhhlic€kbmessage.:wkjhhhhhhhkkjjhhhlllkllllllllllllllllxx:wja.to-€kb_s:wka +:wkkjjjhhhhhhhhhhhhhhhhhhhhhhhcwself.sendlliinf€kbput_info[0].go€kb€kbto_sym€kr€kb, :wkjjkkkkjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjlllllllllllllllllllllllllllllla.each qa	jkjkj€kb€kb€kb€kb€kb€kb€kb€kba	€kba	
+	jjkjkkkkkkkkkkkkkkkkkjjjjhhh:€kukkkkkkkqqqqq
+"l	CHAR	0
+	€kb€kb€kb
 "m	CHAR	0
 	lhx
 "q	CHAR	0
 	
+"u	CHAR	0
+	751
+<ire €kb€kb€kbrequire 'rakeotask :get€kb€kb€kbbeer do actoin "Get t€kb2  €kbbeershhhhhhhhhhhhhhhxxio€kbion€kblllllllllllllllllllloputs actioned€kbne€kbd:wjkkkkjjjkkjjkllllllli= :wjjotask :namegag €kb€kb€kb€kbe€kbtag dokkkkkyyjjjjjpoendkkddllllllllllxxxxxxxxxxxiwhate€kbv€kbever:wkkkkkkkonamespace :lameetup a do jjjjjjjjoendkkhhkkkkkkkI  ko:wjjjyyjjjjp:wjkkllllllllllcwget a nametab€kbg:wjjkkkkjjjjodesc "otask "€kb€kr€kb €kb"€kb€kr€kb:klilisten to a speakerjkjatalkllla doendkoaction = " l€kb€kblistenkjoputs action:wkkkjllahhli{€kb€kb€kr€kb [:beer, :nametag€kr :wjkkjhhhhhhhhhhhhhhhhhi=> :wjjkkkkkkkkkkkkoukoN€kbnumber = ENV["BEERlllllllla |€kr 2:wjhhhhhhhxi#{number:wjjkjw
 "y	LINE	0
 	sub hash_3 {
 	%list = ('randy','randall.ellefsen@ngc.com','tim','timothy.nordloh@ngc.com');
@@ -179,3707 +119,1629 @@ $ FIELD_HANDLER.new('
 	 
 
 # File marks:
-'0  2  0  ~/scratch/temp.rake
-'1  1  0  ~/scratch/temprake
-'2  5  0  ~/code/colorado_docket/lib/colorado_docket/docket.rb
-'3  5  2  ~/rakelib/base_rake.rake
-'4  1  0  ~/Rakefile
-'5  9  0  ~/code/colorado_docket/RakeFile
-'6  5  3  ~/code/colorado_docket/data/polidori
-'7  1  0  ~/scratch/rake_task_management_essentials/require_solution_2/dep.rb
-'8  2  5  ~/scratch/rake_task_management_essentials/require_solution_1/Rakefile
-'9  4  14  ~/scratch/rake_task_management_essentials/require_gotcha/dep.rb
+'0  43  15  ~/.gitignore
+'1  6  0  ~/.viminfo
+'2  8  4  ~/.gitignore
+'3  42  3  ~/.gitignore
+'4  1  0  ~/.gitignore
+'5  9  6  ~/.gitignore
+'6  11  0  ~/.gitignore
+'7  1  12  ~/code/icfp_2015/solutions/0.json
+'8  1  0  ~/code/icfp_2015/solutions/1.json
+'9  76  15  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
 
 # Jumplist (newest first):
--'  2  0  ~/scratch/temp.rake
--'  25  0  ~/scratch/temp.rake
--'  1  0  ~/scratch/temprake
--'  5  0  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  1  0  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  5  2  ~/rakelib/base_rake.rake
--'  2  11  ~/rakelib/base_rake.rake
--'  1  0  ~/Rakefile
--'  9  0  ~/code/colorado_docket/RakeFile
--'  7  0  ~/code/colorado_docket/RakeFile
--'  49  50  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  5  3  ~/code/colorado_docket/data/polidori
--'  1  0  ~/code/colorado_docket/data/polidori
--'  1  0  ~/scratch/rake_task_management_essentials/require_solution_2/dep.rb
--'  2  5  ~/scratch/rake_task_management_essentials/require_solution_1/Rakefile
--'  3  0  ~/scratch/rake_task_management_essentials/require_solution_1/Rakefile
--'  4  14  ~/scratch/rake_task_management_essentials/require_gotcha/dep.rb
--'  1  0  ~/scratch/rake_task_management_essentials/require_gotcha/dep.rb
--'  12  0  ~/scratch/rake_task_management_essentials/require_gotcha/Rakefile
--'  5  2  ~/scratch/rake_task_management_essentials/require_gotcha/dep.rb
--'  3  13  ~/scratch/rake_task_management_essentials/test_multifile/rakelib/clean.rake
--'  4  0  ~/scratch/rake_task_management_essentials/test_multifile/rakelib/clean.rake
--'  77  30  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  11  22  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  61  2  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  2  0  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  12  0  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  4  0  ~/scratch/rake_task_management_essentials/test_rake/Rakefile
--'  1  0  ~/code/colorado_docket/spec/docket_spec.rb
--'  1  0  ~/code/colorado_docket/lib/email/email.rb
--'  1  0  ~/code/colorado_docket/spec/county_spec.rb
--'  1  0  ~/code/colorado_docket/spec.*.rb
--'  4  20  ~/code/colorado_docket/spec/email_spec.rb
--'  50  59  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  18  16  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  17  19  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  1  0  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  13  20  ~/scratch/cli/database/db_backup_initial.rb
--'  1  0  ~/scratch/cli/database/db_backup_initial.rb
--'  5  2  ~/code/colorado_docket/lib/colorado_docket/user.rb
--'  2  2  ~/code/colorado_docket/lib/colorado_docket/user.rb
--'  12  37  ~/code/colorado_docket/lib/colorado_docket/user.rb
--'  3  40  ~/code/colorado_docket/spec/user_spec.rb
--'  1  0  ~/code/colorado_docket/spec/user_spec.rb
--'  13  4  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  8  34  ~/code/scratch/email.rb
--'  1  13  ~/code/scratch/email.rb
--'  15  2  ~/code/scratch/email.rb
--'  1  2  ~/code/perl_examples/test.pl
--'  5  0  ~/code/perl_examples/test.pl
--'  3  12  ~/code/perl_examples/test.pl
--'  6  0  ~/code/perl_examples/test.pl
--'  4  15  ~/code/perl_examples/test.pl
--'  45  22  ~/code/colorado_docket/spec/docket_spec.rb
--'  5  5  ~/code/colorado_docket/spec/docket_spec.rb
--'  27  84  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  6  0  ~/code/colorado_docket/bin/docket_bot.rb
--'  1  0  ~/code/colorado_docket/bin/docket_bot.rb
--'  21  12  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  41  22  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  32  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  28  38  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  36  4  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  17  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  1  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  1  0  ~/code/colorado_docket/bin/im.rb
--'  9  17  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  10  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  55  4  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  11  2  ~/code/colorado_docket/bin/docket_bot.rb
--'  52  4  ~/code/colorado_docket/bin/docket_bot.rb
--'  54  4  ~/code/colorado_docket/bin/docket_bot.rb
--'  23  14  ~/code/colorado_docket/bin/docket_bot.rb
--'  12  0  ~/code/colorado_docket/bin/docket_bot.rb
--'  43  32  ~/code/colorado_docket/bin/docket_bot.rb
--'  24  28  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  29  0  ~/code/colorado_docket/lib/colorado_docket/menu.rb
--'  5  18  ~/code/colorado_docket/bin/im.rb
--'  2  0  ~/code/colorado_docket/bin/im.rb
--'  3  0  ~/code/colorado_docket/bin/im.rb
--'  28  6  ~/code/colorado_docket/docket_bot.rb
--'  16  2  ~/code/colorado_docket/docket_bot.rb
--'  1  2  ~/code/colorado_docket/docket_bot.rb
--'  3  0  ~/code/colorado_docket/spec/county_spec.rb
--'  82  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  60  0  ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
--'  56  6  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  58  17  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  30  110  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  103  6  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  17  4  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  75  6  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  65  6  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  62  6  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  82  36  ~/code/colorado_docket/lib/colorado_docket/docket.rb
--'  85  4  ~/code/colorado_docket/lib/colorado_docket/docket.rb
+-'  43  15  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  6  0  ~/.viminfo
+-'  1  0  ~/.viminfo
+-'  8  4  ~/.gitignore
+-'  42  3  ~/.gitignore
+-'  2  0  ~/.gitignore
+-'  9  6  ~/.gitignore
+-'  11  0  ~/.gitignore
+-'  1  12  ~/code/icfp_2015/solutions/0.json
+-'  1  0  ~/code/icfp_2015/solutions/1.json
+-'  76  15  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
+-'  1  0  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
+-'  1  0  ~/code/icfp_2015/solutions/3.json
+-'  1  0  ~/code/icfp_2015/solutions/2.json
+-'  1  0  ~/code/icfp_2015/.git/MERGE_MSG
+-'  1  0  ~/code/icfp_2015/solutions/16.json
+-'  1  0  ~/code/icfp_2015/solutions/24.json
+-'  41  50  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  23  10  ~/.bashrc
+-'  1  0  ~/code/icfp_2015/lib/constants.rb
+-'  1  0  ~/code/icfp_2015/solutions/10.json
+-'  1  0  ~/code/icfp_2015/lib/hexris/coordinates.rb
+-'  1  1  ~/code/icfp_2015/.gitignore
+-'  2  0  ~/code/icfp_2015/.gitignore
+-'  3  10  ~/code/icfp_2015/.gitignore
+-'  83  0  ~/code/icfp_2015/lib/hexris/player.rb
+-'  1  0  ~/code/icfp_2015/lib/hexris/player.rb
+-'  1  0  ~/code/icfp_2015/solutions/6.json
+-'  169  4  ~/code/icfp_2015/lib/hexris/player.rb
+-'  34  0  ~/code/icfp_2015/lib/hexris/player.rb
+-'  14  0  ~/code/icfp_2015/bin/play
+-'  44  0  ~/code/icfp_2015/lib/hexris/player.rb
+-'  1  0  ~/code/icfp_2015/solutions/12.json
+-'  13  35  ~/code/icfp_2015/bin/decode_moves.rb
+-'  1  0  ~/code/icfp_2015/bin/decode_moves.rb
+-'  1  0  ~/code/icfp_2015/bin/play
+-'  3  16  ~/code/icfp_2015/bin/play
+-'  12  0  ~/code/icfp_2015/bin/decode_moves.rb
+-'  1  111  ~/code/icfp_2015/solutions/13.json
+-'  1  0  ~/code/icfp_2015/solutions/map_13_inhishouse.json
+-'  1  0  ~/code/icfp_2015/data/problem_2.json
+-'  9  17  ~/code/icfp_2015/bin/decode_moves.rb
+-'  1  0  ~/code/icfp_2015/solutions/3_initial.json
+-'  1  0  ~/code/icfp_2015/solutions/lotsa_eis.json
+-'  2  0  ~/code/icfp_2015/bin/decode_moves.rb
+-'  13  0  ~/code/icfp_2015/bin/submitter.sh
+-'  7  17  ~/code/icfp_2015/lib/anagrammatic/translator.rb
+-'  8  17  ~/code/icfp_2015/lib/anagrammatic/translator.rb
+-'  6  21  ~/code/icfp_2015/lib/anagrammatic/translator.rb
+-'  1  0  ~/code/icfp_2015/lib/anagrammatic/translator.rb
+-'  2  0  ~/code/icfp_2015/lib/anagrammatic/translator.rb
+-'  24  27  ~/code/icfp_2015/lib/hexris/problem.rb
+-'  16  8  ~/code/icfp_2015/lib/hexris/problem.rb
+-'  4  11  ~/code/icfp_2015/lib/hexris/problem.rb
+-'  1  0  ~/code/icfp_2015/lib/hexris/problem.rb
+-'  1  12  ~/code/icfp_2015/lib/hexris/honeycomb.rb
+-'  2  16  ~/code/icfp_2015/lib/hexris/honeycomb.rb
+-'  7  1  ~/code/icfp_2015/bin/submitter.sh
+-'  1  122  ~/code/icfp_2015/temp
+-'  40  34  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  6  46  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  30  7  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  32  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  33  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  35  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  5  6  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  1  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  17  0  ~/code/icfp_2015/lib/hexris/honeycomb.rb
+-'  5  25  ~/code/icfp_2015/bin/parse_book
+-'  19  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  20  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
+-'  6  25  ~/code/icfp_2015/test/lovecraft_parser.rb
+-'  1  0  ~/code/icfp_2015/test/lovecraft_parser.rb
+-'  1  0  ~/code/icfp_2015/test/parser_text.rb
+-'  2  14  ~/code/icfp_2015/lib/constants.rb
+-'  8  16  ~/code/icfp_2015/test/scorer_test.rb
+-'  1  0  ~/code/icfp_2015/lib/scorer.rb
+-'  5  2  ~/code/icfp_2015/test/random_test.rb
+-'  1  0  ~/code/icfp_2015/lib/random.rb
+-'  3  2  ~/code/icfp_2015/lib/random.rb
+-'  27  38  ~/code/icfp_2015/lib/icfp_2015/random.rb
+-'  22  21  ~/code/icfp_2015/lib/icfp_2015/random.rb
+-'  1  2  ~/code/icfp_2015/lib/icfp_2015/random.rb
+-'  31  1  ~/code/icfp_2015/lib/icfp_2015/random.rb
+-'  1  0  ~/code/icfp_2015/lib/random_gen.rb
+-'  1  0  ~/code/icfp_2015/lib/random_gen
+-'  3  0  ~/code/countdown/test/results_test.rb
+-'  1  0  ~/code/countdown/test/results_test.rb
+-'  3  0  ~/mpd_plugin/mpc/ftplugin/mpdv.vim
+-'  1  0  ~/mpd_plugin/mpc/ftplugin/mpdv.vim
+-'  69  0  ~/.vimrc
+-'  86  38  ~/.vimrc
+-'  49  36  ~/.vimrc
+-'  48  16  ~/.vimrc
+-'  8  0  ~/.vimrc
+-'  79  8  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
-> ~/scratch/temp.rake
-	"	2	0
-	^	24	47
+> ~/.gitignore
+	"	43	15
+	^	43	16
+	.	43	15
+	+	9	6
+	+	42	3
+	+	8	4
+	+	43	15
+
+> ~/.viminfo
+	"	6	0
+
+> ~/code/icfp_2015/solutions/0.json
+	"	1	12
 	.	2	0
-	+	25	28
-	+	25	35
-	+	25	36
-	+	25	35
-	+	25	36
-	+	25	48
-	+	25	32
-	+	25	0
-	+	25	0
-	+	25	42
-	+	25	0
-	+	25	0
-	+	1	30
-	+	3	35
-	+	4	36
-	+	6	35
-	+	7	36
-	+	9	77
-	+	11	62
-	+	14	33
-	+	15	35
-	+	22	43
-	+	24	46
-	+	11	59
-	+	22	39
-	+	23	0
-	+	20	30
-	+	21	0
-	+	18	30
-	+	19	0
-	+	14	1
-	+	15	1
-	+	11	58
-	+	12	0
-	+	10	0
+	+	1	81
+	+	1	82
+	+	1	0
+	+	1	0
 	+	2	0
 
-> ~/scratch/temprake
+> ~/code/icfp_2015/solutions/1.json
 	"	1	0
-	^	59	47
-	.	59	0
-	+	59	0
+	^	1	40
+	.	1	39
+	+	1	39
 
-> ~/code/colorado_docket/lib/colorado_docket/docket.rb
-	"	5	0
-	^	32	26
-	.	32	25
-	+	88	17
-	+	92	0
-	+	94	0
-	+	87	6
-	+	67	0
-	+	29	17
-	+	37	23
-	+	38	25
-	+	56	19
-	+	56	0
-	+	37	13
-	+	41	13
-	+	42	69
-	+	49	13
-	+	48	0
-	+	54	26
-	+	29	0
-	+	14	0
-	+	29	0
-	+	88	20
-	+	54	37
-	+	54	37
-	+	54	52
-	+	54	69
-	+	54	110
-	+	54	69
-	+	55	0
-	+	54	37
-	+	55	0
-	+	54	70
-	+	54	71
-	+	55	17
-	+	55	0
-	+	55	0
-	+	54	70
-	+	41	15
-	+	70	0
-	+	19	1
-	+	49	18
-	+	54	70
-	+	54	100
-	+	55	0
-	+	55	0
-	+	54	70
-	+	49	20
-	+	38	6
-	+	101	3
-	+	88	6
-	+	102	43
-	+	104	32
-	+	106	0
+> ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
+	"	76	15
+	^	78	17
+	.	78	16
+	+	113	18
+	+	115	14
 	+	109	0
-	+	102	43
-	+	103	20
-	+	105	34
-	+	104	21
-	+	102	48
-	+	107	8
-	+	99	43
-	+	29	0
-	+	19	4
-	+	21	18
-	+	25	0
-	+	26	24
-	+	28	0
-	+	22	20
-	+	23	16
-	+	19	16
-	+	2	0
-	+	8	0
-	+	6	0
-	+	4	0
-	+	3	0
-	+	4	0
-	+	7	0
-	+	7	0
-	+	6	2
-	+	7	2
-	+	5	0
-	+	7	0
-	+	49	0
-	+	48	79
-	+	49	50
-	+	51	20
-	+	52	0
-	+	49	0
-	+	52	25
-	+	48	77
-	+	47	19
-	+	44	21
-	+	46	0
-	+	95	19
-	+	97	8
-	+	95	27
-	+	96	64
-	+	31	13
-	+	34	0
-	+	32	23
-	+	31	17
-	+	32	25
+	+	122	25
+	+	123	48
+	+	125	23
+	+	125	24
+	+	129	0
+	+	125	36
+	+	126	0
+	+	115	0
+	+	128	0
+	+	126	0
+	+	128	15
+	+	129	0
+	+	125	22
+	+	128	8
+	+	139	0
+	+	135	0
+	+	139	29
+	+	139	0
+	+	139	30
+	+	139	1
+	+	136	29
+	+	139	33
+	+	139	11
+	+	139	21
+	+	139	27
+	+	134	33
+	+	75	0
+	+	139	37
+	+	122	13
+	+	125	15
+	+	139	27
+	+	139	31
+	+	136	31
+	+	139	17
+	+	126	8
+	+	128	9
+	+	136	51
+	+	139	0
+	+	128	8
+	+	127	0
+	+	125	7
+	+	142	0
+	+	139	11
+	+	126	0
+	+	125	6
+	+	136	31
+	+	86	12
+	+	105	8
+	+	139	10
+	+	124	36
+	+	125	15
+	+	127	17
+	+	128	39
+	+	136	29
+	+	12	40
+	+	13	28
+	+	19	35
+	+	17	38
+	+	26	40
+	+	138	62
+	+	139	54
+	+	86	12
+	+	105	8
+	+	139	56
+	+	107	0
+	+	107	34
+	+	138	38
+	+	138	18
+	+	107	0
+	+	92	38
+	+	138	27
+	+	138	11
+	+	138	12
+	+	138	10
+	+	86	12
+	+	105	8
+	+	134	0
+	+	140	9
+	+	141	37
+	+	19	37
+	+	105	8
+	+	86	12
+	+	140	10
+	+	18	33
+	+	27	7
+	+	138	10
+	+	138	0
+	+	136	10
+	+	137	29
+	+	86	12
+	+	105	8
+	+	75	50
+	+	28	7
+	+	75	50
+	+	77	34
+	+	76	22
+	+	78	16
 
-> ~/rakelib/base_rake.rake
-	"	5	2
-	^	1	11
-	.	4	0
-	+	7	0
-	+	2	0
-	+	2	83
-	+	2	83
-	+	2	85
-	+	2	85
-	+	2	85
-	+	3	87
-	+	4	89
-	+	6	15
-	+	2	0
-	+	1	12
-	+	2	0
-	+	7	0
-	+	6	2
-	+	2	18
-	+	3	31
-	+	4	50
-	+	4	21
-	+	5	22
-	+	2	0
-	+	3	0
-	+	4	0
-	+	4	0
-	+	5	0
-	+	1	10
-	+	4	0
-
-> ~/Rakefile
+> ~/code/icfp_2015/.git/MERGE_MSG
 	"	1	0
-	^	5	3
-	.	5	0
-	+	1	24
-	+	3	16
-	+	4	9
-	+	5	0
+	^	3	23
+	.	3	22
+	+	3	22
 
-> ~/code/colorado_docket/data/polidori
+> ~/code/icfp_2015/solutions/3.json
 	"	1	0
-	^	5	5
-	.	5	4
-	+	5	4
 
-> ~/code/colorado_docket/spec/docket_spec.rb
-	"	42	40
-	^	35	44
-	.	35	43
-	+	14	0
-	+	15	0
-	+	14	31
-	+	18	50
-	+	22	0
-	+	20	0
-	+	20	29
-	+	19	8
-	+	21	30
-	+	20	5
-	+	20	5
-	+	14	42
-	+	17	0
-	+	24	0
-	+	23	2
-	+	24	42
-	+	27	0
-	+	49	0
-	+	25	3
-	+	6	43
-	+	9	0
-	+	13	0
-	+	20	0
-	+	6	45
-	+	25	36
-	+	26	8
-	+	41	2
-	+	42	41
-	+	48	0
-	+	43	31
-	+	45	9
-	+	45	17
-	+	45	0
-	+	45	0
-	+	45	37
-	+	45	14
-	+	45	10
-	+	45	39
-	+	48	0
-	+	45	16
-	+	45	41
-	+	45	10
-	+	25	18
-	+	24	24
-	+	25	14
-	+	25	39
-	+	25	21
-	+	43	0
-	+	25	33
-	+	42	0
-	+	43	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	48	0
-	+	45	22
-	+	45	23
-	+	46	12
-	+	45	0
-	+	46	38
-	+	43	0
-	+	38	38
-	+	40	0
-	+	39	0
-	+	39	0
-	+	39	0
+> ~/code/icfp_2015/solutions/2.json
+	"	1	0
+	.	1	0
 	+	1	0
-	+	39	23
-	+	39	0
-	+	42	0
-	+	43	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	46	12
-	+	45	0
-	+	44	36
-	+	42	0
-	+	39	20
-	+	29	0
-	+	37	0
-	+	39	22
-	+	30	35
-	+	46	0
-	+	33	45
-	+	36	0
-	+	34	33
-	+	34	49
-	+	34	11
-	+	35	10
-	+	34	29
-	+	35	43
+	+	1	0
+	+	2	0
+	+	1	0
 
-> ~/code/colorado_docket/RakeFile
-	"	9	0
-	^	12	13
-	.	9	0
-	+	7	8
-	+	3	0
-	+	5	0
-	+	6	0
-	+	7	0
+> ~/code/icfp_2015/lib/constants.rb
+	"	4	0
+	^	1	190
+	.	1	0
+	+	1	14
+	+	12	14
+	+	11	15
+	+	1	21
+	+	11	67
+	+	1	172
+	+	10	14
+	+	9	14
+	+	8	14
+	+	7	14
+	+	6	14
+	+	5	13
+	+	4	14
 	+	3	14
-	+	4	35
-	+	3	12
-	+	4	42
-	+	6	18
-	+	4	32
-	+	16	0
+	+	2	13
+	+	1	189
 	+	1	0
-	+	9	2
-	+	9	45
-	+	15	2
-	+	14	10
-	+	12	12
+
+> ~/code/icfp_2015/bin/decode_moves
+	"	5	0
+
+> ~/code/icfp_2015/test/dumb_bod_test.rb
+	"	10	2
+	^	8	43
+	.	8	42
+	+	1	24
+	+	3	41
+	+	5	28
+	+	10	0
+	+	6	26
 	+	9	0
+	+	7	31
+	+	8	42
+
+> ~/code/icfp_2015/lib/hexris/game.rb
+	"	34	8
+
+> ~/code/icfp_2015/lib/hexris/player.rb
+	"	157	4
+	^	161	7
+	.	161	6
+	+	63	0
+	+	45	16
+	+	42	8
+	+	41	25
+	+	42	16
+	+	41	35
+	+	44	16
+	+	42	16
+	+	161	6
+	n	30	17
+
+> ~/code/icfp_2015/bin/dumb_bot
+	"	3	29
+	^	3	30
+	.	3	29
+	+	3	41
+	+	3	0
+	+	1	18
+	+	2	0
+	+	4	0
+	+	6	36
+	+	3	29
+
+> ~/code/icfp_2015/bin/play
+	"	7	18
+
+> ~/code/icfp_2015/lib/hexris/unit.rb
+	"	21	7
+	.	29	55
+	+	29	55
+
+> ~/code/icfp_2015/solutions/5.json
+	"	1	0
+
+> ~/code/icfp_2015/lib/hexris/ai.rb
+	"	9	19
+
+> ~/code/icfp_2015/lib/hexris/visualizer.rb
+	"	16	0
+
+> ~/code/icfp_2015/solutions/10.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/11.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/12.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/13.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/13_failed.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/14.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/15.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/16.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/24.json
+	"	1	0
 
 > ~/.bashrc
-	"	30	7
-	^	30	15
-	.	30	7
-	+	20	51
-	+	22	17
-	+	25	20
-	+	26	17
-	+	39	23
-	+	53	0
-	+	39	8
-	+	23	23
-	+	5	9
-	+	5	0
-	+	4	9
-	+	5	67
-	+	5	0
-	+	4	8
-	+	19	13
-	+	39	0
-	+	36	24
-	+	39	0
-	+	37	26
-	+	24	26
-	+	38	44
-	+	27	6
-	+	5	0
-	+	35	0
-	+	35	0
-	+	31	47
-	+	39	0
-	+	39	87
-	+	39	10
-	+	35	0
-	+	35	0
-	+	35	8
-	+	35	10
-	+	39	54
-	+	35	0
-	+	35	0
-	+	35	0
-	+	25	0
-	+	34	43
-	+	31	42
-	+	35	0
-	+	34	0
-	+	43	21
-	+	32	45
-	+	33	54
-	+	19	28
-	+	29	12
-	+	31	0
-	+	29	51
-	+	40	54
-	+	39	0
-	+	40	20
-	+	40	97
-	+	40	0
-	+	28	30
-	+	43	0
-	+	19	0
-	+	37	0
-	+	39	0
-	+	19	0
-	+	43	0
-	+	19	27
-	+	44	33
-	+	51	0
-	+	47	28
-	+	50	0
-	+	48	6
-	+	49	32
-	+	51	0
-	+	44	0
-	+	52	0
-	+	47	17
-	+	49	17
-	+	19	0
-	+	47	16
-	+	49	16
-	+	17	0
-	+	17	0
-	+	16	1
-	+	16	0
-	+	30	7
+	"	41	50
+	^	57	17
+	.	57	16
+	+	57	16
 
-> ~/scratch/rake_task_management_essentials/require_solution_2/Rakefile
-	"	1	0
-	^	5	1
-	.	5	0
-	+	6	15
-	+	17	14
-	+	1	37
-	+	2	78
-	+	4	15
-	+	5	0
-
-> ~/scratch/rake_task_management_essentials/require_solution_2/dep.rb
+> ~/code/icfp_2015/lib/hexris/coordinates.rb
 	"	1	0
 
-> ~/scratch/rake_task_management_essentials/require_solution_1/Rakefile
-	"	2	5
-	^	2	6
-	.	2	5
-	+	3	0
-	+	16	0
-	+	13	14
-	+	3	0
-	+	1	77
-	+	2	5
-
-> ~/scratch/rake_task_management_essentials/require_solution_1/dep.rb
+> ~/code/icfp_2015/lib/hexris/honeycomb.rb
 	"	1	0
 
-> ~/scratch/rake_task_management_essentials/require_gotcha/dep.rb
-	"	4	14
-	^	5	3
-	.	3	18
+> ~/code/icfp_2015/lib/hexris/problem.rb
+	"	1	0
+
+> ~/code/icfp_2015/lib/hexris/rng.rb
+	"	1	0
+
+> ~/code/icfp_2015/lib/hexris/scorer.rb
+	"	1	0
+
+> ~/code/icfp_2015/.gitignore
+	"	1	1
+	^	1	2
+	.	1	1
+	+	2	3
+	+	3	10
+	+	1	1
+
+> ~/code/icfp_2015/solutions/6.json
+	"	1	0
+
+> ~/code/icfp_2015/solutions/4.json
+	"	1	7097
+
+> ~/code/icfp_2015/bin/decode_moves.rb
+	"	13	35
+	^	13	46
+	.	13	35
+	+	1	0
+	+	6	23
+	+	11	15
+	+	9	18
+	+	10	17
+	+	11	18
+	+	6	16
+	+	7	16
+	+	8	17
+	+	9	18
+	+	10	17
+	+	11	18
+	+	7	24
+	+	8	22
+	+	9	23
+	+	10	22
+	+	11	25
+	+	13	61
+	+	8	24
+	+	9	25
+	+	10	24
+	+	13	69
+	+	12	0
+	+	13	35
+
+> ~/code/icfp_2015/solutions/map_13_inhishouse.json
+	"	1	0
+
+> ~/code/icfp_2015/data/problem_2.json
+	"	1	0
+
+> ~/code/icfp_2015/lib/anagrammatic/translator.rb
+	"	1	0
+	.	7	21
+	+	1	0
+	+	6	21
+	+	8	0
 	+	6	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	22
-	+	3	22
-	+	4	15
-	+	5	0
-	+	3	18
-	i	1	0
+	+	8	23
+	+	7	0
+	+	8	0
+	+	7	21
 
-> ~/scratch/rake_task_management_essentials/require_gotcha/Rakefile
-	"	11	56
-	^	11	57
-	.	11	56
-	+	12	16
-	+	15	30
-	+	24	3
-	+	23	13
-	+	25	0
-	+	18	0
-	+	22	6
-	+	23	17
-	+	1	65
-	+	5	56
-	+	6	97
-	+	7	99
-	+	8	46
-	+	9	0
-	+	11	56
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/dep/1/dep.rb
+> ~/code/icfp_2015/solutions/3_initial.json
 	"	1	0
-	^	1	0
+
+> ~/code/icfp_2015/solutions/lotsa_eis.json
+	"	1	0
+
+> ~/code/icfp_2015/bin/submitter.sh
+	"	13	0
+
+> ~/code/icfp_2015/data/problem_0.json
+	"	1	39
+
+> ~/code/icfp_2015/lib/lovecraft_parser.rb
+	"	40	34
+	^	6	46
+	.	40	34
+	+	19	17
+	+	31	6
+	+	8	43
+	+	18	0
+	+	19	0
+	+	20	0
+	+	31	38
+	+	32	59
+	+	33	39
+	+	34	37
+	+	35	43
+	+	36	39
+	+	37	40
+	+	38	38
+	+	39	37
+	+	16	39
+	+	13	52
+	+	16	30
+	+	31	0
+	+	25	13
+	+	26	3
+	+	31	0
+	+	6	28
+	+	31	3
+	+	31	3
+	+	31	3
+	+	32	3
+	+	33	3
+	+	34	3
+	+	35	3
+	+	36	3
+	+	37	3
+	+	38	3
+	+	39	3
+	+	9	40
+	+	10	39
+	+	11	48
+	+	13	0
+	+	11	0
+	+	12	39
+	+	14	41
+	+	11	51
+	+	15	38
+	+	40	34
+	+	30	45
+	+	31	40
+	+	20	0
+	+	20	0
+	+	18	26
+	+	6	32
+	+	6	0
+	+	6	0
+	+	30	0
+	+	6	32
+	+	26	2
+	+	30	2
+	+	31	2
+	+	31	2
+	+	30	34
+	+	31	43
+	+	31	0
+	+	30	0
+	+	31	0
+	+	30	2
+	+	30	0
+	+	31	0
+	+	30	2
+	+	30	49
+	+	25	30
+	+	26	24
+	+	30	24
+	+	30	24
+	+	30	2
+	+	30	2
+	+	31	2
+	+	32	2
+	+	33	2
+	+	32	0
+	+	25	30
+	+	26	24
+	+	30	24
+	+	30	0
+	+	32	2
+	+	33	2
+	+	34	2
+	+	35	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	39	2
+	+	40	2
+	+	30	0
+	+	29	2
+	+	29	0
+	+	29	0
+	+	25	0
+	+	27	7
+	+	28	46
+	+	6	46
+	+	40	34
+
+> ~/code/icfp_2015/test/lovecraft_parser_test.rb
+	"	6	0
+
+> ~/code/icfp_2015/temp
+	"	1	122
+	^	1	62
+	.	1	58
+	+	1	58
+
+> ~/Downloads/OEBPS/Text/Herbert West Reanimator.xhtml
+	"	63	364
+
+> ~/code/icfp_2015/bin/parse_book
+	"	5	25
+	^	5	26
+	.	5	25
+	+	3	44
+	+	4	0
+	+	5	18
+	+	1	1
+	+	5	25
+
+> ~/code/icfp_2015/data/important_works.txt
+	"	2	0
+
+> ~/Downloads/OEBPS/Text/Nyarlathotep.xhtml
+	"	42	0
+
+> ~/code/icfp_2015/test/lovecraft_parser.rb
+	"	6	25
+	^	3	19
+	.	7	25
+	+	1	24
+	+	3	37
+	+	5	29
+	+	9	0
+	+	6	28
+	+	8	0
+	+	7	53
+	+	3	18
+	+	7	25
+
+> ~/code/icfp_2015/data/call_of_chthulhu.xtml
+	"	100	0
+
+> ~/Downloads/OEBPS/Text/The Call of Cthulhu.xhtml
+	"	50	0
+
+> ~/code/icfp_2015/test/parser_text.rb
+	"	1	0
+
+> ~/code/icfp_2015/lib/scorer.rb
+	"	10	4
+	^	9	43
+	.	10	0
+	+	2	32
+	+	6	28
+	+	3	29
+	+	6	15
+	+	27	28
+	+	28	0
+	+	36	18
+	+	37	0
+	+	36	30
+	+	37	63
+	+	36	42
+	+	37	33
+	+	37	54
+	+	38	0
+	+	41	0
+	+	37	64
+	+	38	43
+	+	40	0
+	+	38	39
+	+	39	61
+	+	36	31
+	+	39	35
+	+	38	38
+	+	39	76
+	+	36	18
+	+	43	0
+	+	35	0
+	+	28	43
+	+	30	36
+	+	32	6
+	+	39	72
+	+	31	0
+	+	28	0
+	+	29	12
+	+	31	49
+	+	33	8
+	+	4	18
+	+	27	0
+	+	27	0
+	+	8	19
+	+	26	0
+	+	8	30
+	+	13	0
+	+	9	53
+	+	20	21
+	+	24	0
+	+	21	13
+	+	19	22
+	+	21	43
+	+	11	17
+	+	9	16
+	+	13	14
+	+	9	66
+	+	11	18
+	+	21	39
+	+	19	0
+	+	4	16
+	+	11	32
+	+	20	19
+	+	21	20
+	+	9	0
+	+	8	15
+	+	8	0
+	+	15	11
+	+	16	0
+	+	15	30
+	+	16	4
+	+	9	42
+	+	11	0
+	+	12	4
+	+	10	0
+
+> ~/code/icfp_2015/test/scorer_test.rb
+	"	1	2
+	^	40	32
+	.	41	0
+	+	1	24
+	+	6	18
+	+	42	0
+	+	7	23
+	+	14	0
+	+	7	27
+	+	14	1
+	+	7	32
+	+	14	13
+	+	8	17
+	+	14	0
+	+	3	24
+	+	8	28
+	+	14	0
+	+	9	0
+	+	10	8
+	+	11	31
+	+	4	21
+	+	12	42
+	+	13	39
+	+	3	15
+	+	4	15
+	+	16	33
+	+	20	0
+	+	17	37
+	+	18	42
+	+	19	44
+	+	18	32
+	+	19	32
+	+	18	28
+	+	19	27
+	+	18	47
+	+	19	41
+	+	18	18
+	+	19	19
+	+	22	34
+	+	26	0
+	+	23	0
+	+	24	39
+	+	18	50
+	+	25	44
+	+	28	37
+	+	33	0
+	+	29	42
+	+	30	0
+	+	31	42
+	+	32	30
+	+	35	23
+	+	41	0
+	+	36	19
+	+	37	29
+	+	41	19
+	+	38	0
+	+	39	15
+	+	40	0
+	+	39	29
+	+	40	31
+	+	35	0
+	+	41	0
+
+> ~/Downloads/OEBPS/Text/At the Mountains of Madness.xhtml
+	"	37	0
+
+> ~/code/icfp_2015/The Complete Works of HP Lovecraft.epub
+	"	6222	0
+
+> ~/code/icfp_2015/lib/random.rb
+	"	6	0
+	.	13	0
+	+	1	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	1	0
+	+	27	0
+	+	13	0
+
+> ~/code/icfp_2015/test/random_test.rb
+	"	5	2
+	^	9	45
+	.	7	13
+	+	1	24
+	+	5	28
+	+	11	0
+	+	6	26
+	+	10	0
+	+	6	30
+	+	10	1
+	+	7	30
+	+	3	40
+	+	10	16
+	+	7	35
+	+	10	5
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	11
+	+	10	12
+	+	10	13
+	+	10	15
+	+	10	14
+	+	10	9
+	+	10	5
+	+	10	5
+	+	10	15
+	+	10	31
+	+	10	31
+	+	10	18
+	+	10	40
+	+	10	14
+	+	10	33
+	+	10	4
+	+	10	33
+	+	10	0
+	+	10	0
+	+	10	28
+	+	10	0
+	+	10	16
+	+	8	12
+	+	9	44
+	+	10	0
+	+	3	25
+	+	5	9
+	+	7	13
+
+> ~/code/icfp_2015/lib/icfp_2015/random.rb
+	"	27	38
+	^	27	39
+	.	27	38
+	+	9	0
+	+	8	18
+	+	8	9
+	+	9	6
+	+	31	0
+	+	9	4
+	+	9	20
+	+	11	15
+	+	24	4
+	+	13	0
+	+	15	0
+	+	15	24
+	+	15	13
+	+	12	23
+	+	15	0
+	+	15	27
+	+	15	0
+	+	16	0
+	+	21	20
+	+	24	0
+	+	15	0
+	+	21	63
+	+	9	0
+	+	30	0
+	+	9	0
+	+	8	0
+	+	14	0
+	+	29	0
+	+	8	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	2	0
+	+	3	7
+	+	15	11
+	+	22	29
+	+	12	26
+	+	16	6
+	+	22	33
+	+	10	17
+	+	19	12
+	+	20	10
+	+	21	7
+	+	22	7
+	+	23	0
+	+	26	16
+	+	27	0
+	+	26	22
+	+	27	5
+	+	22	22
+	+	19	23
+	+	22	31
+	+	27	24
+	+	17	15
+	+	27	38
+	o	1	0
+
+> ~/code/icfp_2015/test/random.rb
+	"	1	0
+
+> ~/code/icfp_2015/lib/random_gen.rb
+	"	1	0
+
+> ~/code/icfp_2015/lib/random_gen
+	"	1	0
+
+> ~/code/countdown/test/results_test.rb
+	"	3	0
+	^	19	35
+	.	18	25
+	+	1	24
+	+	6	47
+	+	14	0
+	+	21	0
+	+	11	42
+	+	7	32
+	+	10	13
+	+	8	30
+	+	7	26
+	+	9	32
+	+	7	18
+	+	8	18
+	+	7	33
+	+	8	33
+	+	9	34
+	+	3	31
+	+	11	21
+	+	12	23
+	+	11	7
+	+	13	31
+	+	16	65
+	+	20	0
+	+	17	0
+	+	19	15
+	+	18	29
+	+	19	34
+	+	18	25
+
+> ~/mpd_plugin/mpc/ftplugin/mpdv.vim
+	"	3	0
+	^	7	6
+	.	7	7
+	+	1	17
+	+	3	34
+	+	4	55
+	+	8	24
+	+	10	35
+	+	11	30
+	+	13	10
+	+	7	23
+	+	1	0
+	+	14	0
+	+	15	39
+	+	7	6
+	+	14	0
+	+	7	7
+
+> ~/mpd_plugin/mpc/mpc.mpdv
+	"	1	44
+	^	1	45
+	.	7	0
+	+	42	0
+	+	36	0
+	+	30	0
+	+	1	0
+	+	25	0
+	+	19	42
+	+	13	0
+	+	7	0
+
+> ~/.vimrc
+	"	69	0
+	^	90	42
+	.	69	0
+	+	87	44
+	+	89	38
+	+	91	0
+	+	89	18
+	+	68	0
+	+	91	0
+	+	90	41
+	+	69	0
+
+> ~/mpd_plugin/mpc/NERD_tree_1
+	"	5	0
 	.	1	0
 	+	1	0
 
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/dep/1/rakefile
-	"	2	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile1
+> ~/mpd_plugin/mpc/ftdetect/mpdv.vim
 	"	1	0
 
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile10
+> ~/mpd_plugin/mpc/plugin/mpc.vim
 	"	1	0
 
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile11
+> ~/mpd_plugin/plugin/mpc.vim
 	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile12
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile13
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile14
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile15
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile16
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile17
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/0773OS_01_Code/code/rakefile18
-	"	1	0
-
-> ~/scratch/rake_task_management_essentials/test_multifile/rakelib/clean.rake
-	"	3	13
-	^	3	50
-	.	3	50
-	+	1	74
-	+	2	71
-	+	3	50
-
-> ~/scratch/rake_task_management_essentials/test_multifile/Rakefile
-	"	12	36
-	^	12	37
-	.	12	36
-	+	4	5
-	+	1	72
-	+	2	74
-	+	3	29
+	^	12	7
+	.	13	0
 	+	13	10
-	+	7	78
-	+	8	24
-	+	6	36
-	+	12	36
-
-> ~/scratch/rake_task_management_essentials/test_multifile/rakelib/clean3.rake
-	"	3	38
-	^	3	44
-	.	3	43
-	+	2	11
-	+	3	43
-
-> ~/scratch/rake_task_management_essentials/test_rake/Rakefile
-	"	77	30
-	^	77	31
-	.	77	30
-	+	3	15
-	+	4	1
-	+	5	0
-	+	2	21
-	+	10	16
-	+	12	0
-	+	12	2
-	+	9	23
-	+	11	21
-	+	12	0
-	+	11	18
-	+	3	0
-	+	1	0
-	+	16	22
-	+	17	0
-	+	22	0
-	+	21	19
-	+	1	20
-	+	8	37
-	+	14	28
-	+	19	22
-	+	27	21
-	+	26	38
-	+	28	23
-	+	30	30
-	+	31	0
-	+	41	30
-	+	42	33
-	+	43	0
-	+	34	49
-	+	37	29
-	+	34	24
-	+	39	24
-	+	52	36
-	+	55	0
-	+	53	35
-	+	55	8
-	+	54	0
-	+	55	0
-	+	54	33
-	+	49	0
-	+	46	0
-	+	45	6
-	+	48	0
-	+	46	15
-	+	49	24
-	+	38	7
-	+	34	15
-	+	46	16
-	+	51	26
-	+	58	38
-	+	59	31
-	+	60	29
-	+	61	0
-	+	58	34
-	+	59	36
-	+	60	34
-	+	63	68
-	+	69	35
-	+	73	0
-	+	70	30
-	+	71	32
-	+	72	23
-	+	64	52
-	+	67	47
-	+	68	53
-	+	75	70
-	+	77	30
-
-> ~/code/colorado_docket/spec/county_spec.rb
-	"	1	0
-	.	8	0
-	+	1	13
-	+	1	34
-	+	1	27
-	+	1	18
-	+	1	24
-	+	1	10
-	+	1	32
-	+	1	24
-	+	1	28
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	24
-	+	11	3
-	+	6	26
-	+	10	0
-	+	7	24
-	+	8	0
-	+	7	12
-	+	8	40
-	+	8	82
-	+	3	18
-	+	4	0
-	+	3	40
-	+	2	0
-	+	8	43
-	+	8	0
-
-> ~/code/colorado_docket/spec/docket_bot_spec.rb
-	"	1	0
-	^	10	26
-	.	11	0
-	+	1	24
-	+	2	0
-	+	14	0
-	+	3	46
-	+	13	0
-	+	6	34
-	+	12	0
-	+	11	38
-	+	3	24
-	+	7	67
-	+	9	38
-	+	7	68
-	+	9	104
-	+	10	27
-	+	8	8
-	+	9	80
-	+	10	27
-	+	11	0
-
-> ~/code/colorado_docket/spec/email_spec.rb
-	"	4	0
-	^	6	1
-	.	6	1
-	+	1	24
-	+	6	3
-	+	4	19
-	+	5	0
-	+	4	23
-	+	5	1
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	1
-
-> ~/code/colorado_docket/spec/menu_spec.rb
-	"	1	0
-	^	7	5
-	.	7	4
-	+	1	25
-	+	1	24
-	+	1	24
-	+	9	0
-	+	9	0
-	+	6	26
-	+	8	0
-	+	7	64
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	0
-	+	3	44
-	+	4	0
-	+	3	7
-	+	7	4
-
-> ~/code/colorado_docket/spec/user_spec.rb
-	"	1	0
-	^	12	28
-	.	12	27
-	+	1	0
-	+	15	0
-	+	1	24
-	+	14	0
-	+	6	27
-	+	13	0
-	+	6	31
-	+	13	1
-	+	7	45
-	+	8	28
-	+	9	33
-	+	11	44
-	+	13	0
-	+	10	0
-	+	3	14
-	+	7	30
-	+	10	30
-	+	3	40
-	+	7	38
-	+	10	38
-	+	12	27
-	o	1	0
-
-> ~/scratch/cli/todo/todo.rdoc
-	"	1	0
-
-> ~/scratch/cli/todo/Rakefile
-	"	1	0
-
-> ~/scratch/cli/todo/Gemfile
-	"	1	0
-
-> ~/code/colorado_docket/lib/colorado_docket/menu.rb
-	"	2	2
-	^	65	20
-	.	65	19
-	+	79	0
-	+	81	0
-	+	80	28
-	+	81	44
-	+	82	0
-	+	40	70
-	+	81	33
-	+	22	16
-	+	13	0
-	+	24	15
-	+	41	46
-	+	71	18
-	+	75	0
-	+	73	30
-	+	71	18
-	+	19	9
-	+	12	11
-	+	19	94
-	+	71	18
-	+	73	21
-	+	72	10
-	+	19	18
-	+	72	13
-	+	73	32
-	+	72	41
-	+	72	0
-	+	17	37
-	+	18	17
-	+	4	25
-	+	22	21
-	+	19	81
-	+	68	21
-	+	68	59
-	+	69	0
-	+	41	67
-	+	63	32
-	+	67	0
-	+	64	48
-	+	66	0
-	+	64	16
-	+	66	92
-	+	61	24
-	+	61	6
-	+	66	6
-	+	61	39
-	+	61	55
-	+	66	86
-	+	61	0
-	+	62	0
-	+	55	0
-	+	59	8
-	+	61	23
-	+	41	71
-	+	55	11
-	+	59	11
-	+	41	77
-	+	23	12
-	+	55	16
-	+	59	16
-	+	95	27
-	+	95	0
-	+	66	25
-	+	61	37
-	+	57	35
-	+	61	36
-	+	66	24
-	+	88	27
-	+	89	70
-	+	90	68
-	+	91	30
-	+	91	32
-	+	93	0
-	+	91	34
-	+	91	9
-	+	92	7
-	+	91	7
-	+	90	8
-	+	89	23
-	+	90	7
-	+	89	71
-	+	90	4
-	+	91	4
-	+	92	5
-	+	66	32
-	+	61	44
-	+	57	43
-	+	66	68
-	+	61	17
-	+	57	34
-	+	90	23
-	+	50	26
-	+	51	0
-	+	56	19
-	+	51	40
-	+	54	0
-	+	57	0
-	+	60	20
-	+	61	0
-	+	66	0
-	+	65	19
-
-> ~/code/colorado_docket/lib/email/email.rb
-	"	1	0
-	^	1	3
-	.	1	2
-	+	1	2
-
-> ~/code/colorado_docket/lib/colorado_docket/interface.rb
-	"	1	0
-
-> ~/code/colorado_docket/lib/colorado_docket/county.rb
-	"	1	0
-	^	5	16
-	.	5	15
-	+	1	0
-	+	7	32
-	+	3	34
-	+	5	15
-
-> ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
-	"	7	8
-	^	39	66
-	.	58	0
-	+	43	0
-	+	43	21
-	+	40	28
-	+	40	29
-	+	40	9
-	+	40	26
-	+	40	21
-	+	39	27
-	+	39	21
-	+	39	23
-	+	39	0
-	+	30	22
-	+	36	74
-	+	36	0
-	+	36	7
-	+	36	0
-	+	36	40
-	+	40	25
-	+	40	19
-	+	36	28
-	+	36	0
-	+	40	34
-	+	40	22
-	+	40	14
-	+	40	11
-	+	40	22
-	+	43	29
-	+	43	0
-	+	43	34
-	+	43	22
-	+	40	33
-	+	40	22
-	+	40	0
-	+	40	36
-	+	40	25
-	+	40	0
-	+	43	0
-	+	40	20
-	+	40	24
-	+	40	27
-	+	40	21
-	+	40	0
-	+	40	65
-	+	40	19
-	+	40	27
-	+	40	24
-	+	40	0
-	+	40	8
-	+	40	16
-	+	40	22
-	+	40	30
-	+	40	8
-	+	40	8
-	+	40	8
-	+	40	8
-	+	30	0
-	+	40	8
-	+	40	8
-	+	40	9
-	+	40	9
-	+	40	9
-	+	40	26
-	+	40	42
-	+	40	38
-	+	40	24
-	+	40	45
-	+	40	33
-	+	40	43
-	+	40	31
-	+	57	12
-	+	58	0
-	+	57	20
-	+	59	40
-	+	40	0
-	+	40	30
-	+	42	70
-	+	40	30
-	+	42	66
-	+	59	35
-	+	40	9
-	+	42	59
-	+	40	0
-	+	38	0
-	+	39	36
-	+	59	40
-	+	59	0
-	+	58	75
-	+	59	0
-	+	58	58
-	+	58	9
-	+	40	57
-	+	40	0
-	+	40	65
-	+	40	0
-	+	36	0
-	+	38	27
-	+	39	33
-	+	38	45
-	+	39	24
-	+	58	0
-
-> ~/code/colorado_docket/spec.*.rb
-	"	1	0
-
-> ~/code/colorado_docket/spec/commands_spec.rb
-	"	1	0
-	^	3	0
-	.	2	0
-	+	1	24
-	+	2	0
-
-> ~/code/colorado_docket/lib/colorado_docket/commands.rb
-	"	5	32
-	^	5	33
-	.	5	32
-	+	6	0
-	+	3	0
-	+	4	0
-	+	6	41
-	+	7	53
-	+	5	32
-	o	1	0
-
-> ~/code/colorado_docket/lib/colorado_docket/user.rb
-	"	5	0
-	^	6	29
-	.	8	0
-	+	2	11
-	+	4	32
-	+	6	36
-	+	6	24
-	+	6	9
-	+	6	49
-	+	9	23
-	+	6	0
-	+	7	9
-	+	7	0
-	+	7	21
-	+	11	22
-	+	12	0
-	+	13	48
-	+	15	10
-	+	5	32
-	+	6	26
-	+	12	25
-	+	5	33
-	+	6	30
-	+	6	45
-	+	13	27
-	+	6	0
-	+	14	23
-	+	5	36
-	+	3	16
-	+	5	6
-	+	6	52
-	+	6	6
-	+	7	6
-	+	7	6
-	+	7	6
-	+	6	0
-	+	7	3
-	+	19	0
-	+	8	0
-
-> ~/code/colorado_docket/lib/constants.rb
-	"	1	0
-	^	7	62
-	.	2	0
-	+	1	60
-	+	3	65
-	+	4	67
-	+	5	62
-	+	6	61
-	+	7	61
-	+	2	0
-
-> ~/scratch/cli/database/db_backup_initial.rb
-	"	13	20
-	^	19	31
-	.	19	30
-	+	4	13
-	+	4	30
-	+	6	29
-	+	7	22
-	+	8	21
-	+	9	5
-	+	6	4
-	+	9	2
-	+	15	0
-	+	4	13
-	+	5	1
-	+	9	1
-	+	10	17
-	+	14	0
-	+	14	6
-	+	11	0
-	+	14	0
-	+	6	2
-	+	7	2
-	+	8	2
-	+	11	2
-	+	12	2
-	+	13	2
-	+	12	19
-	+	13	19
-	+	11	22
-	+	11	20
-	+	22	0
-	+	16	30
-	+	17	5
-	+	15	14
-	+	21	0
-	+	18	33
-	+	16	24
-	+	18	43
-	+	19	30
-
-> ~/code/scratch/email.rb
-	"	8	34
-	^	6	43
-	.	6	42
-	+	1	14
-	+	3	54
-	+	5	68
-	+	6	76
-	+	7	88
-	+	8	95
-	+	15	2
-	+	4	0
-	+	17	37
-	+	18	42
-	+	19	42
-	+	20	44
-	+	21	2
-	+	17	24
-	+	18	22
-	+	5	42
-	+	6	30
-	+	7	35
-	+	5	38
-	+	6	42
-
-> ~/code/perl_examples/test.pl
-	"	1	2
-	.	5	0
-	+	3	35
-	+	6	0
-	+	5	13
-	+	3	16
-	+	5	12
-	+	5	9
-	+	6	0
-	+	5	0
-	+	5	13
-	+	6	0
-	+	5	12
-	+	5	10
-	+	6	0
-	+	5	0
-	+	6	0
-	+	3	22
-	+	4	15
-	+	6	23
-	+	5	0
-
-> ~/code/perl_examples/file1
-	"	1	0
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/code/perl_examples/file2
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/code/colorado_docket/bin/docket_bot.rb
-	"	5	0
-	^	5	1
-	.	5	0
-	+	62	46
-	+	62	43
-	+	18	44
-	+	27	26
-	+	43	32
-	+	45	24
-	+	44	7
-	+	45	0
-	+	44	43
-	+	45	9
-	+	47	8
-	+	46	51
-	+	43	0
-	+	59	0
-	+	62	0
-	+	29	0
-	+	43	0
-	+	43	0
-	+	41	0
-	+	44	12
-	+	46	9
-	+	44	9
-	+	43	19
-	+	43	0
-	+	44	8
-	+	46	59
-	+	44	32
-	+	49	7
-	+	50	19
-	+	50	47
-	+	56	0
-	+	50	45
-	+	48	14
-	+	50	0
-	+	48	19
-	+	50	52
-	+	49	6
-	+	39	27
-	+	39	26
-	+	39	70
-	+	39	38
-	+	39	30
-	+	39	0
-	+	39	30
-	+	39	8
-	+	39	0
-	+	39	2
-	+	39	2
-	+	39	2
-	+	39	2
-	+	39	2
-	+	39	0
-	+	39	5
-	+	39	6
-	+	39	7
-	+	39	2
-	+	39	6
-	+	39	22
-	+	39	1
-	+	49	15
-	+	1	18
-	+	12	0
-	+	13	0
-	+	18	0
-	+	39	51
-	+	15	31
-	+	39	20
-	+	39	6
-	+	14	21
-	+	49	4
-	+	49	36
-	+	51	18
-	+	52	35
-	+	49	0
-	+	55	4
-	+	50	4
-	+	55	4
-	+	52	9
-	+	55	43
-	+	52	5
-	+	55	5
-	+	52	4
-	+	53	5
-	+	16	17
-	+	39	0
-	+	10	1
-	+	13	0
-	+	2	50
-	+	3	30
-	+	4	0
-	+	3	30
-	+	1	7
-	+	7	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	6	0
-	+	49	0
-	+	54	22
-	+	5	0
-
-> ~/code/colorado_docket/bin/docket_bot2.rb
-	"	9	0
-	^	9	11
-	.	8	0
-	+	9	10
-	+	8	0
-
-> ~/code/colorado_docket/1
-	"	16	0
-
-> ~/code/colorado_docket/q
-	"	1	0
-
-> ~/code/colorado_docket/bin/im.rb
-	"	1	0
-	^	5	19
-	.	5	18
-	+	1	18
-	+	2	0
-	+	5	18
-
-> ~/.vimrc
-	"	68	38
-	^	68	39
-	.	68	38
-	+	70	0
-	+	70	0
-	+	65	50
-	+	39	19
-	+	57	0
-	+	54	19
-	+	53	0
-	+	60	17
-	+	40	38
-	+	40	0
-	+	42	15
-	+	41	0
-	+	46	48
-	+	44	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	46	0
-	+	43	14
-	+	49	34
-	+	47	0
-	+	48	0
-	+	49	0
-	+	47	14
-	+	60	17
-	+	64	0
-	+	63	16
-	+	47	25
-	+	48	25
-	+	49	24
-	+	43	34
-	+	44	0
-	+	66	0
-	+	56	0
-	+	55	24
-	+	59	49
-	+	61	46
-	+	31	29
-	+	1	0
-	+	31	30
-	+	37	0
-	+	38	0
-	+	37	74
-	+	16	5
-	+	16	0
-	+	11	0
-	+	10	63
-	+	67	0
-	+	1	0
-	+	67	0
-	+	68	37
-	+	69	30
-	+	68	38
-
-> ~/code/colorado_docket/docket_bot.rb
-	"	28	6
-	^	27	34
-	.	28	0
-	+	34	0
-	+	22	0
-	+	21	0
-	+	22	0
-	+	6	0
-	+	3	0
-	+	6	16
-	+	7	19
-	+	17	21
-	+	19	18
-	+	26	45
-	+	5	25
-	+	6	0
-	+	5	23
-	+	16	0
-	+	11	31
-	+	7	17
-	+	8	0
-	+	7	0
-	+	6	19
-	+	8	0
-	+	7	23
-	+	8	17
-	+	9	18
-	+	10	26
-	+	10	24
-	+	9	18
-	+	7	14
-	+	10	22
-	+	22	0
-	+	12	0
-	+	11	0
-	+	15	0
-	+	13	23
-	+	23	3
-	+	7	0
-	+	25	7
-	+	26	38
-	+	26	7
-	+	28	27
-	+	28	15
-	+	27	33
-	+	11	0
-	+	10	0
-	+	9	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	26	0
-	+	25	6
-	+	26	0
-	+	28	0
-
-> ~/code/colorado_docket/im.rb
-	"	7	22
-	^	7	23
-	.	7	22
-	+	1	17
-	+	3	23
-	+	4	15
-	+	5	27
-	+	9	0
-	+	4	0
-	+	9	0
-	+	8	1
-	+	4	1
-	+	5	3
-	+	6	3
-	+	7	3
-	+	3	22
-	+	7	22
-
-> ~/code/colorado_docket/temp.rb
-	"	7	4
-	^	8	5
-	.	8	4
-	+	2	19
-	+	10	87
-	+	1	27
-	+	1	0
-	+	1	0
-	+	10	23
-	+	10	22
-	+	10	0
-	+	10	87
-	+	10	57
-	+	10	44
-	+	3	16
-	+	10	16
-	+	10	0
-	+	2	48
-	+	3	0
-	+	10	0
-	+	10	0
-	+	1	0
-	+	4	3
-	+	10	9
-	+	2	22
-	+	10	0
-	+	2	44
-	+	10	20
-	+	10	0
-	+	10	0
-	+	7	17
-	+	10	18
-	+	10	0
-	+	10	21
-	+	7	0
-	+	10	0
-	+	10	0
-	+	10	3
-	+	7	0
-	+	10	0
-	+	10	0
-	+	7	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	7	17
-	+	7	11
-	+	7	11
-	+	7	0
-	+	10	0
-	+	10	0
-	+	7	11
-	+	10	11
-	+	10	11
-	+	7	12
-	+	10	0
-	+	7	25
-	+	5	0
-	+	7	0
-	+	6	0
-	+	9	4
-	+	2	44
-	+	9	12
-	+	8	22
-	+	9	15
-	+	9	16
-	+	9	15
-	+	10	0
-	+	9	37
-	+	9	0
-	+	9	62
-	+	9	0
-	+	9	0
-	+	9	12
-	+	9	0
-	+	9	0
-	+	9	19
-	+	9	0
-	+	9	23
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	8	4
-
-> ~/code/colorado_docket/lib/colorado_docket/docket_bot
-	"	1	14
-	^	1	15
-	.	1	15
-	+	1	15
-
-> ~/code/colorado_docket/lib/colorado_docket/docket2.rb
-	"	2	2
-	^	16	12
-	.	16	11
-	+	10	0
-	+	10	36
-	+	20	13
-	+	20	0
-	+	20	14
-	+	10	0
-	+	20	5
-	+	20	43
-	+	20	12
-	+	20	26
-	+	3	25
-	+	21	0
-	+	20	17
-	+	21	6
-	+	20	6
-	+	21	14
-	+	21	11
-	+	21	0
-	+	20	6
-	+	21	6
-	+	21	6
-	+	21	6
-	+	21	6
-	+	21	0
-	+	21	19
-	+	21	47
-	+	21	0
-	+	21	11
-	+	21	25
-	+	21	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	21	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	20	0
-	+	20	21
-	+	1	21
-	+	20	33
-	+	11	15
-	+	22	16
-	+	6	17
-	+	7	0
-	+	20	0
-	+	8	6
-	+	20	0
-	+	20	0
-	+	20	0
-	+	9	0
-	+	20	6
-	+	23	0
-	+	23	49
-	+	23	47
-	+	23	33
-	+	20	6
-	+	23	6
-	+	23	6
-	+	23	0
-	+	22	0
-	+	23	0
-	+	12	0
-	+	22	15
-	+	22	13
-	+	22	6
-	+	22	0
-	+	22	0
-	+	22	0
-	+	22	28
-	+	22	14
-	+	21	27
-	+	22	0
-	+	22	6
-	+	21	21
-	+	22	19
-	+	22	6
-	+	22	0
-	+	22	0
-	+	22	6
-	+	21	6
-	+	22	6
-	+	22	74
-	+	21	6
-	+	22	6
-	+	22	6
-	+	22	6
-	+	22	6
-	+	22	37
-	+	22	43
-	+	21	28
-	+	22	18
-	+	22	65
-	+	20	23
-	+	21	27
-	+	22	0
-	+	13	70
-	+	16	14
-	+	17	18
-	+	16	11
-
-> ~/code/stock_tip/lib/stock_tip/cli/menu.rb
-	"	184	29
-	^	181	30
-	.	181	29
-	+	15	20
-	+	97	19
-	+	78	27
-	+	74	18
-	+	76	40
-	+	84	0
-	+	91	0
-	+	78	17
-	+	74	18
-	+	19	23
-	+	74	22
-	+	74	18
-	+	74	0
-	+	48	0
-	+	74	30
-	+	74	0
-	+	49	0
-	+	44	0
-	+	50	0
-	+	100	19
-	+	26	36
-	+	50	70
-	+	52	0
-	+	55	0
-	+	56	31
-	+	57	0
-	+	71	0
-	+	64	0
-	+	55	36
-	+	84	35
-	+	80	37
-	+	70	0
-	+	80	39
-	+	51	19
-	+	49	0
-	+	53	9
-	+	44	22
-	+	178	53
-	+	24	17
-	+	23	10
-	+	116	32
-	+	116	28
-	+	116	29
-	+	107	0
-	+	102	0
-	+	142	56
-	+	147	8
-	+	181	30
-	+	140	25
-	+	154	79
-	+	155	25
-	+	167	24
-	+	155	0
-	+	152	0
-	+	155	24
-	+	168	26
-	+	153	15
-	+	155	38
-	+	157	18
-	+	158	20
-	+	165	15
-	+	166	32
-	+	103	43
-	+	92	0
-	+	89	28
-	+	90	17
-	+	91	0
-	+	67	28
-	+	69	0
-	+	68	17
-	+	38	35
-	+	38	15
-	+	129	40
-	+	130	16
-	+	130	28
-	+	131	0
-	+	38	0
-	+	102	52
-	+	103	25
-	+	116	0
-	+	118	19
-	+	118	22
-	+	16	8
-	+	16	8
-	+	118	0
-	+	181	20
-	+	148	0
-	+	147	19
-	+	181	30
-	+	173	0
-	+	75	37
-	+	16	0
-	+	21	27
-	+	22	0
-	+	21	22
-	+	101	38
-	+	75	33
-	+	181	25
-	+	180	38
-	+	181	29
-
-> ~/code/stock_tip/lib/stock_tip/yaml_interface/watchlist.rb
-	"	56	13
-	^	53	14
-	.	53	13
-	+	53	13
-	+	64	17
-	+	65	21
-	+	54	59
-	+	55	20
-	+	56	40
-	+	53	13
-	+	56	44
-	+	35	26
-	+	38	51
-	+	38	0
-	+	43	0
-	+	38	18
-	+	38	0
-	+	38	17
-	+	38	6
-	+	35	39
-	+	38	72
-	+	38	51
-	+	38	72
-	+	38	6
-	+	38	13
-	+	38	20
-	+	36	13
-	+	38	13
-	+	38	0
-	+	37	17
-	+	38	54
-	+	38	0
-	+	40	0
-	+	38	83
-	+	39	13
-	+	67	26
-	+	68	67
-	+	69	73
-	+	71	64
-	+	69	73
-	+	71	18
-	+	72	0
-	+	71	18
-	+	69	53
-	+	67	11
-	+	69	29
-	+	67	73
-	+	69	59
-	+	67	0
-	+	59	0
-	+	47	24
-	+	59	0
-	+	67	0
-	+	67	19
-	+	68	0
-	+	47	0
-	+	43	0
-	+	15	0
-	+	36	37
-	+	38	0
-	+	38	0
-	+	38	0
-	+	38	53
-	+	38	0
-	+	36	21
-	+	5	36
-	+	44	38
-	+	45	39
-	+	46	44
-	+	67	35
-	+	69	71
-	+	67	62
-	+	68	18
-	+	69	49
-	+	67	10
-	+	68	0
-	+	52	16
-	+	69	62
-	+	70	45
-	+	25	11
-	+	43	0
-	+	26	43
-	+	52	48
-	+	57	0
-	+	60	38
-	+	61	36
-	+	64	0
-	+	61	0
-	+	63	23
-	+	62	25
-	+	63	36
-	+	64	0
-	+	61	11
-	+	63	35
-	+	52	18
-	+	63	0
-	+	61	31
-	+	52	79
-	+	54	41
-	+	63	35
-	+	63	0
-	+	52	45
-	+	53	13
-
-> ~/code/stock_tip/spec/watch_list_spec.rb
-	"	13	17
-	^	11	19
-	.	11	18
-	+	1	24
-	+	38	0
-	+	7	29
-	+	15	0
-	+	8	52
-	+	9	27
-	+	10	0
-	+	10	20
-	+	10	14
-	+	9	9
-	+	10	19
-	+	10	20
-	+	6	0
-	+	16	0
-	+	3	18
-	+	10	26
-	+	11	28
-	+	11	0
-	+	12	40
-	+	13	20
-	+	14	36
-	+	13	21
-	+	11	18
-	+	9	18
-	+	17	28
-	+	22	0
-	+	18	0
-	+	21	18
-	+	19	30
-	+	21	24
-	+	10	0
-	+	19	22
-	+	21	26
-	+	19	0
-	+	20	21
-	+	21	22
-	+	21	22
-	+	21	0
-	+	24	49
-	+	29	0
-	+	25	0
-	+	28	4
-	+	21	5
-	+	22	24
-	+	28	24
-	+	22	0
-	+	21	4
-	+	28	5
-	+	31	0
-	+	30	0
-	+	37	0
-	+	31	71
-	+	35	48
-	+	34	18
-	+	33	18
-	+	27	18
-	+	26	18
-	+	20	18
-	+	19	18
-	+	9	18
-	+	11	18
-
-> ~/code/stock_tip/lib/yfapi/stock.rb
-	"	26	10
-	.	6	0
-	+	16	20
-	+	14	21
-	+	16	21
-	+	13	36
-	+	13	0
-	+	13	63
-	+	13	0
-	+	13	63
-	+	13	0
-	+	13	62
-	+	15	7
-	+	13	0
+	+	13	45
 	+	13	16
-	+	13	8
 	+	13	0
-	+	13	9
-	+	29	22
-	+	30	34
-	+	29	16
-	+	30	30
-	+	29	14
-	+	30	17
-	+	17	0
-	+	19	22
-	+	22	39
-	+	27	13
-	+	22	14
-	+	27	13
-	+	19	19
-	+	21	17
-	+	22	11
-	+	22	16
-	+	22	0
-	+	20	25
-	+	27	0
-	+	21	14
-	+	22	42
-	+	27	0
-	+	23	60
-	+	26	12
-	+	22	0
-	+	21	23
-	+	22	0
-	+	23	17
-	+	23	16
-	+	23	18
-	+	26	0
-	+	24	0
-	+	26	0
-	+	24	63
-	+	25	0
-	+	24	44
-	+	22	40
-	+	24	0
-	+	22	11
-	+	29	13
-	+	30	18
-	+	30	12
-	+	13	54
-	+	22	0
-	+	22	0
-	+	23	0
-	+	30	0
-	+	26	6
+	+	13	23
+	+	13	76
 	+	13	40
 	+	13	0
-	+	13	0
-	+	13	4
-	+	13	4
-	+	13	4
-	+	13	4
-	+	13	0
-	+	13	0
-	+	13	58
-	+	13	11
-	+	13	35
-	+	13	49
-	+	13	10
-	+	13	16
-	+	13	8
-	+	13	0
-	+	13	28
-	+	13	46
 	+	13	34
-	+	13	45
-	+	13	52
+	+	13	7
 	+	13	0
+	+	13	15
+	+	13	13
+	+	1	0
 	+	13	0
-	+	13	11
+	+	13	15
+	+	13	27
 	+	13	0
-	+	21	66
-	+	22	49
+	+	12	6
 	+	13	0
-	+	19	0
-	+	19	21
-	+	19	0
-	+	19	0
-	+	19	0
-	+	17	24
-	+	6	0
 
-> ~/code/stock_tip/lib/yfapi/stock_info.rb
-	"	12	6
-	^	18	70
-	.	19	0
-	+	11	0
-	+	11	0
-	+	11	54
-	+	11	22
-	+	11	50
-	+	11	52
-	+	11	31
-	+	11	62
-	+	11	0
-	+	11	77
-	+	11	23
-	+	11	23
-	+	11	22
-	+	11	0
-	+	11	52
-	+	11	11
-	+	11	6
-	+	11	65
-	+	11	58
-	+	11	0
-	+	11	48
-	+	17	0
-	+	11	24
-	+	16	0
-	+	15	0
-	+	12	12
-	+	14	21
-	+	14	0
-	+	14	11
-	+	14	0
-	+	20	10
-	+	25	0
-	+	21	7
-	+	23	25
-	+	24	17
-	+	22	13
-	+	11	54
-	+	11	0
-	+	11	54
-	+	11	36
-	+	11	67
-	+	11	21
-	+	11	101
-	+	11	37
-	+	11	68
-	+	11	37
-	+	11	26
-	+	11	48
-	+	11	17
-	+	11	47
-	+	11	27
-	+	11	17
-	+	11	0
-	+	11	19
-	+	11	47
-	+	11	20
-	+	11	27
-	+	11	0
-	+	11	30
-	+	11	52
-	+	11	19
-	+	19	71
-	+	6	15
-	+	23	39
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	11	0
-	+	12	26
-	+	18	56
-	+	19	35
-	+	19	7
-	+	19	0
-	+	27	15
-	+	26	36
-	+	26	0
-	+	26	38
-	+	26	47
-	+	26	30
-	+	26	41
-	+	26	17
-	+	26	21
-	+	27	20
-	+	14	25
-	+	13	31
-	+	14	19
-	+	19	6
-	+	27	0
-	+	26	0
-	+	18	63
-	+	10	1
-	+	9	0
-	+	26	0
-	+	26	18
-	+	27	0
-	+	26	6
-	+	27	0
-	+	18	69
-	+	19	0
-
-> ~/code/stock_tip/spec/stock_spec.rb
-	"	12	0
-	.	37	0
-	+	1	24
-	+	3	38
-	+	39	0
-	+	6	29
-	+	11	0
-	+	7	23
-	+	8	4
-	+	7	11
-	+	8	30
-	+	9	48
-	+	10	0
-	+	13	31
-	+	14	34
-	+	15	31
-	+	13	33
-	+	15	23
-	+	15	0
-	+	17	0
-	+	18	0
-	+	25	0
-	+	20	50
-	+	15	15
-	+	18	49
-	+	24	0
-	+	20	9
-	+	21	31
-	+	22	50
+> ~/mpd_plugin/mpc.mpdv
+	"	5	44
+	^	1	45
+	.	7	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	29	0
 	+	23	0
-	+	22	27
-	+	24	0
-	+	23	51
-	+	22	48
-	+	26	0
-	+	38	0
-	+	26	18
-	+	28	26
-	+	38	4
-	+	31	0
-	+	38	0
-	+	31	15
-	+	33	28
-	+	28	14
-	+	33	14
-	+	33	27
-	+	28	27
-	+	28	0
-	+	33	0
-	+	34	52
-	+	35	46
-	+	36	71
-	+	37	20
-	+	37	0
+	+	17	0
+	+	11	0
+	+	1	0
+	+	1	0
+	+	7	0
 
-> ~/code/stock_tip/lib/yfapi/constants.rb
-	"	16	11
-	^	16	12
-	.	16	11
-	+	27	35
-	+	27	33
-	+	24	4
-	+	24	4
-	+	16	20
-	+	17	0
-	+	18	6
-	+	17	5
-	+	24	4
-	+	24	4
-	+	27	4
-	+	27	4
-	+	17	11
-	+	17	11
-	+	17	11
-	+	12	0
-	+	17	0
-	+	16	16
-	+	17	0
-	+	16	4
-	+	17	3
-	+	18	0
-	+	16	0
-	+	27	4
-	+	27	4
-	+	24	2
-	+	34	2
-	+	24	2
-	+	33	15
-	+	24	0
-	+	20	18
-	+	24	0
-	+	25	0
-	+	24	0
-	+	25	33
-	+	26	32
-	+	25	23
-	+	27	23
-	+	27	23
-	+	27	23
-	+	28	23
-	+	29	20
-	+	28	20
-	+	27	20
-	+	27	20
-	+	27	20
-	+	26	20
-	+	25	20
-	+	30	20
-	+	26	57
-	+	25	0
-	+	27	0
-	+	25	43
-	+	26	43
-	+	30	48
-	+	39	61
-	+	30	49
-	+	52	62
-	+	71	79
-	+	83	76
-	+	97	58
-	+	107	57
-	+	126	66
-	+	149	67
-	+	70	0
-	+	71	69
-	+	70	69
-	+	20	18
-	+	34	0
-	+	27	55
-	+	27	55
-	+	28	55
-	+	29	54
-	+	30	54
-	+	36	66
-	+	37	66
-	+	45	67
-	+	77	81
-	+	78	81
-	+	79	82
-	+	80	82
-	+	79	0
-	+	81	73
-	+	82	73
-	+	83	81
-	+	89	0
-	+	58	80
-	+	60	69
-	+	61	69
-	+	77	67
-	+	78	67
-	+	83	67
-	+	25	20
-	+	26	40
-	+	29	40
-	+	30	40
-	+	46	52
-	+	16	14
-	+	12	12
-	+	16	11
+> ~/mpd_plugin/ftdetect/mpdv.vim
+	"	1	0
+	.	1	0
+	+	1	50
+	+	1	53
+	+	1	0
 
-> ~/code/stock_tip/lib/stock_tip/yaml_interface/portfolio.rb
-	"	30	3
-	^	12	15
-	.	14	0
+> ~/mpd_plugin/autoload/mpc/autoload/mpc.vim
+	"	13	19
+	^	16	20
+	.	16	19
+	+	1	0
+	+	1	26
+	+	1	28
+	+	1	0
+	+	1	49
+	+	1	10
+	+	1	21
+	+	1	44
+	+	1	0
+	+	14	25
+	+	15	0
+	+	20	0
+	+	20	38
+	+	20	69
+	+	20	50
+	+	20	17
+	+	20	0
+	+	20	0
+	+	14	0
+	+	15	0
+	+	15	0
+	+	17	0
+	+	20	0
+	+	16	19
+
+> ~/scratch/script_vim/intro/function.vim
+	"	3	0
+
+> ~/scratch/script_vim/tempf.vim
+	"	3	9
+	^	3	10
+	.	4	0
+	+	1	0
 	+	2	0
+	+	4	0
+
+> ~/.mpdconf
+	"	3	36
+	^	3	37
+	.	3	36
+	+	2	51
+	+	3	44
+	+	7	0
+	+	7	0
+	+	3	36
+
+> ~/scratch/script_vim/function.vin
+	"	1	0
+
+> ~/code/countdown/temp.txt
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/code/countdown/lib/count_down.rb
+	"	25	0
+	^	26	1
+	.	26	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	64	0
+	+	64	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	23	0
+	+	22	0
+	+	14	0
+	+	15	0
+	+	15	0
+	+	16	0
+	+	14	0
+	+	25	0
+	+	14	0
+	+	16	0
+	+	23	0
+	+	25	0
+	+	33	19
+	+	42	0
+	+	34	0
+	+	40	15
+	+	24	17
+	+	25	0
+	+	33	31
+	+	34	4
+	+	24	29
+	+	22	33
+	+	22	23
+	+	22	37
+	+	22	67
+	+	22	0
+	+	64	4
+	+	22	0
+	+	13	4
+	+	24	29
+	+	28	34
+	+	20	37
+	+	22	0
+	+	28	0
+	+	32	0
+	+	28	19
+	+	24	37
+	+	31	14
+	+	28	37
+	+	20	39
+	+	28	33
+	+	20	61
+	+	28	10
+	+	28	41
+	+	29	45
+	+	64	58
+	+	8	0
+	+	13	0
+	+	28	62
+	+	31	5
+	+	28	4
+	+	29	59
+	+	30	18
+	+	29	19
+	+	30	0
+	+	31	0
+	+	28	0
+	+	30	14
+	+	24	30
+	+	24	0
+	+	30	6
+	+	20	70
+	+	29	21
+	+	24	16
+	+	30	30
+	+	24	0
+	+	29	0
+	+	30	14
+	+	20	25
+	+	20	20
+	+	22	24
+	+	22	0
+	+	20	0
+	+	24	30
+	+	21	11
+	+	20	0
+	+	26	0
+	+	64	0
+	+	44	0
+	+	45	0
+	+	44	0
+	+	42	0
+	+	43	0
+	+	42	0
+	+	26	0
+	g	44	2
+
+> ~/code/countdown/lib/results.rb
+	"	6	0
+	.	7	0
+	+	3	28
+	+	4	12
+	+	24	21
+	+	4	34
+	+	2	0
+	+	17	5
+	+	11	0
+	+	9	0
+	+	11	0
+	+	10	12
+	+	17	5
+	+	11	0
+	+	15	0
+	+	11	0
+	+	17	0
+	+	11	20
+	+	19	0
+	+	14	29
+	+	23	0
 	+	5	17
+	+	11	18
+	+	23	0
+	+	21	36
+	+	23	0
+	+	21	36
+	+	22	62
+	+	24	0
+	+	8	2
+	+	7	0
+	+	22	0
+	+	21	0
+	+	12	44
+	+	11	53
+	+	20	38
+	+	21	11
+	+	22	52
+	+	21	55
+	+	14	20
+	+	21	4
+	+	16	11
+	+	11	18
+	+	14	20
+	+	21	0
 	+	9	0
-	+	37	0
+	+	17	5
 	+	9	0
+	+	7	0
+
+> ~/code/countdown/test/count_down_test.rb
+	"	24	0
+	^	9	16
+	.	25	0
+	+	1	20
+	+	62	2
+	+	1	1
+	+	1	2
+	+	61	1
+	+	1	14
+	+	1	47
+	+	61	0
+	+	1	0
+	+	1	31
+	+	1	46
+	+	1	52
+	+	1	18
+	+	1	0
+	+	1	52
+	+	1	46
+	+	1	20
+	+	1	20
+	+	1	18
+	+	1	52
+	+	1	52
+	+	1	4
+	+	1	66
+	+	61	80
+	+	1	1
+	+	1	0
+	+	1	1
+	+	1	1
+	+	61	1
+	+	1	0
+	+	61	0
+	+	1	0
+	+	1	0
+	+	17	75
 	+	18	0
-	+	7	0
-	+	9	20
-	+	7	59
-	+	7	91
-	+	18	16
-	+	19	6
-	+	7	12
-	+	9	12
-	+	19	15
-	+	7	113
-	+	7	44
-	+	7	0
-	+	7	0
-	+	18	18
-	+	18	19
+	+	8	0
+	+	17	0
+	+	20	26
+	+	25	0
+	+	21	29
+	+	22	24
+	+	24	5
+	+	21	14
+	+	24	53
+	+	24	36
+	+	24	35
+	+	24	32
+	+	24	30
+	+	24	42
+	+	25	0
+	+	24	31
+	+	24	0
+	+	24	4
+	+	23	0
+	+	9	5
+	+	25	0
+
+> /usr/share/vim/vim73/doc/insert.txt
+	"	1879	67
+
+> ~/code/countdown/NERD_tree_1
+	"	5	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/countdown/Rakefile
+	"	18	17
+	^	18	18
+	.	18	17
+	+	1	0
+	+	4	32
+	+	5	30
+	+	14	37
 	+	19	0
 	+	18	17
-	+	19	18
-	+	3	33
-	+	19	74
-	+	20	44
-	+	10	0
-	+	29	27
-	+	30	23
-	+	18	48
-	+	18	49
-	+	11	19
-	+	20	62
-	+	19	6
-	+	9	0
-	+	11	6
-	+	17	0
-	+	28	0
-	+	36	0
-	+	17	25
-	+	20	64
-	+	30	41
-	+	20	56
-	+	11	18
-	+	20	50
-	+	18	55
-	+	34	25
-	+	33	12
-	+	34	67
-	+	14	44
-	+	14	63
-	+	20	79
-	+	4	32
-	+	11	10
-	+	29	12
-	+	30	0
-	+	11	0
-	+	30	30
-	+	11	10
-	+	19	10
-	+	17	0
-	+	14	0
-	+	20	66
-	+	17	3
-	+	16	29
-	+	17	0
-	+	16	15
-	+	34	36
-	+	14	0
-	+	11	0
-	+	2	20
-	+	4	25
-	+	14	24
-	+	2	20
-	+	24	20
-	+	25	51
-	+	21	10
-	+	26	15
-	+	25	18
-	+	18	11
-	+	24	14
-	+	16	35
-	+	13	26
-	+	11	0
-	+	12	15
-	+	14	0
 
-> ~/code/stock_tip/lib/stock_tip/owned_stock.rb
-	"	29	6
-	.	29	0
-	+	25	0
-	+	25	53
-	+	25	38
-	+	25	25
-	+	28	31
-	+	31	6
-	+	31	0
-	+	24	28
-	+	25	34
-	+	25	32
-	+	25	31
-	+	26	0
-	+	25	32
-	+	18	31
-	+	8	84
+> ~/.git/MERGE_MSG
+	"	1	0
+
+> ~/code/countdown/.git/index
+	"	1	0
+
+> /usr/share/vim/vim73/doc/cmdline.txt
+	"	503	31
+
+> /usr/share/vim/vim73/doc/map.txt
+	"	539	1
+
+> ~/code/countdown/bin/countdown
+	"	5	0
+	^	6	43
+	.	5	0
+	+	1	18
+	+	3	28
 	+	9	0
-	+	15	0
-	+	24	19
-	+	25	19
-	+	28	22
-	+	31	6
-	+	36	12
-	+	36	0
-	+	36	0
-	+	38	14
-	+	37	11
-	+	38	71
-	+	8	73
-	+	15	0
-	+	29	6
-	+	15	22
-	+	29	24
-	+	31	0
-	+	45	23
-	+	54	39
-	+	46	21
-	+	48	51
-	+	50	43
-	+	50	34
-	+	54	0
-	+	50	55
-	+	52	58
-	+	50	55
-	+	52	47
-	+	52	49
-	+	54	0
-	+	52	48
-	+	53	0
-	+	46	15
-	+	54	12
-	+	52	0
-	+	46	0
-	+	29	58
-	+	47	0
-	+	52	5
-	+	50	54
-	+	52	20
-	+	50	55
-	+	52	47
-	+	46	0
-	+	29	31
-	+	53	18
-	+	12	61
-	+	53	0
-	+	53	0
-	+	53	44
-	+	51	43
-	+	53	0
-	+	49	0
-	+	23	0
-	+	19	0
-	+	56	0
-	+	44	0
-	+	41	19
-	+	42	39
-	+	15	29
-	+	5	38
-	+	48	12
-	+	49	12
-	+	50	12
-	+	51	12
-	+	52	12
-	+	48	0
-	+	5	37
-	+	10	29
-	+	12	29
-	+	49	9
-	+	5	28
-	+	5	28
-	+	14	48
-	+	15	0
-	+	29	19
+	+	3	17
+	+	6	22
+	+	8	1
+	+	6	1
+	+	8	9
+	+	6	3
+	+	5	5
+	+	6	18
 	+	5	0
-	+	29	40
-	+	29	12
-	+	30	34
-	+	52	0
-	+	30	0
-	+	29	32
-	+	29	0
-
-> ~/code/stock_tip/spec/portfolio_spec.rb
-	"	46	11
-	^	19	22
-	.	19	22
-	+	1	0
-	+	1	43
-	+	1	27
-	+	1	0
-	+	1	38
-	+	1	0
-	+	1	15
-	+	1	37
-	+	1	48
-	+	1	0
-	+	1	0
-	+	19	12
-	+	11	12
-	+	16	18
-	+	57	0
-	+	16	32
-	+	20	33
-	+	3	58
-	+	11	32
-	+	6	27
-	+	22	4
-	+	14	28
-	+	26	48
-	+	38	0
-	+	8	0
-	+	7	0
-	+	8	0
-	+	8	57
-	+	16	12
-	+	11	0
-	+	11	12
-	+	16	12
-	+	19	12
-	+	26	0
-	+	33	26
-	+	33	0
-	+	33	27
-	+	33	26
-	+	38	0
-	+	33	22
-	+	34	27
-	+	27	0
-	+	27	0
-	+	28	18
-	+	11	12
-	+	10	21
-	+	11	9
-	+	15	14
-	+	8	0
-	+	15	53
-	+	10	60
-	+	4	61
-	+	23	23
-	+	31	0
-	+	32	33
-	+	33	41
-	+	34	40
-	+	31	53
-	+	33	45
-	+	34	44
-	+	35	29
-	+	16	24
-	+	28	22
-	+	34	0
-	+	35	25
-	+	35	0
-	+	16	18
-	+	28	16
-	+	33	17
-	+	34	17
-	+	40	0
-	+	41	0
-	+	56	0
-	+	42	0
-	+	50	5
-	+	56	0
-	+	51	26
-	+	56	15
-	+	50	19
-	+	56	19
-	+	50	56
-	+	56	0
-	+	56	0
-	+	56	0
-	+	56	0
-	+	50	75
-	+	52	0
-	+	56	0
-	+	52	75
-	+	50	4
-	+	52	4
-	+	53	25
-	+	36	23
-	+	37	24
-	+	54	0
-	+	11	27
-	+	19	22
-
-> ~/code/stock_tip/lib/stock_tip/yaml_interface/yaml_interface.rb
-	"	29	6
-	^	32	18
-	.	32	17
-	+	1	0
-	+	1	0
-	+	2	20
-	+	7	32
-	+	9	40
-	+	29	54
-	+	29	57
-	+	29	52
-	+	29	55
-	+	34	0
-	+	15	8
-	+	24	13
-	+	29	51
-	+	29	0
-	+	13	42
-	+	15	0
-	+	15	0
-	+	15	0
-	+	19	0
-	+	18	0
-	+	20	45
-	+	20	11
-	+	19	22
-	+	27	7
-	+	20	14
-	+	10	7
-	+	13	31
-	+	29	18
-	+	15	0
-	+	31	63
-	+	31	0
-	+	10	35
-	+	29	25
-	+	30	34
-	+	8	0
-	+	5	21
-	+	30	20
-	+	8	27
-	+	30	64
-	+	29	12
-	+	13	46
-	+	24	7
-	+	27	0
-	+	25	7
-	+	26	0
-	+	15	15
-	+	24	21
-	+	32	17
-
-> ~/code/stock_tip/spec/menu_spec.rb
-	"	52	0
-	^	50	54
-	.	50	53
-	+	15	0
-	+	15	0
-	+	15	0
-	+	17	0
-	+	17	0
-	+	18	0
-	+	17	34
-	+	19	34
-	+	21	32
-	+	20	0
-	+	6	0
-	+	24	37
-	+	28	0
-	+	28	0
-	+	12	5
-	+	13	0
-	+	8	0
-	+	15	0
-	+	17	0
-	+	11	4
-	+	17	4
-	+	21	4
-	+	53	0
-	+	28	0
-	+	56	0
-	+	56	0
-	+	57	0
-	+	56	17
-	+	56	20
-	+	56	15
-	+	56	18
-	+	56	18
-	+	56	21
-	+	56	16
-	+	55	0
-	+	56	0
-	+	56	0
-	+	25	15
-	+	26	0
-	+	28	0
-	+	56	0
-	+	28	0
-	+	27	29
-	+	25	16
-	+	28	0
-	+	24	27
-	+	30	0
-	+	29	0
-	+	30	24
-	+	31	28
-	+	36	26
-	+	52	0
-	+	51	5
-	+	37	60
-	+	51	0
-	+	51	0
-	+	37	30
-	+	47	0
-	+	38	33
-	+	39	39
-	+	40	35
-	+	39	34
-	+	41	36
-	+	44	21
-	+	51	3
-	+	51	25
-	+	41	34
-	+	51	34
-	+	51	16
-	+	51	0
-	+	48	0
-	+	51	0
-	+	38	20
-	+	37	31
-	+	50	41
-	+	39	13
-	+	38	24
-	+	39	0
-	+	31	18
-	+	51	0
-	+	25	0
-	+	18	2
-	+	19	2
-	+	20	2
-	+	21	2
-	+	15	0
-	+	17	0
-	+	15	5
-	+	18	1
-	+	19	1
-	+	20	1
-	+	21	1
-	+	24	1
-	+	25	1
-	+	26	1
-	+	27	1
-	+	28	1
-	+	15	4
-	+	30	1
-	+	50	53
-
-> ~/code/stock_tip/bin/stocktip
-	"	8	0
-	^	8	67
-	.	9	0
-	+	2	0
-	+	3	39
-	+	3	67
-	+	1	7
-	+	3	44
-	+	3	45
-	+	1	7
-	+	9	0
-	+	9	72
-	+	9	0
-	+	9	57
-	+	10	35
-	+	9	40
-	+	9	61
-	+	9	14
-	+	9	39
-	+	9	29
-	+	9	51
-	+	7	0
-	+	4	0
-	+	8	23
-	+	10	3
-	+	9	5
-	+	8	3
-	+	9	14
-	+	9	28
-	+	9	0
-	+	9	0
-	+	9	28
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	3
-	+	9	0
-	+	9	1
-	+	9	0
-	+	4	25
+	+	6	42
 	+	5	0
-	+	4	39
-	+	10	67
-	+	10	50
-	+	9	0
-	+	9	0
-	+	10	16
-	+	9	0
-	+	8	66
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	10	15
-	+	11	0
-	+	10	0
-	+	8	0
-	+	9	0
-	+	10	43
-	+	11	0
-	+	10	15
-	+	8	66
-	+	9	0
 
-> ~/code/stock_tip/lib/stock_tip/yaml_interface/account_info.rb
-	"	9	6
-	.	9	0
-	+	6	0
-	+	2	2
-	+	3	45
-	+	6	0
-	+	8	33
-	+	12	0
-	+	32	0
-	+	3	20
-	+	6	0
-	+	7	0
-	+	12	7
-	+	32	36
-	+	32	0
-	+	32	0
-	+	8	0
-	+	2	20
-	+	9	0
-
-> ~/code/stock_tip/spec/stock_info_spec.rb
-	"	20	2
-	^	19	0
-	.	19	0
-	+	1	24
-	+	3	35
-	+	5	28
-	+	5	30
-	+	20	3
-	+	8	34
-	+	7	2
-	+	8	0
-	+	8	42
-	+	8	33
-	+	9	50
-	+	13	0
-	+	10	0
-	+	11	42
-	+	8	4
-	+	11	4
-	+	12	40
-	+	13	0
-	+	3	34
-	+	8	57
-	+	15	48
-	+	18	0
-	+	6	46
-	+	8	0
-	+	16	38
-	+	17	49
-	+	8	0
-	+	9	26
-	+	11	56
-	+	12	13
-	+	16	4
-	+	17	4
-	+	16	4
-	+	17	4
-	+	16	19
-	+	17	19
-	+	16	25
-	+	17	34
-	+	16	0
-	+	19	0
-
-> ~/code/stock_tip/lib/yfapi.rb
-	"	3	29
-	^	2	34
-	.	3	29
-	+	1	32
-	+	2	33
-	+	3	29
-
-> ~/code/stock_tip/spec/owned_stock_spec.rb
-	"	40	4
-	^	39	6
-	.	39	5
-	+	19	12
-	+	20	13
-	+	21	59
-	+	22	4
-	+	21	4
-	+	29	40
-	+	30	0
-	+	7	12
-	+	10	13
-	+	7	11
-	+	10	0
-	+	7	21
-	+	10	0
-	+	19	18
-	+	30	5
-	+	11	24
-	+	30	56
-	+	25	46
-	+	27	0
-	+	28	0
-	+	26	5
-	+	26	20
-	+	13	33
-	+	22	77
-	+	11	48
-	+	21	55
-	+	30	25
-	+	26	22
-	+	30	49
-	+	30	25
-	+	30	15
-	+	30	35
-	+	30	32
-	+	30	0
-	+	30	32
-	+	30	53
-	+	26	0
-	+	26	32
-	+	26	0
-	+	24	0
-	+	26	0
-	+	26	0
-	+	30	23
-	+	30	4
-	+	27	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	25	0
-	+	26	0
-	+	26	0
-	+	26	41
-	+	26	61
-	+	26	0
-	+	30	41
-	+	30	52
-	+	26	56
-	+	26	40
-	+	26	21
-	+	26	53
-	+	30	40
-	+	30	51
-	+	7	2
-	+	7	83
-	+	26	20
-	+	30	23
-	+	20	80
-	+	26	0
-	+	33	0
-	+	32	0
-	+	30	0
-	+	34	7
-	+	30	39
-	+	20	70
-	+	7	0
-	+	4	44
-	+	26	58
-	+	30	55
-	+	34	32
-	+	33	39
-	+	37	39
-	+	38	41
-	+	36	0
-	+	42	50
-	+	46	3
-	+	42	54
-	+	46	1
-	+	45	11
-	+	42	32
-	+	45	23
-	+	38	0
-	+	42	0
-	+	38	4
-	+	45	42
-	+	44	0
-	+	43	24
-	+	44	68
-	+	45	32
-	+	38	5
-	+	39	5
-
-> ~/code/stock_tip/spec/account_info_spec.rb
-	"	14	19
-	^	11	20
-	.	11	19
+> ~/code/countdown/test/goal_seek_test.rb
+	"	6	10
+	^	6	11
+	.	6	10
 	+	1	24
 	+	5	33
-	+	17	0
-	+	6	39
-	+	6	0
-	+	6	53
-	+	6	24
-	+	6	41
-	+	6	13
-	+	6	12
-	+	3	36
-	+	4	0
+	+	7	0
+	+	6	47
 	+	3	34
-	+	6	30
-	+	7	51
-	+	16	50
-	+	16	44
-	+	16	40
-	+	16	41
-	+	8	11
-	+	16	0
-	+	8	11
-	+	11	34
-	+	15	31
-	+	11	0
-	+	15	12
-	+	12	0
-	+	15	0
-	+	12	11
-	+	13	28
-	+	14	26
-	+	11	19
-	+	14	30
-	+	6	19
-	+	3	48
-	+	6	12
-	+	11	12
-	+	8	16
-	+	6	0
-	+	11	19
+	+	6	10
 
-> ~/code/stock_tip/spec/constants_spec.rb
-	"	10	34
-	^	21	51
-	.	21	0
-	+	1	24
-	+	23	3
-	+	6	35
-	+	8	0
-	+	7	47
-	+	3	39
-	+	4	0
+> ~/code/countdown/lib/goalseek.rb
+	"	11	0
+	^	10	5
+	.	9	36
+	+	1	5
+	+	2	27
+	+	5	0
+	+	8	5
+	+	3	15
+	+	4	15
+	+	8	11
+	+	9	36
+
+> ~/scratch/getmail/blocktest.rb
+	"	15	11
+	^	13	18
+	.	13	10
+	+	28	0
+	+	40	0
+	+	41	0
+	+	40	11
+	+	41	10
+	+	41	0
+	+	28	22
+	+	31	0
+	+	20	34
+	+	42	0
+	+	33	0
+	+	37	0
+	+	33	51
+	+	28	22
+	+	32	30
+	+	38	63
+	+	39	0
+	+	40	1
+	+	41	0
+	+	66	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	18	13
+	+	38	0
+	+	28	0
+	+	36	0
+	+	33	0
+	+	18	14
+	+	20	0
+	+	34	0
+	+	15	0
+	+	6	0
+	+	7	0
+	+	3	0
+	+	7	19
+	+	7	0
+	+	42	73
+	+	42	81
+	+	42	6
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	33	0
+	+	11	0
+	+	9	0
+	+	17	0
 	+	9	0
 	+	10	0
-	+	18	0
-	+	10	30
-	+	11	16
-	+	14	34
-	+	17	0
-	+	15	43
-	+	16	41
-	+	19	34
-	+	22	0
-	+	20	50
-	+	21	50
-	+	21	0
-
-> ~/Downloads/yahoofinance-1.2.2/lib/yahoofinance.rb
-	"	319	4
-
-> ~/code/stock_tip/lib/stock_tip/yaml_interface/watch_list_format.rb
-	"	20	4
-	^	19	44
-	.	20	0
-	+	6	0
-	+	1	0
-	+	6	9
-	+	6	0
-	+	6	0
-	+	5	22
 	+	8	0
-	+	9	39
-	+	10	0
-	+	12	19
-	+	14	38
-	+	18	20
-	+	12	18
-	+	23	0
-	+	21	0
-	+	11	0
-	+	7	0
-	+	12	8
-	+	18	35
-	+	18	35
-	+	18	31
-	+	18	16
-	+	18	23
-	+	18	7
-	+	18	7
-	+	18	7
-	+	18	17
-	+	18	25
-	+	18	25
-	+	18	7
-	+	18	0
-	+	18	7
-	+	18	0
-	+	18	43
-	+	18	63
-	+	18	10
-	+	18	27
-	+	17	9
-	+	18	8
-	+	18	8
-	+	18	8
-	+	17	13
-	+	18	10
-	+	17	8
-	+	18	0
-	+	18	21
-	+	18	26
-	+	18	0
-	+	18	17
-	+	18	13
-	+	18	30
-	+	18	0
-	+	17	46
-	+	18	18
-	+	18	10
-	+	18	7
-	+	18	7
-	+	18	7
-	+	18	7
-	+	17	34
-	+	18	7
-	+	18	0
-	+	17	0
-	+	17	0
-	+	18	0
-	+	18	0
-	+	18	15
-	+	18	25
-	+	18	20
-	+	13	14
-	+	18	0
-	+	17	16
-	+	12	17
-	+	20	9
-	+	13	14
-	+	17	25
-	+	14	22
-	+	17	0
-	+	12	0
-	+	13	6
-	+	14	6
-	+	15	6
-	+	16	6
-	+	17	6
-	+	18	6
-	+	19	38
-	+	20	0
-	+	19	43
-	+	20	0
-
-> ~/code/stock_tip/spec/watch_list_format_spec.rb
-	"	11	2
-	^	9	14
-	.	9	13
-	+	1	33
-	+	11	0
-	+	6	31
-	+	10	0
-	+	7	35
-	+	8	0
-	+	7	9
-	+	8	13
-	+	1	8
-	+	3	66
-	+	8	17
-	+	9	7
-	+	8	10
-	+	9	13
-
-> ~/code/stock_tip/data/current/portfolio.yaml
-	"	9	0
-	^	15	32
-	.	15	31
-	+	8	31
-	+	15	31
-
-> ~/code/stock_tip/data/current/account.yaml
-	"	4	0
-
-> ~/code/stock_tip/lib/constants.rb
-	"	76	2
-	^	122	0
-	.	120	0
-	+	61	27
-	+	62	25
-	+	63	38
-	+	61	23
-	+	62	23
-	+	63	35
-	+	62	0
-	+	64	40
-	+	62	0
-	+	61	34
-	+	65	9
-	+	66	0
-	+	65	40
-	+	61	41
-	+	62	0
-	+	66	48
-	+	67	47
-	+	70	15
-	+	71	19
-	+	72	31
-	+	71	23
-	+	73	29
-	+	74	32
-	+	81	0
-	+	75	31
-	+	76	32
-	+	77	31
-	+	78	32
-	+	79	31
-	+	80	29
-	+	90	0
-	+	83	10
-	+	89	0
-	+	84	15
-	+	85	18
-	+	86	18
-	+	87	0
-	+	84	10
-	+	87	24
-	+	85	0
-	+	84	19
-	+	85	19
-	+	86	19
-	+	87	19
-	+	88	21
-	+	85	0
-	+	84	18
-	+	88	29
-	+	91	10
-	+	92	28
-	+	93	36
-	+	106	0
-	+	94	27
-	+	92	27
-	+	106	0
-	+	95	26
-	+	93	0
-	+	96	0
-	+	95	36
-	+	96	39
-	+	97	39
-	+	98	37
-	+	99	18
-	+	98	12
-	+	99	12
-	+	98	20
-	+	99	36
-	+	100	35
-	+	101	36
-	+	102	36
-	+	103	39
-	+	93	0
-	+	103	45
-	+	104	39
-	+	105	35
-	+	104	45
-	+	105	47
-	+	108	8
-	+	117	0
-	+	118	0
-	+	109	23
-	+	110	22
-	+	111	30
-	+	112	29
-	+	113	27
-	+	114	27
-	+	117	0
-	+	115	25
-	+	110	14
-	+	110	0
-	+	110	25
-	+	111	0
-	+	115	31
-	+	116	31
-	+	1	11
-	+	2	0
-	+	122	0
-	+	123	0
-	+	3	0
-	+	120	0
-
-> ~/code/stock_tip/spec/yaml_interface_spec.rb
-	"	12	38
-	^	3	39
-	.	3	38
-	+	13	16
-	+	3	38
-
-> ~/code/stock_tip/lib/stock_tip/stock_info.rb
-	"	37	40
-	^	20	20
-	.	40	44
-	+	17	14
-	+	18	41
-	+	23	0
-	+	38	0
-	+	36	27
-	+	38	13
-	+	38	57
-	+	38	11
-	+	35	21
-	+	36	9
-	+	38	30
-	+	43	18
-	+	38	0
-	+	43	0
-	+	16	0
-	+	25	0
-	+	24	0
-	+	36	16
-	+	25	20
-	+	27	56
-	+	11	19
-	+	11	0
-	+	12	26
-	+	11	24
-	+	27	40
-	+	40	40
-	+	18	10
-	+	22	27
-	+	43	6
-	+	38	50
-	+	38	14
-	+	43	17
-	+	22	26
-	+	23	8
-	+	22	17
-	+	22	12
-	+	43	11
-	+	22	6
-	+	23	0
-	+	22	26
-	+	26	59
-	+	27	21
-	+	40	49
-	+	22	28
-	+	38	13
-	+	39	6
-	+	43	0
-	+	12	22
-	+	26	38
-	+	27	12
-	+	28	64
-	+	29	9
-	+	16	0
-	+	3	0
-	+	8	0
-	+	5	16
-	+	29	58
-	+	30	45
-	+	32	12
-	+	30	14
-	+	31	32
-	+	29	12
-	+	28	59
-	+	38	0
-	+	37	6
-	+	37	0
-	+	28	69
-	+	39	6
-	+	28	11
-	+	11	24
+	+	14	3
+	+	11	38
+	+	29	0
 	+	28	0
-	+	29	0
-	+	39	0
-	+	39	0
-	+	27	7
-	+	40	56
-	+	27	6
-	+	7	33
-	+	22	15
-	+	21	43
-	+	22	6
-	+	21	17
-	+	22	43
-	+	21	12
-	+	38	0
-	+	38	9
-	+	38	0
-	+	38	0
-	+	21	6
-	+	22	45
-	+	21	50
-	+	19	25
-	+	19	12
-	+	19	84
-	+	19	66
-	+	19	0
-	+	19	12
-	+	20	19
-	+	19	0
-	+	40	44
-
-> ~/code/stock_tip/menu
-	"	1	0
-
-> ~/code/stock_tip/lib/yaml_interface.rb
-	"	3	53
-	^	3	54
-	.	3	53
-	+	1	18
-	+	2	19
-	+	3	53
-
-> ~/code/stock_tip/lib/stock_tip/yaml_interface.rb
-	"	25	53
-	^	30	13
-	.	30	12
-	+	1	0
-	+	1	0
-	+	2	20
-	+	7	32
-	+	9	40
-	+	30	54
-	+	30	57
-	+	30	52
-	+	30	55
-	+	34	0
-	+	15	8
-	+	24	13
-	+	30	51
-	+	30	0
-	+	13	42
-	+	15	0
-	+	15	0
-	+	15	0
-	+	19	0
-	+	18	0
-	+	20	45
-	+	20	11
-	+	19	22
-	+	27	7
-	+	20	14
-	+	10	7
-	+	13	31
-	+	30	18
-	+	15	0
-	+	32	63
-	+	32	0
-	+	10	35
-	+	30	25
-	+	31	34
-	+	8	0
-	+	5	21
-	+	31	20
-	+	8	27
-	+	31	64
-	+	30	12
-
-> ~/code/stock_tip/spec/stock_tip_spec.rb
-	"	1	0
-	^	4	0
-	.	4	0
-	+	7	0
-	+	1	24
-	+	5	16
-	+	15	2
-	+	5	19
-	+	6	0
-	+	14	0
-	+	3	33
-	+	4	0
-
-> ~/code/stock_tip/spec/yaml_interface.rb
-	"	11	30
-	^	13	23
-	.	13	22
-	+	1	0
-	+	3	48
-	+	5	31
-	+	7	64
-	+	12	63
-	+	1	0
-	+	12	36
-	+	17	66
-	+	7	36
-	+	18	32
-	+	19	37
-	+	19	0
-	+	16	12
-	+	8	12
-	+	13	18
 	+	20	16
-	+	13	22
-
-> ./bin/initialize_account.rb
-	"	33	44
-	^	32	61
-	.	32	0
-	+	27	36
-	+	27	0
-	+	5	58
-	+	19	34
-	+	27	23
-	+	27	40
+	+	21	43
+	+	22	0
 	+	19	0
+	+	43	32
+	+	44	60
+	+	45	20
+	+	44	19
+	+	14	0
+	+	36	0
+	+	43	22
+	+	45	23
+	+	48	0
+	+	48	46
+	+	56	0
+	+	63	0
+	+	57	6
+	+	50	26
+	+	51	18
+	+	53	0
+	+	52	0
+	+	57	8
+	+	52	28
+	+	50	20
+	+	54	5
+	+	57	30
+	+	52	14
+	+	54	7
+	+	59	31
+	+	62	19
+	+	20	0
+	+	26	0
+	+	25	42
+	+	24	6
+	+	25	37
+	+	6	0
+	+	5	13
+	+	6	0
+	+	7	0
+	+	3	0
+	+	1	0
+	+	13	9
+	+	20	6
+	+	13	10
+
+> ~/scratch/getmail/getmail.rb
+	"	1	0
+	^	7	49
+	.	6	0
+	+	3	40
+	+	4	55
+	+	5	21
+	+	6	44
+	+	8	69
+	+	9	60
+	+	10	2
+	+	1	16
+	+	3	33
+	+	4	36
+	+	3	35
+	+	4	67
+	+	11	14
+	+	5	18
+	+	4	19
+	+	3	20
+	+	2	0
+	+	4	11
+	+	3	45
+	+	6	12
+	+	5	10
+	+	6	0
+	+	6	38
+	+	6	0
+	+	5	0
+	+	6	35
+	+	4	36
+	+	7	48
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+
+> ~/scratch/getmail/lambdatest.rb
+	"	1	0
+	^	26	31
+	.	26	31
+	+	1	11
+	+	20	0
+	+	23	0
+	+	9	0
+	+	10	18
+	+	11	0
+	+	13	31
+	+	30	24
+	+	29	0
+	+	30	24
+	+	29	0
+	+	30	0
+	+	29	9
+	+	30	0
+	+	13	29
+	+	29	55
+	+	26	55
+	+	27	53
+	+	31	16
+	+	27	43
+	+	2	16
+	+	4	10
+	+	5	9
+	+	10	17
+	+	12	10
+	+	10	14
+	+	12	7
+	+	13	10
+	+	32	24
+	+	27	48
+	+	26	31
+
+> ~/scratch/getmail/return_examples.rb
+	"	1	0
+	^	15	18
+	.	15	17
+	+	1	0
+	+	21	0
+	+	7	32
+	+	15	42
+	+	18	25
+	+	15	21
+	+	18	18
+	+	6	15
+	+	16	25
+	+	21	0
+	+	16	12
+	+	21	0
 	+	20	0
 	+	19	0
-	+	20	1
-	+	27	56
-	+	27	12
-	+	27	36
-	+	27	58
-	+	27	41
-	+	27	0
-	+	27	27
-	+	27	75
-	+	27	0
-	+	27	43
-	+	27	34
-	+	27	18
-	+	27	0
-	+	44	0
-	+	6	42
-	+	44	24
-	+	29	16
-	+	42	0
-	+	29	0
-	+	38	2
-	+	40	25
-	+	44	32
-	+	38	28
-	+	30	29
-	+	28	8
-	+	38	21
-	+	40	15
-	+	44	29
-	+	30	0
-	+	30	24
-	+	17	20
-	+	20	25
-	+	30	0
-	+	43	0
-	+	44	55
-	+	45	0
-	+	46	0
-	+	44	34
-	+	43	0
-	+	23	0
-	+	22	34
-	+	29	23
-	+	29	0
-	+	23	0
-	+	22	30
-	+	23	0
-	+	26	34
-	+	27	0
-	+	29	6
-	+	44	39
-	+	39	4
-	+	39	59
-	+	40	17
-	+	39	41
-	+	40	20
-	+	39	59
-	+	32	45
-	+	39	49
-	+	32	49
-	+	32	15
-	+	32	18
-	+	32	15
-	+	38	0
-	+	32	63
-	+	36	61
-	+	39	59
-	+	31	7
-	+	33	5
-	+	33	6
-	+	36	0
-	+	33	7
-	+	36	14
-	+	33	61
-	+	36	9
-	+	33	29
-	+	32	0
-	+	36	0
-	+	34	52
-	+	38	0
-	+	34	67
-	+	38	56
-	+	34	69
-	+	34	11
-	+	36	0
-	+	34	11
-	+	35	11
-	+	37	0
-	+	38	0
-	+	39	36
-	+	32	0
+	+	20	22
+	+	16	24
+	+	15	17
 
-> ~/code/stock_tip/lib/stock_tip.rb
-	"	4	10
-	^	3	11
-	.	3	10
-	+	1	14
-	+	3	0
-	+	3	0
-	+	12	0
-	+	2	0
-	+	8	22
-	+	11	0
-	+	3	2
-	+	11	2
-	+	3	0
-	+	3	0
-	+	4	0
-	+	3	0
-	+	5	0
-	+	12	0
-	+	10	0
-	+	7	10
-	+	3	10
-
-> ~/code/stock_tip/lib/stock_tip/cli
+> ~/scratch/getmail/what_about_yield.rb
 	"	1	0
+	^	4	14
+	.	4	13
+	+	1	0
+	+	4	10
+	+	16	8
+	+	1	10
+	+	16	19
+	+	4	0
+	+	5	0
+	+	4	2
+	+	3	10
+	+	16	37
+	+	14	34
+	+	4	19
+	+	16	30
+	+	14	42
+	+	14	21
+	+	14	0
+	+	15	0
+	+	16	20
+	+	14	5
+	+	4	0
+	+	4	5
+	+	5	0
+	+	5	25
+	+	14	0
+	+	9	70
+	+	10	68
+	+	11	72
+	+	12	33
+	+	4	0
+	+	5	0
+	+	4	2
+	+	16	0
+	+	3	17
+	+	4	13

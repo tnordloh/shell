@@ -1,0 +1,7 @@
+bind_to_address "127.0.0.1"
+music_directory "/Users/tim/Music/music/Lady\ GaGa/"
+db_file "/Users/tim/scratch/script_vim/mpd.db"
+audio_output {
+  name "audio"
+  type "osx"
+}

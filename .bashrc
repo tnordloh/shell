@@ -52,3 +52,6 @@ function get_todo_commands()
   fi
 }
 complete -F get_todo_commands todo
+
+export USER='railsdev@nordloh.com'
+export PASSWORD='mayonnaise_54321'
