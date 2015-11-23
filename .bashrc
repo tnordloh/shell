@@ -33,6 +33,10 @@ alias tt="~/code/time_tracker/bin/time_tracker add_entry"
 alias trl="~/code/time_tracker/bin/time_report last_day"
 alias ll='ls -al'
 alias l='ls'
+alias v='vagrant'
+alias vs='vagrant ssh'
+alias vu='vagrant up'
+
 
 
 #echo "screen split: Ca-S"
