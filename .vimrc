@@ -2,6 +2,7 @@
 """ Setting """
 """""""""""""""
 
+
 set nocompatible                  " Changes other options.
 
 syntax enable                     " Turn on syntax highlighting.
@@ -84,7 +85,7 @@ xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 
 "automatically load ctags on file write
-autocmd BufWritePost * call system("ctags -R")
+"autocmd BufWritePost * call system("ctags -R")
 
 set runtimepath+=/Users/tim/mpd_plugin
 set runtimepath+=/Users/tim/mpd_plugin/mpc

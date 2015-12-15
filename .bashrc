@@ -1,5 +1,6 @@
 # -*- sh -*-
 
+
 # Enviroment Variables
 set -o vi
 export EDITOR="vim"
@@ -39,9 +40,6 @@ alias vu='vagrant up'
 
 
 
-#echo "screen split: Ca-S"
-#echo "screen activate: Ca-c"
-#echo "screen, toggle between windows: Ca-tab"
 export PS1='\[\e[1;36m\]\w\[\e[m\]\[\e[1;32m\] `gshead` \[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
 export PS1='\[\e[1;31m\]`gshead`\[\e[m\]\[\e[1;33m\] \w \[\e[m\]\[\e[1;31m\]:\[\e[m\]\[\e[1;32m\]'
 
@@ -59,3 +57,6 @@ complete -F get_todo_commands todo
 
 export USER='railsdev@nordloh.com'
 export PASSWORD='mayonnaise_54321'
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

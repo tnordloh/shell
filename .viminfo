@@ -8,57 +8,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/temp
+~MSle0~/offsets
 
 # Last Substitute Search Pattern:
-~MSle0&points
+~MSle0&text_field 'provider',
 
 # Last Substitute String:
-$move_score
+$
 
 # Command Line History (newest to oldest):
-:quit
-:wq!
-:q
-:!ls
 :wq
+:q
+:quit
 :w
-:76
 :qa
-:Q
-:q!
-:e!
-:e
-:tabe ./bin/play
-:tabe ./lib/anagrammatic/translator.rb
-:tabe ./solutions/0.json
-:w ./solutions/aleister_crowley_ei.json
-:w ./solutions/lotsa_eis.json
-:w ./solutions/aliester.json
-:ls
-:tabe ./solutions/2.json
+:qa!
+:tabe ./app/views/layouts/application.html.erb
+:bd
+:bn
+:bl
+:tabe ./app/views/shared/_sidebar.html.erb
+:tabe ./app/views/shared/_nav_lien.html.erb
+:tabe ./app/views/shared/_menubar_lien.html.erb
+::L
+:tabe ./app/views/shared/_nav_lookup_only.html.erb
+:tabe ./app/views/shared/_nav_user_profile.html.erb
+:tabe ./app/views/user/_content_for_user_profile.html.erb
+:tabe ./app/views/user/profile.html.erb
+:tabe ./app/views/lien/_form_patient_insurance_company.html.erb
+:tabe ./app/views/lien/case.html.erb
 
 # Search String History (newest to oldest):
-?/temp
-?/PS1
-?/resc
-?/problem
-?/def problem
-?/e\!
-?/e!
-?/lei
-?/lie
-?/b
-?/ari
-?/def make_
-?/def read
-?/make
-?/makeH
-?/def move
-?/def cells
-?/def valid?
-?/def try_mo
-?//
+?/offsets
+?/describe
+?/describe_
+?/xs-
+?/howdy
+?/book
+?/text
+?/content
+?/xs
+?/float
+?/sm-
+?/def index
+?/def logged
+?/div
+?/release_
+?/def clear
+?/collected
+?/clear_
+?/def clear_
+?/reason
 
 # Expression History (newest to oldest):
 =35*6
@@ -69,28 +69,31 @@ $move_score
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	      @power_word_value = Hash.new(300)
+"0	LINE	0
+	  <li <% if @pagename == "Patient Information" %>class="nav-item active"<% end %>>
 "1	LINE	0
-	>>>>>>> fc0deebe39ddc61c7dc06a26b3ccf55ecf2cd1df
+	    @y_offsets.freeze
 "2	LINE	0
-	[{"problemId":0,"seed":0,"tag":"sup mom","solution":"ppppppppppmglw'nafhaaaaaaaaaaaaaa"}]
+	    @x_offsets.freeze
 "3	LINE	0
-	=======
+	    @y_offsets      = calculate_y_offsets
 "4	LINE	0
-	<<<<<<< HEAD
+	    @x_offsets      = calculate_x_offsets
 "5	LINE	0
-	    private
+	
 "6	LINE	0
-	>>>>>>> 8e894b8bf6ab70b61839ee549786e0cc94d80c91
+	  <li <% if @pagename == "Profile" %>id="current"<% end %>>
 "7	LINE	0
-	=======
+	<ul>
 "8	LINE	0
-	[{"problemId":0,"seed":0,"tag":"manual:0:0:13","solution":"aaaaaaaaaaaaaaaalaapppalbakkbdlbdlklbbabapppppppaaaaaaaaaaa"}]
+	<b>Claim/Policy #:</b><br>
 "9	LINE	0
-	<<<<<<< HEAD
-"a	CHAR	0
-	w
+	<b>Ext:</b>
+"a	LINE	0
+	<%= render 'shared/flash' %>
+"b	LINE	0
+	      <%= text_field :user, :login, placeholder: 'User Name' %><br /> 
+	      <%= password_field :user, :password, placeholder: 'Password' %><br /> 
 "g	CHAR	0
 	924
 <tjkk:1gtgtyygtjkkkkkkkkkkkkkkkkkkkkkp:wgtjddkgTyygtpgtpkdd:w/Elemhhjjjjj/ElemiGED€kb€kb€kbREXLM::jjhhhhhhhhhh.jhkkkllcwMLjjjhhhhhhkllcwMLjjhhhhcwREXMLuiREXML::nnnnngtdddd:wqjjjllllllllliREXML::nnnn:wgtjjjjjlllllllll.nn.nnnn:w:13kjgt:w:21gt:21iREXML:::wkkkk€kBjjjkkgtkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkjkocheck_next_c€kbitel€kbm_lee€kbvel(my_peek,itemhhhhhhhhhhhdwxllllim€kb,my_peek:wjjjjjjjkjkkkkkkkkjjjjjjjjjjjjjjjjjjjjkkkjjkkkkkkkkkj9kjjjjjjjjjdodef check_next_item(item,peekkkkkkkkkkkkkkkkkkjjkkkjjjkkjjjjjjjjjjjjjjjjjjjjjkkkjhhhhhhhhhhhhhkkkkkkkkkkkkkkkkkkkkkkkjjjjjddjjjjjjjjjjjjjjjjjddddkkkkkkkkkkkkkkkkkklllllljlllllllllllkkljjlllllllixx€kb€kbllhxxif€kbig€kbfjhi  jhhhh   hhi  lllllllxxxxxxxxxxxxxxxxxxjhhhhhhi  kjoed€kbnd:wkkkkkkkkkkkkkkkkkkjjjjjjjjkjjjkkkkllllllllllllllljjjjjjjjjjjjjjjjjjjjjjjjjjj:wjjjkkkkkkk
@@ -100,1648 +103,1784 @@ $move_score
 	1961
 <reirequire_relag€kbtive ./secret_santa/person€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbsecret_santa/assign_santas""hhhhhhhhhhhhhhhhhhhhhhhhhhhhhli""yyplllllllllllllllllllllllllllllllllcwread_data:womodule Secret_santa€kb€kb€kb€kb€kb€kbSantadef self.get_sa€kb€kb€kb€kb€kb€kbget_santassantas = read_€kb€kb€kb€kb€kbSecretSanta::read_data€kb€kb€kb€kb€kb€kb€kb€kb€kbHLreuaread€kb€kb€kb€kbReadData.new(HHLLyypxxxxxxxxxiklcwpeoplejhhhhhLLLLkcwdatajllllllllllcwAssignSantaslllllllhlidata.santashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhisecret_santas -€kb= :wHHLLosecret_sangas.€kb€kb€kb€kbtas.valid_permutations€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kbpowwib€kb€kb€kb€kbssibilitei€kb€kbies = :wop€kbpossibilities[rand(0...x.size:wkkkkxas:wjkjkoSecretSanta.get_santas:wjjjjhhhhhhhhhhhhhhhhiputs €kb€kb€kb€kb :wkkkoputs "tod €kb€kb€kb€kbgot data:wyypddjkpllllllxxxxxxxxigot secret santas:wyypujoputs "gog possibilities:wyyjpllllllxxxxxxxxxxxxxxxxxipui€kb€kbicked one posi€kbsibility:wkkkkkkkkjjjjjjjhhxipossibilitei€kb€kbies:wjkkkkkkjjjjhhhhhhddkkddkkddkjjjjddkllliuts:wHHHjjjjjjjjjo €kbdef to_skjo"#{first €kb_name€kr€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kb@lllllllllllli, €kb€kb @{@last€kb€kb€kb€kb€kb€kb€kb€kr€kb#{@last_name€kr, #{ema€kb€kb€kb@email:wLjjjjjjjjjjjjjkjjjjjjkklLLjjkkhhhxxxxifinal_entry =ofinal_entry.each |entryla doendkoentry[€kb€kb€kb€kb€kb€kr€kb€kb"entry€kb€kb€kb€kb€kb#{entry[0€kr€kr entry[1]€kb€kb€kb€kb€kb€kb€kb€kb#{entry[1:wjkkkkjjjkhhhhhhhhhhhhhhhjkjddkop final_entry:wkkop final_entry:wkjjjkhhhhhhhhhhhhdddddd:wkkjofinal_entry.each {en€kb€kb|entyr€kb€kbry€kri €kb€kb puts final€kb€kb€kb€kb€kbentry:wli[0:whhhhhhhhhhhllllli"xllllllllli ""hlientry[1:whhhhhhhhhhhhhhhhhhhhllllli#{€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr}lli#{€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr}:whhhhhhhhhhhi is assigned to €kb:w€kuw
 "j	CHAR	0
-	jk€kb€kb
+	jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkj
 "k	CHAR	0
-	jjkjkkkkkkkkkkkkkkkkkjjjjhhh:€kukkkkkkkqqqqq
+	774
+<kkkPjlllllllllxxxxxxxxxxxxxxxxxhhhhxxxxxxxiCategorylllllllllllllllllllllxxxxxxxxxxxxxxxxxicategory.name:wjkjjjkonext f€kbf€kbif colum.name == :categoryhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhi<% llllllllllllllllllllllllllllllllla %>:wllllhhhhhhhhhhhr"llllllllli":wkjhhhhhhhhhhhhhhhhhhhlin:w€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kdl:tabe ./ap	con	refe	jjjjjj/€kb€kbjjjj/kkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkjjjjhhcwelseendkokkkyyjjjkpjddklllllllllllllllllllllhxxxxxxxxxxxxxxxxxxxxxireferral fal€kbilee€kbdd€kb...:wLLLL:tabe ./a€kblo	def€kbve	Gkkkkqkkkk:tabe ./ap	€kb€kb€kb€kblo	dev	Gkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkqkk:tabe€kb€kb€kb€kb€kb€kb
 "l	CHAR	0
 	€kb€kb€kb
 "m	CHAR	0
 	lhx
-"q	CHAR	0
-	
+"p@	CHAR	0
+	sprintf("%.2f",@lien.case_lien_amount)
+"r	CHAR	0
+	hlcwtp€kbyo€kbpe:wHLLHLjkkkjjjjjHhhhiuser_:wjLLjjkkdd:wLjkkkjkkkkkkkkkkkkkkkkkkkkkkkkkjllllllllllllllll$a,user€kb€kb€kb€kb:user_type:wLHHjjjjjjkku:wlllllllllllllllllllliuser_:wLLHu:wjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjLHHjkjkjkjkk
+"s	LINE	0
+	    <%= render 'shared/header' %>
 "u	CHAR	0
-	751
-<ire €kb€kb€kbrequire 'rakeotask :get€kb€kb€kbbeer do actoin "Get t€kb2  €kbbeershhhhhhhhhhhhhhhxxio€kbion€kblllllllllllllllllllloputs actioned€kbne€kbd:wjkkkkjjjkkjjkllllllli= :wjjotask :namegag €kb€kb€kb€kbe€kbtag dokkkkkyyjjjjjpoendkkddllllllllllxxxxxxxxxxxiwhate€kbv€kbever:wkkkkkkkonamespace :lameetup a do jjjjjjjjoendkkhhkkkkkkkI  ko:wjjjyyjjjjp:wjkkllllllllllcwget a nametab€kbg:wjjkkkkjjjjodesc "otask "€kb€kr€kb €kb"€kb€kr€kb:klilisten to a speakerjkjatalkllla doendkoaction = " l€kb€kblistenkjoputs action:wkkkjllahhli{€kb€kb€kr€kb [:beer, :nametag€kr :wjkkjhhhhhhhhhhhhhhhhhi=> :wjjkkkkkkkkkkkkoukoN€kbnumber = ENV["BEERlllllllla |€kr 2:wjhhhhhhhxi#{number:wjjkjw
+	€kb€kb
 "y	LINE	0
 	sub hash_3 {
 	%list = ('randy','randall.ellefsen@ngc.com','tim','timothy.nordloh@ngc.com');
-"-	CHAR	0
+""-	CHAR	0
 	 
 
 # File marks:
-'0  43  15  ~/.gitignore
-'1  6  0  ~/.viminfo
-'2  8  4  ~/.gitignore
-'3  42  3  ~/.gitignore
-'4  1  0  ~/.gitignore
-'5  9  6  ~/.gitignore
-'6  11  0  ~/.gitignore
-'7  1  12  ~/code/icfp_2015/solutions/0.json
-'8  1  0  ~/code/icfp_2015/solutions/1.json
-'9  76  15  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
+'0  6  0  ~/.gitignore
+'1  1  0  ~/.npmrc
+'2  8  14  ~/.gitignore
+'3  16  10  ~/.gitignore
+'4  15  4  ~/.gitignore
+'5  7477  0  ~/observe_field.txt
+'6  5  0  ~/.vimrc
+'7  88  0  ~/.vimrc
+'8  3  0  ~/.bashrc
+'9  1  0  ~/.bashrc
 
 # Jumplist (newest first):
--'  43  15  ~/.gitignore
+-'  6  0  ~/.gitignore
 -'  1  0  ~/.gitignore
--'  6  0  ~/.viminfo
--'  1  0  ~/.viminfo
--'  8  4  ~/.gitignore
--'  42  3  ~/.gitignore
--'  2  0  ~/.gitignore
--'  9  6  ~/.gitignore
--'  11  0  ~/.gitignore
--'  1  12  ~/code/icfp_2015/solutions/0.json
--'  1  0  ~/code/icfp_2015/solutions/1.json
--'  76  15  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
--'  1  0  ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
--'  1  0  ~/code/icfp_2015/solutions/3.json
--'  1  0  ~/code/icfp_2015/solutions/2.json
--'  1  0  ~/code/icfp_2015/.git/MERGE_MSG
--'  1  0  ~/code/icfp_2015/solutions/16.json
--'  1  0  ~/code/icfp_2015/solutions/24.json
--'  41  50  ~/.bashrc
+-'  1  0  ~/.npmrc
+-'  8  14  ~/.gitignore
+-'  16  10  ~/.gitignore
+-'  15  4  ~/.gitignore
+-'  7477  0  ~/observe_field.txt
+-'  1  0  ~/observe_field.txt
+-'  5  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  88  0  ~/.vimrc
+-'  3  0  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  23  10  ~/.bashrc
--'  1  0  ~/code/icfp_2015/lib/constants.rb
--'  1  0  ~/code/icfp_2015/solutions/10.json
--'  1  0  ~/code/icfp_2015/lib/hexris/coordinates.rb
--'  1  1  ~/code/icfp_2015/.gitignore
--'  2  0  ~/code/icfp_2015/.gitignore
--'  3  10  ~/code/icfp_2015/.gitignore
--'  83  0  ~/code/icfp_2015/lib/hexris/player.rb
--'  1  0  ~/code/icfp_2015/lib/hexris/player.rb
--'  1  0  ~/code/icfp_2015/solutions/6.json
--'  169  4  ~/code/icfp_2015/lib/hexris/player.rb
--'  34  0  ~/code/icfp_2015/lib/hexris/player.rb
--'  14  0  ~/code/icfp_2015/bin/play
--'  44  0  ~/code/icfp_2015/lib/hexris/player.rb
--'  1  0  ~/code/icfp_2015/solutions/12.json
--'  13  35  ~/code/icfp_2015/bin/decode_moves.rb
--'  1  0  ~/code/icfp_2015/bin/decode_moves.rb
--'  1  0  ~/code/icfp_2015/bin/play
--'  3  16  ~/code/icfp_2015/bin/play
--'  12  0  ~/code/icfp_2015/bin/decode_moves.rb
--'  1  111  ~/code/icfp_2015/solutions/13.json
--'  1  0  ~/code/icfp_2015/solutions/map_13_inhishouse.json
--'  1  0  ~/code/icfp_2015/data/problem_2.json
--'  9  17  ~/code/icfp_2015/bin/decode_moves.rb
--'  1  0  ~/code/icfp_2015/solutions/3_initial.json
--'  1  0  ~/code/icfp_2015/solutions/lotsa_eis.json
--'  2  0  ~/code/icfp_2015/bin/decode_moves.rb
--'  13  0  ~/code/icfp_2015/bin/submitter.sh
--'  7  17  ~/code/icfp_2015/lib/anagrammatic/translator.rb
--'  8  17  ~/code/icfp_2015/lib/anagrammatic/translator.rb
--'  6  21  ~/code/icfp_2015/lib/anagrammatic/translator.rb
--'  1  0  ~/code/icfp_2015/lib/anagrammatic/translator.rb
--'  2  0  ~/code/icfp_2015/lib/anagrammatic/translator.rb
--'  24  27  ~/code/icfp_2015/lib/hexris/problem.rb
--'  16  8  ~/code/icfp_2015/lib/hexris/problem.rb
--'  4  11  ~/code/icfp_2015/lib/hexris/problem.rb
--'  1  0  ~/code/icfp_2015/lib/hexris/problem.rb
--'  1  12  ~/code/icfp_2015/lib/hexris/honeycomb.rb
--'  2  16  ~/code/icfp_2015/lib/hexris/honeycomb.rb
--'  7  1  ~/code/icfp_2015/bin/submitter.sh
--'  1  122  ~/code/icfp_2015/temp
--'  40  34  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  6  46  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  30  7  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  32  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  33  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  35  2  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  5  6  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  1  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  17  0  ~/code/icfp_2015/lib/hexris/honeycomb.rb
--'  5  25  ~/code/icfp_2015/bin/parse_book
--'  19  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  20  0  ~/code/icfp_2015/lib/lovecraft_parser.rb
--'  6  25  ~/code/icfp_2015/test/lovecraft_parser.rb
--'  1  0  ~/code/icfp_2015/test/lovecraft_parser.rb
--'  1  0  ~/code/icfp_2015/test/parser_text.rb
--'  2  14  ~/code/icfp_2015/lib/constants.rb
--'  8  16  ~/code/icfp_2015/test/scorer_test.rb
--'  1  0  ~/code/icfp_2015/lib/scorer.rb
--'  5  2  ~/code/icfp_2015/test/random_test.rb
--'  1  0  ~/code/icfp_2015/lib/random.rb
--'  3  2  ~/code/icfp_2015/lib/random.rb
--'  27  38  ~/code/icfp_2015/lib/icfp_2015/random.rb
--'  22  21  ~/code/icfp_2015/lib/icfp_2015/random.rb
--'  1  2  ~/code/icfp_2015/lib/icfp_2015/random.rb
--'  31  1  ~/code/icfp_2015/lib/icfp_2015/random.rb
--'  1  0  ~/code/icfp_2015/lib/random_gen.rb
--'  1  0  ~/code/icfp_2015/lib/random_gen
--'  3  0  ~/code/countdown/test/results_test.rb
--'  1  0  ~/code/countdown/test/results_test.rb
--'  3  0  ~/mpd_plugin/mpc/ftplugin/mpdv.vim
--'  1  0  ~/mpd_plugin/mpc/ftplugin/mpdv.vim
--'  69  0  ~/.vimrc
--'  86  38  ~/.vimrc
--'  49  36  ~/.vimrc
--'  48  16  ~/.vimrc
--'  8  0  ~/.vimrc
--'  79  8  ~/.vimrc
+-'  36  4  ~/scratch/rails/depot/app/controllers/users_controller.rb
+-'  1  0  ~/scratch/rails/depot/app/controllers/users_controller.rb
+-'  1  0  ~/code/lcd/lib/seven_segments.rb
+-'  47  6  ~/code/lcd/lib/segment.rb
+-'  40  31  ~/code/lcd/lib/segment.rb
+-'  39  8  ~/code/lcd/lib/segment.rb
+-'  36  31  ~/code/lcd/lib/segment.rb
+-'  35  8  ~/code/lcd/lib/segment.rb
+-'  79  0  ~/code/lcd/lib/segment.rb
+-'  25  6  ~/code/lcd/lib/segment.rb
+-'  30  51  ~/code/lcd/lib/segment.rb
+-'  10  7  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/layouts/application.html.erb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/profile.html.erb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_patient.html.erb
+-'  42  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/index.html.erb
+-'  19  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/_form.html.erb
+-'  33  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  25  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  26  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  21  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  31  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  1  6  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  24  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  5  23  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  4  2  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  28  68  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  6  3  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  34  44  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  10  7  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/layouts/application.html.erb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/profile.html.erb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_patient.html.erb
+-'  42  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/index.html.erb
+-'  19  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/_form.html.erb
+-'  33  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  25  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  26  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  21  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  31  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  1  6  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  24  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  5  23  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  4  2  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  28  68  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  6  3  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  34  44  ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+-'  48  10  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  55  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  46  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  45  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  38  46  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  32  23  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  85  23  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  71  21  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  43  25  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  56  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  34  8  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  339  0  ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+-'  94  4  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  53  18  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  45  4  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  46  4  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  47  4  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  48  4  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  28  0  ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/development.rb
+-'  3  0  ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/production.rb
+-'  7  0  ~/code/lloyd/vagrant_test/lloyds_liens/config/environment.rb
+-'  284  17  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  175  16  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  158  16  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  146  16  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  46  16  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  25  0  ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+-'  2  0  ~/code/lloyd/vagrant_test/lloyds_liens/config/database.yml
+-'  49  8  ~/code/lloyd/vagrant_test/lloyds_liens/test/fixtures/user.yml
+-'  58  0  ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+-'  26  82  ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/test.rb
+-'  1  0  ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/test.rb
+-'  182  22  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  1  0  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  172  0  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  165  19  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  55  21  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  298  41  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  270  4  ~/code/MegaPedSketch/MegaPedSketch.c
+-'  127  10  ~/code/MegaPedSketch/MegaPedSketch.c
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	43	15
-	^	43	16
-	.	43	15
-	+	9	6
-	+	42	3
-	+	8	4
-	+	43	15
-
-> ~/.viminfo
 	"	6	0
-
-> ~/code/icfp_2015/solutions/0.json
-	"	1	12
-	.	2	0
-	+	1	81
-	+	1	82
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/code/icfp_2015/solutions/1.json
-	"	1	0
-	^	1	40
-	.	1	39
-	+	1	39
-
-> ~/code/icfp_2015/lib/dumb_bot/dumb_bot.rb
-	"	76	15
-	^	78	17
-	.	78	16
-	+	113	18
-	+	115	14
-	+	109	0
-	+	122	25
-	+	123	48
-	+	125	23
-	+	125	24
-	+	129	0
-	+	125	36
-	+	126	0
-	+	115	0
-	+	128	0
-	+	126	0
-	+	128	15
-	+	129	0
-	+	125	22
-	+	128	8
-	+	139	0
-	+	135	0
-	+	139	29
-	+	139	0
-	+	139	30
-	+	139	1
-	+	136	29
-	+	139	33
-	+	139	11
-	+	139	21
-	+	139	27
-	+	134	33
-	+	75	0
-	+	139	37
-	+	122	13
-	+	125	15
-	+	139	27
-	+	139	31
-	+	136	31
-	+	139	17
-	+	126	8
-	+	128	9
-	+	136	51
-	+	139	0
-	+	128	8
-	+	127	0
-	+	125	7
-	+	142	0
-	+	139	11
-	+	126	0
-	+	125	6
-	+	136	31
-	+	86	12
-	+	105	8
-	+	139	10
-	+	124	36
-	+	125	15
-	+	127	17
-	+	128	39
-	+	136	29
-	+	12	40
-	+	13	28
-	+	19	35
-	+	17	38
-	+	26	40
-	+	138	62
-	+	139	54
-	+	86	12
-	+	105	8
-	+	139	56
-	+	107	0
-	+	107	34
-	+	138	38
-	+	138	18
-	+	107	0
-	+	92	38
-	+	138	27
-	+	138	11
-	+	138	12
-	+	138	10
-	+	86	12
-	+	105	8
-	+	134	0
-	+	140	9
-	+	141	37
-	+	19	37
-	+	105	8
-	+	86	12
-	+	140	10
-	+	18	33
-	+	27	7
-	+	138	10
-	+	138	0
-	+	136	10
-	+	137	29
-	+	86	12
-	+	105	8
-	+	75	50
-	+	28	7
-	+	75	50
-	+	77	34
-	+	76	22
-	+	78	16
-
-> ~/code/icfp_2015/.git/MERGE_MSG
-	"	1	0
-	^	3	23
-	.	3	22
-	+	3	22
-
-> ~/code/icfp_2015/solutions/3.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/2.json
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-	+	1	0
-
-> ~/code/icfp_2015/lib/constants.rb
-	"	4	0
-	^	1	190
-	.	1	0
-	+	1	14
-	+	12	14
-	+	11	15
-	+	1	21
-	+	11	67
-	+	1	172
-	+	10	14
-	+	9	14
+	^	7	16
+	.	7	0
+	+	15	4
+	+	16	10
 	+	8	14
-	+	7	14
-	+	6	14
-	+	5	13
-	+	4	14
-	+	3	14
-	+	2	13
-	+	1	189
-	+	1	0
-
-> ~/code/icfp_2015/bin/decode_moves
-	"	5	0
-
-> ~/code/icfp_2015/test/dumb_bod_test.rb
-	"	10	2
-	^	8	43
-	.	8	42
-	+	1	24
-	+	3	41
-	+	5	28
-	+	10	0
-	+	6	26
-	+	9	0
-	+	7	31
-	+	8	42
-
-> ~/code/icfp_2015/lib/hexris/game.rb
-	"	34	8
-
-> ~/code/icfp_2015/lib/hexris/player.rb
-	"	157	4
-	^	161	7
-	.	161	6
-	+	63	0
-	+	45	16
-	+	42	8
-	+	41	25
-	+	42	16
-	+	41	35
-	+	44	16
-	+	42	16
-	+	161	6
-	n	30	17
-
-> ~/code/icfp_2015/bin/dumb_bot
-	"	3	29
-	^	3	30
-	.	3	29
-	+	3	41
+	+	7	0
 	+	3	0
-	+	1	18
-	+	2	0
 	+	4	0
-	+	6	36
-	+	3	29
+	+	5	0
+	+	6	0
+	+	7	0
 
-> ~/code/icfp_2015/bin/play
-	"	7	18
-
-> ~/code/icfp_2015/lib/hexris/unit.rb
-	"	21	7
-	.	29	55
-	+	29	55
-
-> ~/code/icfp_2015/solutions/5.json
-	"	1	0
-
-> ~/code/icfp_2015/lib/hexris/ai.rb
-	"	9	19
-
-> ~/code/icfp_2015/lib/hexris/visualizer.rb
-	"	16	0
-
-> ~/code/icfp_2015/solutions/10.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/11.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/12.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/13.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/13_failed.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/14.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/15.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/16.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/24.json
+> ~/.npmrc
 	"	1	0
 
 > ~/.bashrc
-	"	41	50
-	^	57	17
-	.	57	16
-	+	57	16
-
-> ~/code/icfp_2015/lib/hexris/coordinates.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/hexris/honeycomb.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/hexris/problem.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/hexris/rng.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/hexris/scorer.rb
-	"	1	0
-
-> ~/code/icfp_2015/.gitignore
-	"	1	1
-	^	1	2
-	.	1	1
-	+	2	3
-	+	3	10
-	+	1	1
-
-> ~/code/icfp_2015/solutions/6.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/4.json
-	"	1	7097
-
-> ~/code/icfp_2015/bin/decode_moves.rb
-	"	13	35
-	^	13	46
-	.	13	35
-	+	1	0
-	+	6	23
-	+	11	15
-	+	9	18
-	+	10	17
-	+	11	18
-	+	6	16
-	+	7	16
-	+	8	17
-	+	9	18
-	+	10	17
-	+	11	18
-	+	7	24
-	+	8	22
-	+	9	23
-	+	10	22
-	+	11	25
-	+	13	61
-	+	8	24
-	+	9	25
-	+	10	24
-	+	13	69
-	+	12	0
-	+	13	35
-
-> ~/code/icfp_2015/solutions/map_13_inhishouse.json
-	"	1	0
-
-> ~/code/icfp_2015/data/problem_2.json
-	"	1	0
-
-> ~/code/icfp_2015/lib/anagrammatic/translator.rb
-	"	1	0
-	.	7	21
-	+	1	0
-	+	6	21
-	+	8	0
-	+	6	0
-	+	8	23
-	+	7	0
-	+	8	0
-	+	7	21
-
-> ~/code/icfp_2015/solutions/3_initial.json
-	"	1	0
-
-> ~/code/icfp_2015/solutions/lotsa_eis.json
-	"	1	0
-
-> ~/code/icfp_2015/bin/submitter.sh
-	"	13	0
-
-> ~/code/icfp_2015/data/problem_0.json
-	"	1	39
-
-> ~/code/icfp_2015/lib/lovecraft_parser.rb
-	"	40	34
-	^	6	46
-	.	40	34
-	+	19	17
-	+	31	6
-	+	8	43
-	+	18	0
-	+	19	0
-	+	20	0
-	+	31	38
-	+	32	59
-	+	33	39
-	+	34	37
-	+	35	43
-	+	36	39
-	+	37	40
-	+	38	38
-	+	39	37
-	+	16	39
-	+	13	52
-	+	16	30
-	+	31	0
-	+	25	13
-	+	26	3
-	+	31	0
-	+	6	28
-	+	31	3
-	+	31	3
-	+	31	3
-	+	32	3
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	39	3
-	+	9	40
-	+	10	39
-	+	11	48
-	+	13	0
-	+	11	0
-	+	12	39
-	+	14	41
-	+	11	51
-	+	15	38
-	+	40	34
-	+	30	45
-	+	31	40
-	+	20	0
-	+	20	0
-	+	18	26
-	+	6	32
-	+	6	0
-	+	6	0
-	+	30	0
-	+	6	32
-	+	26	2
-	+	30	2
-	+	31	2
-	+	31	2
-	+	30	34
-	+	31	43
-	+	31	0
-	+	30	0
-	+	31	0
-	+	30	2
-	+	30	0
-	+	31	0
-	+	30	2
-	+	30	49
-	+	25	30
-	+	26	24
-	+	30	24
-	+	30	24
-	+	30	2
-	+	30	2
-	+	31	2
-	+	32	2
-	+	33	2
-	+	32	0
-	+	25	30
-	+	26	24
-	+	30	24
-	+	30	0
-	+	32	2
-	+	33	2
-	+	34	2
-	+	35	2
-	+	36	2
-	+	37	2
-	+	38	2
-	+	39	2
-	+	40	2
-	+	30	0
-	+	29	2
-	+	29	0
-	+	29	0
-	+	25	0
-	+	27	7
-	+	28	46
-	+	6	46
-	+	40	34
-
-> ~/code/icfp_2015/test/lovecraft_parser_test.rb
-	"	6	0
-
-> ~/code/icfp_2015/temp
-	"	1	122
-	^	1	62
-	.	1	58
-	+	1	58
-
-> ~/Downloads/OEBPS/Text/Herbert West Reanimator.xhtml
-	"	63	364
-
-> ~/code/icfp_2015/bin/parse_book
-	"	5	25
-	^	5	26
-	.	5	25
-	+	3	44
-	+	4	0
-	+	5	18
-	+	1	1
-	+	5	25
-
-> ~/code/icfp_2015/data/important_works.txt
-	"	2	0
-
-> ~/Downloads/OEBPS/Text/Nyarlathotep.xhtml
 	"	42	0
-
-> ~/code/icfp_2015/test/lovecraft_parser.rb
-	"	6	25
-	^	3	19
-	.	7	25
-	+	1	24
-	+	3	37
-	+	5	29
-	+	9	0
-	+	6	28
-	+	8	0
-	+	7	53
-	+	3	18
-	+	7	25
-
-> ~/code/icfp_2015/data/call_of_chthulhu.xtml
-	"	100	0
-
-> ~/Downloads/OEBPS/Text/The Call of Cthulhu.xhtml
-	"	50	0
-
-> ~/code/icfp_2015/test/parser_text.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/scorer.rb
-	"	10	4
-	^	9	43
-	.	10	0
-	+	2	32
-	+	6	28
-	+	3	29
-	+	6	15
-	+	27	28
-	+	28	0
-	+	36	18
-	+	37	0
-	+	36	30
-	+	37	63
-	+	36	42
-	+	37	33
-	+	37	54
-	+	38	0
-	+	41	0
-	+	37	64
-	+	38	43
-	+	40	0
-	+	38	39
-	+	39	61
-	+	36	31
-	+	39	35
-	+	38	38
-	+	39	76
-	+	36	18
-	+	43	0
-	+	35	0
-	+	28	43
-	+	30	36
-	+	32	6
-	+	39	72
-	+	31	0
-	+	28	0
-	+	29	12
-	+	31	49
-	+	33	8
-	+	4	18
-	+	27	0
-	+	27	0
-	+	8	19
-	+	26	0
-	+	8	30
-	+	13	0
-	+	9	53
-	+	20	21
-	+	24	0
-	+	21	13
-	+	19	22
-	+	21	43
-	+	11	17
-	+	9	16
-	+	13	14
-	+	9	66
-	+	11	18
-	+	21	39
-	+	19	0
-	+	4	16
-	+	11	32
-	+	20	19
-	+	21	20
-	+	9	0
-	+	8	15
-	+	8	0
-	+	15	11
-	+	16	0
-	+	15	30
-	+	16	4
-	+	9	42
-	+	11	0
-	+	12	4
-	+	10	0
-
-> ~/code/icfp_2015/test/scorer_test.rb
-	"	1	2
-	^	40	32
-	.	41	0
-	+	1	24
-	+	6	18
+	.	42	0
 	+	42	0
-	+	7	23
-	+	14	0
-	+	7	27
-	+	14	1
-	+	7	32
-	+	14	13
-	+	8	17
-	+	14	0
-	+	3	24
-	+	8	28
-	+	14	0
-	+	9	0
-	+	10	8
-	+	11	31
-	+	4	21
-	+	12	42
-	+	13	39
-	+	3	15
-	+	4	15
-	+	16	33
-	+	20	0
-	+	17	37
-	+	18	42
-	+	19	44
-	+	18	32
-	+	19	32
-	+	18	28
-	+	19	27
-	+	18	47
-	+	19	41
-	+	18	18
-	+	19	19
-	+	22	34
-	+	26	0
-	+	23	0
-	+	24	39
-	+	18	50
-	+	25	44
-	+	28	37
-	+	33	0
-	+	29	42
-	+	30	0
-	+	31	42
-	+	32	30
-	+	35	23
-	+	41	0
-	+	36	19
-	+	37	29
-	+	41	19
-	+	38	0
-	+	39	15
-	+	40	0
-	+	39	29
-	+	40	31
-	+	35	0
-	+	41	0
 
-> ~/Downloads/OEBPS/Text/At the Mountains of Madness.xhtml
-	"	37	0
-
-> ~/code/icfp_2015/The Complete Works of HP Lovecraft.epub
-	"	6222	0
-
-> ~/code/icfp_2015/lib/random.rb
-	"	6	0
-	.	13	0
-	+	1	0
-	+	1	0
-	+	3	0
-	+	1	0
-	+	1	0
-	+	27	0
-	+	13	0
-
-> ~/code/icfp_2015/test/random_test.rb
-	"	5	2
-	^	9	45
-	.	7	13
-	+	1	24
-	+	5	28
-	+	11	0
-	+	6	26
-	+	10	0
-	+	6	30
-	+	10	1
-	+	7	30
-	+	3	40
-	+	10	16
-	+	7	35
-	+	10	5
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	11
-	+	10	12
-	+	10	13
-	+	10	15
-	+	10	14
-	+	10	9
-	+	10	5
-	+	10	5
-	+	10	15
-	+	10	31
-	+	10	31
-	+	10	18
-	+	10	40
-	+	10	14
-	+	10	33
-	+	10	4
-	+	10	33
-	+	10	0
-	+	10	0
-	+	10	28
-	+	10	0
-	+	10	16
-	+	8	12
-	+	9	44
-	+	10	0
-	+	3	25
-	+	5	9
-	+	7	13
-
-> ~/code/icfp_2015/lib/icfp_2015/random.rb
-	"	27	38
-	^	27	39
-	.	27	38
-	+	9	0
-	+	8	18
-	+	8	9
-	+	9	6
-	+	31	0
-	+	9	4
-	+	9	20
-	+	11	15
-	+	24	4
-	+	13	0
-	+	15	0
-	+	15	24
-	+	15	13
-	+	12	23
-	+	15	0
-	+	15	27
-	+	15	0
-	+	16	0
-	+	21	20
-	+	24	0
-	+	15	0
-	+	21	63
-	+	9	0
-	+	30	0
-	+	9	0
-	+	8	0
-	+	14	0
-	+	29	0
-	+	8	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	2	0
-	+	3	7
-	+	15	11
-	+	22	29
-	+	12	26
-	+	16	6
-	+	22	33
-	+	10	17
-	+	19	12
-	+	20	10
-	+	21	7
-	+	22	7
-	+	23	0
-	+	26	16
-	+	27	0
-	+	26	22
-	+	27	5
-	+	22	22
-	+	19	23
-	+	22	31
-	+	27	24
-	+	17	15
-	+	27	38
-	o	1	0
-
-> ~/code/icfp_2015/test/random.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/random_gen.rb
-	"	1	0
-
-> ~/code/icfp_2015/lib/random_gen
-	"	1	0
-
-> ~/code/countdown/test/results_test.rb
-	"	3	0
-	^	19	35
-	.	18	25
-	+	1	24
-	+	6	47
-	+	14	0
-	+	21	0
-	+	11	42
-	+	7	32
-	+	10	13
-	+	8	30
-	+	7	26
-	+	9	32
-	+	7	18
-	+	8	18
-	+	7	33
-	+	8	33
-	+	9	34
-	+	3	31
-	+	11	21
-	+	12	23
-	+	11	7
-	+	13	31
-	+	16	65
-	+	20	0
-	+	17	0
-	+	19	15
-	+	18	29
-	+	19	34
-	+	18	25
-
-> ~/mpd_plugin/mpc/ftplugin/mpdv.vim
-	"	3	0
-	^	7	6
-	.	7	7
-	+	1	17
-	+	3	34
-	+	4	55
-	+	8	24
-	+	10	35
-	+	11	30
-	+	13	10
-	+	7	23
-	+	1	0
-	+	14	0
-	+	15	39
-	+	7	6
-	+	14	0
-	+	7	7
-
-> ~/mpd_plugin/mpc/mpc.mpdv
-	"	1	44
-	^	1	45
-	.	7	0
-	+	42	0
-	+	36	0
-	+	30	0
-	+	1	0
-	+	25	0
-	+	19	42
-	+	13	0
-	+	7	0
+> ~/observe_field.txt
+	"	7477	0
 
 > ~/.vimrc
-	"	69	0
-	^	90	42
-	.	69	0
-	+	87	44
-	+	89	38
-	+	91	0
-	+	89	18
-	+	68	0
-	+	91	0
-	+	90	41
-	+	69	0
-
-> ~/mpd_plugin/mpc/NERD_tree_1
 	"	5	0
-	.	1	0
-	+	1	0
+	^	5	0
+	.	5	0
+	+	91	0
+	+	90	0
+	+	88	0
+	+	85	0
+	+	84	0
+	+	83	0
+	+	81	0
+	+	80	0
+	+	79	0
+	+	88	0
+	+	5	0
 
-> ~/mpd_plugin/mpc/ftdetect/mpdv.vim
-	"	1	0
+> ~/scratch/rails/depot/app/controllers/users_controller.rb
+	"	36	4
 
-> ~/mpd_plugin/mpc/plugin/mpc.vim
-	"	1	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/test.rb
+	"	35	0
+	^	35	0
+	.	35	0
+	+	25	45
+	+	26	82
+	+	36	0
+	+	35	0
 
-> ~/mpd_plugin/plugin/mpc.vim
-	"	1	0
-	^	12	7
-	.	13	0
-	+	13	10
-	+	13	45
-	+	13	16
-	+	13	0
-	+	13	23
-	+	13	76
-	+	13	40
-	+	13	0
-	+	13	34
-	+	13	7
-	+	13	0
-	+	13	15
-	+	13	13
-	+	1	0
-	+	13	0
-	+	13	15
-	+	13	27
-	+	13	0
-	+	12	6
-	+	13	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/test/controllers/user_controller_test.rb
+	"	76	4
+	^	80	27
+	.	78	0
+	+	48	18
+	+	48	18
+	+	48	9
+	+	48	13
+	+	48	12
+	+	48	11
+	+	48	13
+	+	48	16
+	+	48	10
+	+	48	15
+	+	54	18
+	+	48	20
+	+	48	13
+	+	48	19
+	+	48	16
+	+	48	14
+	+	48	28
+	+	48	22
+	+	48	19
+	+	48	26
+	+	48	25
+	+	48	23
+	+	48	16
+	+	48	20
+	+	48	18
+	+	48	24
+	+	48	22
+	+	48	28
+	+	48	19
+	+	48	12
+	+	48	20
+	+	48	28
+	+	48	18
+	+	48	0
+	+	48	18
+	+	48	0
+	+	44	0
+	+	58	38
+	+	58	0
+	+	58	38
+	+	48	15
+	+	48	16
+	+	48	22
+	+	48	29
+	+	48	28
+	+	48	23
+	+	48	27
+	+	50	17
+	+	48	46
+	+	54	29
+	+	49	25
+	+	55	33
+	+	58	0
+	+	54	0
+	+	44	33
+	+	83	35
+	+	95	0
+	+	5	0
+	+	5	0
+	+	48	0
+	+	95	0
+	+	53	30
+	+	53	42
+	+	53	29
+	+	53	19
+	+	53	0
+	+	53	41
+	+	53	21
+	+	53	35
+	+	48	0
+	+	53	0
+	+	84	0
+	+	95	0
+	+	52	29
+	+	24	0
+	+	92	0
+	+	91	0
+	+	57	26
+	+	93	18
+	+	94	21
+	+	85	39
+	+	93	29
+	+	96	0
+	+	60	0
+	+	82	0
+	+	60	49
+	+	70	0
+	+	70	0
+	+	70	27
+	+	71	23
+	+	77	18
+	+	68	30
+	+	77	33
+	+	93	18
+	+	70	0
+	+	78	0
+	+	69	0
+	+	80	26
+	+	94	0
+	+	78	0
 
-> ~/mpd_plugin/mpc.mpdv
-	"	5	44
-	^	1	45
-	.	7	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	29	0
-	+	23	0
-	+	17	0
-	+	11	0
-	+	1	0
-	+	1	0
-	+	7	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/test/fixtures/user.yml
+	"	54	2
+	.	54	0
+	+	40	11
+	+	41	13
+	+	42	11
+	+	41	10
+	+	43	17
+	+	44	18
+	+	45	19
+	+	46	12
+	+	47	11
+	+	48	15
+	+	49	9
+	+	50	13
+	+	51	14
+	+	52	16
+	+	53	18
+	+	54	22
+	+	55	17
+	+	54	0
 
-> ~/mpd_plugin/ftdetect/mpdv.vim
-	"	1	0
-	.	1	0
-	+	1	50
-	+	1	53
-	+	1	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/database.yml
+	"	8	0
+	^	2	1
 
-> ~/mpd_plugin/autoload/mpc/autoload/mpc.vim
-	"	13	19
-	^	16	20
-	.	16	19
-	+	1	0
-	+	1	26
-	+	1	28
-	+	1	0
-	+	1	49
-	+	1	10
-	+	1	21
-	+	1	44
-	+	1	0
-	+	14	25
-	+	15	0
-	+	20	0
-	+	20	38
-	+	20	69
-	+	20	50
-	+	20	17
-	+	20	0
-	+	20	0
-	+	14	0
-	+	15	0
-	+	15	0
-	+	17	0
-	+	20	0
-	+	16	19
+> ~/code/lloyd/vagrant_test/lloyds_liens/db/schema.rb
+	"	285	4
+	^	284	20
+	.	284	0
+	+	284	0
 
-> ~/scratch/script_vim/intro/function.vim
-	"	3	0
-
-> ~/scratch/script_vim/tempf.vim
-	"	3	9
-	^	3	10
-	.	4	0
-	+	1	0
-	+	2	0
-	+	4	0
-
-> ~/.mpdconf
-	"	3	36
-	^	3	37
-	.	3	36
-	+	2	51
-	+	3	44
-	+	7	0
-	+	7	0
-	+	3	36
-
-> ~/scratch/script_vim/function.vin
-	"	1	0
-
-> ~/code/countdown/temp.txt
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/code/countdown/lib/count_down.rb
-	"	25	0
-	^	26	1
-	.	26	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	64	0
-	+	64	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	23	0
-	+	22	0
-	+	14	0
-	+	15	0
-	+	15	0
-	+	16	0
-	+	14	0
-	+	25	0
-	+	14	0
-	+	16	0
-	+	23	0
-	+	25	0
-	+	33	19
-	+	42	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/user_controller.rb
+	"	48	10
+	^	36	25
+	.	36	24
+	+	61	58
+	+	46	297
+	+	39	60
+	+	28	53
+	+	61	0
+	+	60	66
+	+	61	55
+	+	46	258
+	+	39	13
+	+	38	32
+	+	46	34
+	+	46	194
+	+	61	19
 	+	34	0
-	+	40	15
-	+	24	17
-	+	25	0
-	+	33	31
-	+	34	4
-	+	24	29
-	+	22	33
-	+	22	23
-	+	22	37
-	+	22	67
-	+	22	0
-	+	64	4
-	+	22	0
-	+	13	4
-	+	24	29
-	+	28	34
-	+	20	37
-	+	22	0
+	+	30	0
+	+	27	74
+	+	27	72
+	+	60	76
+	+	46	71
+	+	56	7
+	+	56	0
+	+	34	0
+	+	291	3
+	+	292	3
+	+	46	0
+	+	46	34
+	+	45	0
+	+	56	0
+	+	57	0
+	+	46	102
+	+	46	155
+	+	46	160
+	+	46	234
+	+	46	255
+	+	46	259
+	+	57	0
+	+	58	24
+	+	48	26
+	+	36	24
+
+> ~/code/MegaPedSketch/MegaPedSketch.c
+	"	1	0
+	^	182	23
+	.	182	22
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	306	8
+	+	183	6
+	+	184	0
+	+	188	38
+	+	183	0
+	+	177	0
+	+	175	58
+	+	176	22
+	+	55	10
+	+	52	14
+	+	173	19
+	+	174	0
+	+	311	0
+	+	174	0
+	+	178	6
+	+	207	19
+	+	206	41
+	+	208	0
+	+	310	0
+	+	307	25
+	+	298	43
+	+	299	3
+	+	303	48
+	+	304	0
+	+	298	46
+	+	300	24
+	+	298	44
+	+	300	18
+	+	301	30
+	+	302	33
+	+	301	8
+	+	303	31
+	+	305	0
+	+	277	0
+	+	298	40
+	+	300	18
+	+	282	0
+	+	301	30
+	+	303	12
+	+	277	0
+	+	277	0
+	+	284	0
+	+	298	45
+	+	300	23
+	+	301	31
+	+	291	0
+	+	298	40
+	+	300	18
+	+	296	13
+	+	303	14
+	+	306	0
+	+	23	12
+	+	20	24
+	+	308	33
+	+	309	16
+	+	165	0
+	+	171	0
+	+	168	20
+	+	170	25
+	+	169	0
+	+	167	56
+	+	169	24
+	+	183	44
+	+	169	23
+	+	184	0
+	+	183	0
+	+	184	0
+	+	182	22
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/log/test.log
+	"	2332	17
+	.	1	0
+	+	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/promocodes_controller.rb
+	"	19	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/environment.rb
+	"	6	0
+	.	7	0
+	+	7	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/production.rb
+	"	53	2
+	.	53	0
+	+	53	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/environments/development.rb
+	"	28	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/test/fixtures/promocodes.yml
+	"	1	0
+	^	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/makepay.html.erb
+	"	30	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/models/user.rb
+	"	91	2
+
+> ~/code/megaped/.git/MERGE_MSG
+	"	1	0
+
+> ~/code/megaped/.gitignore
+	"	2	0
+	^	2	0
+	.	2	0
+	+	1	9
+	+	2	0
+
+> ~/Downloads/MegaPedSketch/MegaPedSketch.ino
+	"	34	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/config/routes.rb
+	"	41	0
+	^	47	6
+	.	47	5
+	+	98	4
+	+	98	4
+	+	98	48
+	+	98	4
+	+	98	4
+	+	98	0
+	+	76	0
+	+	80	4
+	+	99	0
+	+	82	4
+	+	83	0
+	+	81	0
+	+	78	4
+	+	83	4
+	+	77	0
+	+	83	50
+	+	78	62
+	+	81	22
+	+	25	46
+	+	26	46
+	+	47	5
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_nav_lien.html.erb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_menubar_lien.html.erb
+	"	7	2
+	.	7	0
+	+	6	0
+	+	6	82
+	+	7	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/controllers/lien_controller.rb
+	"	64	0
+	^	68	15
+	.	68	14
+	+	83	4
+	+	83	4
+	+	83	4
+	+	83	4
+	+	83	4
+	+	83	0
+	+	82	48
+	+	83	0
+	+	87	48
+	+	88	0
+	+	92	48
+	+	93	0
+	+	242	0
+	+	239	24
+	+	242	5
+	+	242	0
+	+	242	0
+	+	242	0
+	+	240	17
+	+	242	6
+	+	238	10
+	+	241	0
+	+	128	16
+	+	244	10
+	+	246	0
+	+	249	0
+	+	135	16
+	+	236	0
+	+	233	0
+	+	236	0
+	+	232	10
+	+	149	16
+	+	142	16
+	+	251	8
+	+	252	0
+	+	255	0
+	+	68	14
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/patient.html.erb
+	"	19	2
+	.	19	0
+	+	28	48
+	+	28	69
+	+	28	70
+	+	28	59
+	+	28	68
+	+	28	71
+	+	28	72
+	+	28	53
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	7
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	6
+	+	34	3
+	+	35	3
+	+	36	1
+	+	36	1
+	+	28	55
 	+	28	0
-	+	32	0
-	+	28	19
+	+	28	48
+	+	28	0
+	+	28	50
+	+	28	0
+	+	28	46
+	+	28	0
+	+	28	50
+	+	28	0
+	+	28	46
+	+	28	0
+	+	4	0
+	+	36	0
+	+	25	25
+	+	31	25
+	+	21	25
+	+	6	0
+	+	3	2
+	+	4	2
+	+	15	0
+	+	18	0
+	+	5	1
+	+	15	2
+	+	16	3
+	+	17	3
+	+	21	30
+	+	25	30
+	+	31	30
 	+	24	37
-	+	31	14
-	+	28	37
-	+	20	39
-	+	28	33
-	+	20	61
-	+	28	10
-	+	28	41
-	+	29	45
-	+	64	58
-	+	8	0
+	+	28	76
+	+	22	0
+	+	24	0
+	+	28	50
+	+	28	0
+	+	28	0
+	+	25	0
+	+	34	39
+	+	34	0
+	+	32	49
+	+	34	0
+	+	21	25
+	+	25	0
+	+	25	26
+	+	28	0
+	+	25	25
+	+	21	25
+	+	25	25
+	+	25	25
+	+	31	0
+	+	21	25
+	+	25	25
+	+	5	25
+	+	31	25
+	+	20	32
+	+	21	25
+	+	25	25
+	+	31	25
+	+	23	22
+	+	27	0
+	+	33	0
+	+	19	0
+
+> ~/code/lcd/lib/lcd.rb
+	"	1	0
+	^	13	31
+	.	13	30
+	+	20	23
+	+	9	0
+	+	20	0
+	+	12	0
+	+	20	0
+	+	20	14
+	+	20	15
+	+	20	0
+	+	20	25
+	+	20	11
+	+	20	31
 	+	13	0
-	+	28	62
-	+	31	5
-	+	28	4
-	+	29	59
-	+	30	18
-	+	29	19
+	+	20	0
+	+	12	12
+	+	12	0
+	+	18	0
+	+	12	25
+	+	13	30
+	+	15	29
+	+	15	0
+	+	15	22
+	+	15	11
+	+	14	0
+	+	15	9
+	+	15	0
+	+	15	9
+	+	15	33
+	+	15	7
+	+	15	31
+	+	15	10
+	+	15	14
+	+	15	25
+	+	15	8
+	+	15	10
+	+	15	0
+	+	15	0
+	+	15	29
+	+	15	36
+	+	17	0
+	+	16	16
+	+	18	17
+	+	15	11
+	+	18	10
+	+	18	8
+	+	16	23
+	+	18	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	12	60
+	+	13	16
+	+	14	16
+	+	15	6
+	+	18	0
+	+	12	4
+	+	13	30
+
+> ~/code/lcd/lib/segment.rb
+	"	47	6
+	^	42	0
+	.	30	51
+	+	44	18
+	+	12	10
+	+	44	12
+	+	12	0
+	+	44	10
+	+	44	12
+	+	44	0
+	+	48	12
+	+	48	12
+	+	17	22
+	+	17	14
+	+	46	0
+	+	43	0
+	+	43	0
+	+	43	24
+	+	48	0
+	+	43	4
+	+	48	4
+	+	43	4
+	+	17	4
+	+	43	0
+	+	50	0
+	+	52	0
+	+	51	8
+	+	64	0
+	+	65	0
+	+	73	0
+	+	65	0
+	+	73	0
+	+	53	0
+	+	62	0
+	+	63	0
+	+	53	16
+	+	54	4
+	+	44	4
+	+	44	0
+	+	17	4
+	+	17	21
+	+	17	21
+	+	54	4
+	+	65	4
+	+	17	5
+	+	17	0
+	+	17	0
+	+	3	25
+	+	11	2
+	+	4	14
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	5	4
+	+	6	4
+	+	7	4
+	+	8	4
+	+	9	4
+	+	10	4
+	+	3	18
+	+	5	11
+	+	6	11
+	+	8	11
+	+	9	11
+	+	10	11
+	+	25	37
+	+	4	7
+	+	5	7
+	+	6	7
+	+	7	7
+	+	8	7
+	+	9	7
+	+	10	8
+	+	9	8
+	+	8	8
+	+	7	8
+	+	6	8
+	+	5	8
+	+	10	15
+	+	25	38
+	+	27	33
+	+	25	0
+	+	28	75
+	+	30	70
+	+	25	21
+	+	15	15
+	+	16	12
+	+	17	20
+	+	17	5
+	+	3	21
+	+	36	37
+	+	48	4
+	+	46	0
+	+	38	0
+	+	40	37
+	+	42	0
+	+	44	4
+	+	17	0
+	+	30	51
+
+> ~/code/lcd/lib/seven_segments.rb
+	"	42	4
+	.	62	0
+	+	27	17
+	+	53	10
+	+	53	18
+	+	53	0
+	+	72	0
+	+	67	0
+	+	26	0
+	+	46	22
+	+	47	19
+	+	48	26
+	+	49	0
+	+	51	0
+	+	50	5
+	+	75	0
+	+	73	25
+	+	73	57
+	+	74	0
+	+	47	11
+	+	27	28
+	+	47	7
+	+	73	20
+	+	74	26
+	+	48	11
+	+	50	35
+	+	29	0
+	+	27	24
+	+	48	16
+	+	46	18
+	+	11	45
+	+	73	17
+	+	73	0
+	+	73	16
+	+	73	8
+	+	74	0
+	+	74	18
+	+	74	0
+	+	73	6
+	+	74	5
+	+	73	49
+	+	73	0
+	+	74	0
+	+	73	0
+	+	73	49
+	+	73	48
+	+	74	0
+	+	63	0
+	+	77	0
+	+	59	0
+	+	60	0
+	+	68	0
+	+	77	0
+	+	63	0
+	+	63	0
+	+	54	13
+	+	54	0
+	+	54	0
+	+	54	0
+	+	54	7
+	+	54	0
+	+	54	12
+	+	54	0
+	+	54	14
+	+	54	23
+	+	54	0
+	+	63	0
+	+	54	10
+	+	54	19
+	+	54	16
+	+	54	0
+	+	54	0
+	+	54	23
+	+	54	0
+	+	54	2
+	+	54	11
+	+	54	18
+	+	54	16
+	+	54	17
+	+	54	16
+	+	54	25
+	+	54	9
+	+	54	0
+	+	54	0
+	+	54	0
+	+	54	48
+	+	63	0
+	+	64	0
+	+	63	0
+	+	67	0
+	+	63	0
+	+	59	0
+	+	59	0
+	+	63	0
+	+	59	0
+	+	54	0
+	+	54	0
+	+	59	0
+	+	54	0
+	+	38	0
+	+	61	76
+	+	62	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/layouts/application.html.erb
+	"	16	38
+	^	11	31
+	.	11	30
+	+	48	0
+	+	47	0
+	+	46	4
+	+	22	0
+	+	26	0
+	+	31	0
+	+	26	10
+	+	27	10
+	+	28	10
+	+	29	10
+	+	29	10
+	+	30	10
+	+	30	10
+	+	31	10
+	+	31	10
+	+	39	0
+	+	43	0
+	+	44	0
+	+	43	10
+	+	29	0
+	+	31	0
+	+	29	10
+	+	30	10
 	+	30	0
 	+	31	0
+	+	30	8
+	+	12	0
+	+	13	28
+	+	12	21
+	+	13	37
+	+	12	0
+	+	13	0
+	+	20	38
+	+	11	30
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/signup.html.erb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/_form.html.erb
+	"	19	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/user.html.erb
+	"	17	13
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/index.html.erb
+	"	42	0
+	.	42	0
+	+	42	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_top_logo.html.erb
+	"	1	17
+	^	1	10
+	.	1	17
+	+	2	0
+	+	4	0
+	+	2	0
+	+	1	0
+	+	4	0
+	+	1	17
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/assets/stylesheets/application.css.scss
+	"	32	0
+	^	32	9
+	.	32	0
+	+	15	0
+	+	10	0
+	+	15	0
+	+	11	18
+	+	13	16
+	+	14	0
+	+	12	17
+	+	25	0
+	+	18	0
+	+	25	0
+	+	18	0
+	+	32	0
 	+	28	0
-	+	30	14
-	+	24	30
-	+	24	0
-	+	30	6
-	+	20	70
-	+	29	21
-	+	24	16
-	+	30	30
-	+	24	0
-	+	29	0
-	+	30	14
-	+	20	25
-	+	20	20
-	+	22	24
-	+	22	0
-	+	20	0
-	+	24	30
-	+	21	11
-	+	20	0
-	+	26	0
-	+	64	0
+	+	32	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/parties.html.erb
+	"	20	23
+	.	20	23
+	+	44	201
+	+	44	81
+	+	44	199
 	+	44	0
-	+	45	0
+	+	44	199
+	+	44	72
+	+	44	161
+	+	44	66
 	+	44	0
+	+	44	3
+	+	44	182
+	+	44	3
+	+	44	170
+	+	44	0
+	+	44	6
+	+	44	0
+	+	1	0
+	+	44	0
+	+	44	0
+	+	44	0
+	+	21	3
+	+	21	3
+	+	22	3
+	+	44	0
+	+	21	3
+	+	23	0
+	+	19	0
+	+	23	0
+	+	20	0
+	+	21	4
+	+	21	6
+	+	21	6
+	+	22	7
+	+	44	0
+	+	23	33
+	+	44	0
+	+	44	0
+	+	28	47
+	+	44	0
+	+	44	0
+	+	39	51
+	+	34	0
+	+	39	29
+	+	44	0
+	+	2	0
+	+	6	32
+	+	9	19
+	+	2	0
+	+	21	24
+	+	21	9
+	+	20	23
+	+	27	23
+	+	34	23
+	+	38	23
+	+	33	30
+	+	19	30
+	+	43	17
+	+	43	3
+	+	43	0
+	+	43	0
+	+	21	0
+	+	43	0
 	+	42	0
 	+	43	0
 	+	42	0
-	+	26	0
-	g	44	2
+	+	36	0
+	+	21	0
+	+	22	10
+	+	25	0
+	+	23	0
+	+	24	0
+	+	29	0
+	+	40	0
+	+	38	23
+	+	34	23
+	+	27	23
+	+	20	23
 
-> ~/code/countdown/lib/results.rb
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_content_for_lien.html.erb
 	"	6	0
-	.	7	0
-	+	3	28
-	+	4	12
-	+	24	21
-	+	4	34
-	+	2	0
-	+	17	5
-	+	11	0
-	+	9	0
-	+	11	0
-	+	10	12
-	+	17	5
-	+	11	0
-	+	15	0
-	+	11	0
-	+	17	0
-	+	11	20
-	+	19	0
-	+	14	29
-	+	23	0
-	+	5	17
-	+	11	18
-	+	23	0
-	+	21	36
-	+	23	0
-	+	21	36
-	+	22	62
-	+	24	0
-	+	8	2
-	+	7	0
-	+	22	0
-	+	21	0
-	+	12	44
-	+	11	53
-	+	20	38
-	+	21	11
-	+	22	52
-	+	21	55
-	+	14	20
-	+	21	4
-	+	16	11
-	+	11	18
-	+	14	20
-	+	21	0
-	+	9	0
-	+	17	5
-	+	9	0
-	+	7	0
 
-> ~/code/countdown/test/count_down_test.rb
-	"	24	0
-	^	9	16
-	.	25	0
-	+	1	20
-	+	62	2
-	+	1	1
-	+	1	2
-	+	61	1
-	+	1	14
-	+	1	47
-	+	61	0
-	+	1	0
-	+	1	31
-	+	1	46
-	+	1	52
-	+	1	18
-	+	1	0
-	+	1	52
-	+	1	46
-	+	1	20
-	+	1	20
-	+	1	18
-	+	1	52
-	+	1	52
-	+	1	4
-	+	1	66
-	+	61	80
-	+	1	1
-	+	1	0
-	+	1	1
-	+	1	1
-	+	61	1
-	+	1	0
-	+	61	0
-	+	1	0
-	+	1	0
-	+	17	75
-	+	18	0
-	+	8	0
-	+	17	0
-	+	20	26
-	+	25	0
-	+	21	29
-	+	22	24
-	+	24	5
-	+	21	14
-	+	24	53
-	+	24	36
-	+	24	35
-	+	24	32
-	+	24	30
-	+	24	42
-	+	25	0
-	+	24	31
-	+	24	0
-	+	24	4
-	+	23	0
-	+	9	5
-	+	25	0
-
-> /usr/share/vim/vim73/doc/insert.txt
-	"	1879	67
-
-> ~/code/countdown/NERD_tree_1
-	"	5	0
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_patient.html.erb
+	"	1	0
 	.	1	0
 	+	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_patient_attorney.html.erb
+	"	7	6
+	.	4	0
 	+	1	0
+	+	4	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_patient_insurance_company.html.erb
+	"	22	60
+	^	22	61
+	.	22	60
 	+	1	0
-	+	1	0
-
-> ~/code/countdown/Rakefile
-	"	18	17
-	^	18	18
-	.	18	17
-	+	1	0
-	+	4	32
-	+	5	30
-	+	14	37
-	+	19	0
-	+	18	17
-
-> ~/.git/MERGE_MSG
-	"	1	0
-
-> ~/code/countdown/.git/index
-	"	1	0
-
-> /usr/share/vim/vim73/doc/cmdline.txt
-	"	503	31
-
-> /usr/share/vim/vim73/doc/map.txt
-	"	539	1
-
-> ~/code/countdown/bin/countdown
-	"	5	0
-	^	6	43
-	.	5	0
-	+	1	18
-	+	3	28
-	+	9	0
-	+	3	17
-	+	6	22
-	+	8	1
-	+	6	1
-	+	8	9
-	+	6	3
-	+	5	5
-	+	6	18
-	+	5	0
-	+	6	42
-	+	5	0
-
-> ~/code/countdown/test/goal_seek_test.rb
-	"	6	10
-	^	6	11
-	.	6	10
-	+	1	24
-	+	5	33
-	+	7	0
-	+	6	47
-	+	3	34
-	+	6	10
-
-> ~/code/countdown/lib/goalseek.rb
-	"	11	0
-	^	10	5
-	.	9	36
-	+	1	5
-	+	2	27
-	+	5	0
-	+	8	5
-	+	3	15
-	+	4	15
-	+	8	11
-	+	9	36
-
-> ~/scratch/getmail/blocktest.rb
-	"	15	11
-	^	13	18
-	.	13	10
-	+	28	0
-	+	40	0
-	+	41	0
-	+	40	11
-	+	41	10
-	+	41	0
-	+	28	22
-	+	31	0
-	+	20	34
-	+	42	0
-	+	33	0
-	+	37	0
-	+	33	51
-	+	28	22
-	+	32	30
-	+	38	63
-	+	39	0
-	+	40	1
-	+	41	0
-	+	66	0
-	+	28	0
-	+	28	0
-	+	28	0
-	+	18	13
-	+	38	0
-	+	28	0
-	+	36	0
-	+	33	0
-	+	18	14
-	+	20	0
-	+	34	0
+	+	27	0
+	+	12	33
+	+	13	0
+	+	14	0
+	+	12	32
+	+	14	45
 	+	15	0
-	+	6	0
-	+	7	0
-	+	3	0
-	+	7	19
-	+	7	0
-	+	42	73
-	+	42	81
-	+	42	6
-	+	7	0
-	+	7	0
-	+	7	0
-	+	7	0
-	+	7	0
-	+	33	0
-	+	11	0
-	+	9	0
+	+	16	41
 	+	17	0
-	+	9	0
-	+	10	0
-	+	8	0
-	+	14	3
-	+	11	38
-	+	29	0
-	+	28	0
-	+	20	16
+	+	19	0
 	+	21	43
 	+	22	0
-	+	19	0
-	+	43	32
-	+	44	60
-	+	45	20
-	+	44	19
-	+	14	0
-	+	36	0
-	+	43	22
-	+	45	23
-	+	48	0
-	+	48	46
-	+	56	0
-	+	63	0
-	+	57	6
-	+	50	26
-	+	51	18
-	+	53	0
-	+	52	0
-	+	57	8
-	+	52	28
-	+	50	20
-	+	54	5
-	+	57	30
-	+	52	14
-	+	54	7
-	+	59	31
-	+	62	19
-	+	20	0
+	+	23	39
+	+	24	0
+	+	25	55
 	+	26	0
-	+	25	42
-	+	24	6
-	+	25	37
-	+	6	0
-	+	5	13
+	+	22	60
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_defendant.html.erb
+	"	8	0
+	.	8	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
 	+	6	0
 	+	7	0
-	+	3	0
-	+	1	0
-	+	13	9
-	+	20	6
-	+	13	10
+	+	8	0
 
-> ~/scratch/getmail/getmail.rb
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_other_responsible_party.html.erb
 	"	1	0
-	^	7	49
+	.	1	0
+	+	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_defendant_insurance_company.html.erb
+	"	8	0
 	.	6	0
-	+	3	40
-	+	4	55
-	+	5	21
-	+	6	44
-	+	8	69
-	+	9	60
-	+	10	2
-	+	1	16
-	+	3	33
-	+	4	36
-	+	3	35
-	+	4	67
-	+	11	14
-	+	5	18
-	+	4	19
-	+	3	20
 	+	2	0
-	+	4	11
-	+	3	45
-	+	6	12
-	+	5	10
+	+	3	0
 	+	6	0
-	+	6	38
-	+	6	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/_form_other_insurance_company.html.erb
+	"	12	8
+	^	15	53
+	.	15	52
+	+	1	0
+	+	26	0
+	+	1	0
+	+	7	0
+	+	8	21
+	+	10	18
+	+	12	19
+	+	14	17
+	+	17	20
+	+	19	13
+	+	21	11
+	+	23	26
+	+	15	52
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_sidebar.html.erb
+	"	44	61
+	^	44	69
+	.	44	61
+	+	23	26
+	+	22	59
+	+	19	0
+	+	44	147
+	+	42	0
+	+	3	0
 	+	5	0
-	+	6	35
-	+	4	36
-	+	7	48
+	+	3	0
+	+	19	0
+	+	2	7
+	+	4	7
+	+	5	4
+	+	6	4
+	+	7	4
+	+	8	4
+	+	44	126
+	+	43	49
+	+	44	61
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/case.html.erb
+	"	124	9
+	^	6	27
+	.	6	26
+	+	107	53
+	+	108	53
+	+	107	50
+	+	108	31
+	+	108	82
+	+	102	0
+	+	87	0
+	+	89	15
+	+	97	0
+	+	98	0
+	+	99	0
+	+	98	11
+	+	103	0
+	+	110	0
+	+	111	0
+	+	110	9
+	+	113	13
+	+	115	58
+	+	115	18
+	+	115	13
+	+	114	34
+	+	115	0
+	+	118	0
+	+	118	0
+	+	119	124
+	+	122	13
+	+	117	59
+	+	118	0
+	+	119	53
+	+	120	73
+	+	4	0
+	+	4	0
+	+	129	0
+	+	4	0
+	+	41	59
+	+	45	59
+	+	60	0
+	+	73	0
+	+	73	0
+	+	128	0
+	+	60	0
+	+	73	0
+	+	60	8
+	+	59	1
+	+	60	0
+	+	58	20
+	+	72	0
+	+	59	30
+	+	5	20
+	+	57	0
+	+	9	0
+	+	6	31
+	+	56	0
+	+	9	0
+	+	73	0
+	+	81	0
+	+	84	0
+	+	86	0
+	+	87	0
+	+	92	0
+	+	96	70
+	+	97	0
+	+	92	0
+	+	106	0
+	+	108	70
+	+	109	0
+	+	118	0
+	+	121	0
+	+	106	0
+	+	129	0
+	+	73	18
+	+	74	31
+	+	126	0
+	+	75	0
+	+	4	0
+	+	9	0
+	+	7	0
+	+	49	33
+	+	49	32
+	+	49	38
+	+	49	22
+	+	49	13
+	+	49	44
+	+	49	16
+	+	49	21
+	+	49	37
+	+	49	43
+	+	49	0
+	+	50	14
+	+	51	16
+	+	52	29
+	+	53	15
+	+	54	0
+	+	53	0
+	+	69	7
+	+	129	0
+	+	124	9
+	+	59	26
+	+	74	26
+	+	6	26
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/profile.html.erb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/_content_for_user_profile.html.erb
+	"	3	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_nav_user_profile.html.erb
+	"	11	33
+	^	11	59
+	.	11	58
+	+	1	0
+	+	2	0
+	+	3	0
+	+	5	32
+	+	6	0
+	+	8	59
+	+	11	58
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/shared/_nav_lookup_only.html.erb
+	"	1	0
+
+> ~/scratch/file.rb
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	22
+	+	2	2
+	+	1	16
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/case_amend_date.js.erb
+	"	1	49
+	^	1	19
+	.	1	18
+	+	1	18
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/case_amend_reason.js.erb
+	"	1	88
+	^	1	89
+	.	1	88
+	+	1	88
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/models/lien.rb
+	"	10	3
+	^	10	4
+	.	9	24
+	+	6	0
+	+	12	0
+	+	5	0
+	+	12	0
+	+	6	19
+	+	6	49
+	+	6	16
+	+	11	2
+	+	6	51
+	+	11	0
+	+	6	126
+	+	11	0
+	+	7	22
+	+	8	24
+	+	9	24
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/models/users.rb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/user/new.html.erb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/clear_case_collected_date.js.erb
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/case_collected_date.js.erb
+	"	1	72
+	^	1	93
+	.	1	92
+	+	1	92
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/case_release_date.js.erb
+	"	1	83
+	^	1	84
+	.	1	83
+	+	1	83
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/log/development.log
+	"	1463	0
+	.	6	0
+	+	5	0
+	+	6	0
+
+> ~/.tmux.conf
+	"	3	19
+	^	3	20
+	.	3	0
+	+	3	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/assets/javascripts/lien.js
+	"	10	0
+	^	25	21
+	.	25	0
+	+	1	0
+	+	2	0
 	+	3	0
 	+	4	0
+	+	4	0
 	+	5	0
 	+	6	0
-
-> ~/scratch/getmail/lambdatest.rb
-	"	1	0
-	^	26	31
-	.	26	31
-	+	1	11
-	+	20	0
-	+	23	0
+	+	7	0
+	+	8	0
 	+	9	0
-	+	10	18
+	+	10	0
 	+	11	0
-	+	13	31
-	+	30	24
-	+	29	0
-	+	30	24
-	+	29	0
-	+	30	0
-	+	29	9
-	+	30	0
-	+	13	29
-	+	29	55
-	+	26	55
-	+	27	53
-	+	31	16
-	+	27	43
-	+	2	16
-	+	4	10
-	+	5	9
-	+	10	17
-	+	12	10
-	+	10	14
-	+	12	7
-	+	13	10
-	+	32	24
-	+	27	48
-	+	26	31
-
-> ~/scratch/getmail/return_examples.rb
-	"	1	0
-	^	15	18
-	.	15	17
+	+	1	1
+	+	2	1
+	+	3	1
+	+	4	1
+	+	4	1
+	+	5	1
+	+	6	1
+	+	7	1
+	+	8	1
+	+	9	1
+	+	10	1
+	+	11	1
 	+	1	0
-	+	21	0
-	+	7	32
-	+	15	42
-	+	18	25
-	+	15	21
-	+	18	18
-	+	6	15
-	+	16	25
-	+	21	0
-	+	16	12
-	+	21	0
-	+	20	0
-	+	19	0
-	+	20	22
-	+	16	24
-	+	15	17
-
-> ~/scratch/getmail/what_about_yield.rb
-	"	1	0
-	^	4	14
-	.	4	13
-	+	1	0
-	+	4	10
-	+	16	8
-	+	1	10
-	+	16	19
-	+	4	0
-	+	5	0
-	+	4	2
+	+	11	0
+	+	2	0
+	+	10	0
+	+	4	18
 	+	3	10
-	+	16	37
-	+	14	34
-	+	4	19
-	+	16	30
-	+	14	42
-	+	14	21
-	+	14	0
-	+	15	0
-	+	16	20
-	+	14	5
+	+	4	16
 	+	4	0
-	+	4	5
-	+	5	0
-	+	5	25
-	+	14	0
-	+	9	70
-	+	10	68
-	+	11	72
-	+	12	33
+	+	5	49
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	7	36
+	+	5	45
+	+	7	28
+	+	5	16
+	+	7	39
+	+	7	1
+	+	8	0
+	+	7	32
+	+	7	9
 	+	4	0
-	+	5	0
-	+	4	2
+	+	20	0
+	+	20	11
+	+	23	37
+	+	25	17
+	+	11	0
+	+	20	14
+	+	23	48
+	+	25	20
+	+	16	8
+	+	25	8
+	+	20	0
+	+	11	0
+	+	20	0
+	+	11	0
+	+	7	0
 	+	16	0
-	+	3	17
-	+	4	13
+	+	25	0
+
+> ~/scratch/coffee_script/checkbooks2/checkbooks2.coffee
+	"	70	15
+	^	70	16
+	.	70	15
+	+	1	22
+	+	7	21
+	+	11	22
+	+	15	38
+	+	18	16
+	+	13	0
+	+	9	0
+	+	19	6
+	+	21	11
+	+	25	0
+	+	22	33
+	+	25	0
+	+	23	0
+	+	24	0
+	+	23	30
+	+	24	31
+	+	29	13
+	+	33	21
+	+	33	21
+	+	30	18
+	+	33	20
+	+	33	21
+	+	34	0
+	+	33	17
+	+	35	39
+	+	36	37
+	+	37	17
+	+	39	51
+	+	41	38
+	+	45	0
+	+	44	0
+	+	45	16
+	+	46	3
+	+	48	0
+	+	46	3
+	+	47	0
+	+	50	12
+	+	52	0
+	+	51	6
+	+	52	2
+	+	53	0
+	+	54	19
+	+	55	2
+	+	62	60
+	+	65	0
+	+	64	2
+	+	66	34
+	+	73	0
+	+	68	21
+	+	69	46
+	+	71	54
+	+	73	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	76	0
+	+	80	0
+	+	87	0
+	+	86	2
+	+	75	20
+	+	77	16
+	+	78	13
+	+	80	0
+	+	79	16
+	+	99	0
+	+	97	53
+	+	106	0
+	+	101	45
+	+	97	46
+	+	101	54
+	+	105	4
+	+	104	0
+	+	9	10
+	+	13	10
+	+	18	10
+	+	97	14
+	+	97	14
+	+	98	2
+	+	99	0
+	+	89	29
+	+	71	40
+	+	70	15
+
+> ~/code/colorado_docket/lib/colorado_docket/commands.rb
+	"	1	0
+
+> ~/code/colorado_docket/lib/colorado_docket/county.rb
+	"	1	0
+
+> ~/code/colorado_docket/lib/colorado_docket/docket.rb
+	"	68	6
+
+> ~/code/colorado_docket/lib/colorado_docket/docket_bot.rb
+	"	1	0
+
+> ~/code/colorado_docket/lib/colorado_docket/interface.rb
+	"	1	0
+
+> ~/code/colorado_docket/lib/colorado_docket/menu.rb
+	"	1	0
+
+> ~/code/colorado_docket/lib/colorado_docket/user.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/county_spec.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/docket_bot_spec.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/docket_spec.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/email_spec.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/menu_spec.rb
+	"	1	0
+
+> ~/code/colorado_docket/spec/user_spec.rb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/views/lien/insurance_partial.html.erb
+	"	1	0
+
+> ~/code/lloyd/vagrant_test/lloyds_liens/app/assets/lien.js
+	"	1	16
+	^	4	17
+	.	4	16
+	+	12	3
+	+	2	0
+	+	1	0
+	+	2	22
+	+	4	16
+
+> ~/code/activemerchant/test.rb
+	"	5	41
+	^	5	42
+	.	5	41
+	+	4	45
+	+	11	56
+	+	12	38
+	+	12	25
+	+	12	30
+	+	12	34
+	+	13	36
+	+	17	43
+	+	24	78
+	+	25	50
+	+	26	49
+	+	30	70
+	+	31	79
+	+	36	87
+	+	42	53
+	+	9	0
+	+	9	0
+	+	10	0
+	+	9	0
+	+	43	0
+	+	25	28
+	+	26	33
+	+	24	12
+	+	2	24
+	+	1	37
+	+	35	16
+	+	20	14
+	+	21	45
+	+	12	21
+	+	26	53
+	+	31	28
+	+	37	30
+	+	36	21
+	+	26	54
+	+	12	33
+	+	12	19
+	+	12	21
+	+	12	24
+	+	13	24
+	+	39	24
+	+	17	29
+	+	39	13
+	+	9	0
+	+	26	53
+	+	12	33
+	+	25	18
+	+	9	47
+	+	26	54
+	+	31	32
+	+	12	33
+	+	9	0
+	+	26	36
+	+	28	0
+	+	26	36
+	+	12	0
+	+	14	0
+	+	12	0
+	+	15	0
+	+	18	21
+	+	17	31
+	+	18	7
+	+	26	36
+	+	31	31
+	+	36	21
+	+	27	0
+	+	3	13
+	+	22	21
+	+	31	35
+	+	36	25
+	+	22	0
+	+	31	30
+	+	36	20
+	+	7	133
+	+	8	0
+	+	25	137
+	+	25	29
+	+	26	33
+	+	7	129
+	+	5	41
+
+> ~/code/lloyd/archive/e-lien/config/environments/development.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/config/environments/production.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/config/environments/test.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/config/environment.rb
+	"	44	2
+
+> ~/code/lloyd/archive/e-lien/app/controllers/user_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/users_controller.rb
+	"	2	2
+
+> ~/code/lloyd/archive/e-lien/app/controllers/lien_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/admin_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/advertising_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/application.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/category_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/export_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/insurance_companies_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/lien_admin_controller.rb
+	"	141	63
+
+> ~/code/lloyd/archive/e-lien/app/controllers/options_controller.rb
+	"	1	0
+
+> ~/code/lloyd/archive/e-lien/app/controllers/pdf_controller.rb
+	"	105	50
+
+> ~/code/lloyd/archive/e-lien/app/models/lien.rb
+	"	1	0
