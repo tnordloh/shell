@@ -89,3 +89,5 @@ imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 
 set runtimepath+=/Users/tim/mpd_plugin
 set runtimepath+=/Users/tim/mpd_plugin/mpc
+
+au BufRead,BufNewFile *.ino set filetype=c
