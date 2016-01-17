@@ -23,6 +23,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
 alias gca='git commit --all'
+alias gd='git diff'
 alias gp='git push'
 alias gs='git status -sb'
 alias v='vim'
@@ -55,8 +56,8 @@ function get_todo_commands()
 }
 complete -F get_todo_commands todo
 
-export USER='railsdev@nordloh.com'
-export PASSWORD='mayonnaise_54321'
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+source ~/.private_variables
