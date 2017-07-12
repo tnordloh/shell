@@ -71,16 +71,23 @@ function! s:DoubleBars()
     endif
 endfunction
 
-iab <buffer> def <C-R>=<SID>SpecialAbbrev("def")<CR>
+"iab <buffer> def <C-R>=<SID>SpecialAbbrev("def")<CR>
+"
+"iab <buffer> for <C-R>=<SID>For()<CR>
+"iab <buffer> if <C-R>=<SID>SpecialAbbrev("if")<CR>
+"iab <buffer> case <C-R>=<SID>Case()<CR>
+"iab <buffer> module <C-R>=<SID>SpecialAbbrev("module")<CR>
+"iab <buffer> unless <C-R>=<SID>SpecialAbbrev("unless")<CR>
+"iab <buffer> until <C-R>=<SID>SpecialAbbrev("until")<CR>
+"iab <buffer> while <C-R>=<SID>SpecialAbbrev("while")<CR>
+"iab <buffer> class <C-R>=<SID>Class()<CR>
+"iab <buffer> each_with_object <C-R>=<SID>Eachwithobject()<CR>
+"iab <buffer> ea <C-R>=<SID>EachBrace()<CR>
+"iab <buffer> times <C-R>=<SID>Times()<CR>
+"iab <buffer> ma <C-R>=<SID>MapBrace()<CR>
+"iab <buffer> map <C-R>=<SID>MapDo()<CR>
+"iab <buffer> it <C-R>=<SID>It()<CR>
 
-iab <buffer> for <C-R>=<SID>For()<CR>
-iab <buffer> if <C-R>=<SID>SpecialAbbrev("if")<CR>
-iab <buffer> case <C-R>=<SID>Case()<CR>
-iab <buffer> class <C-R>=<SID>SpecialAbbrev("class")<CR>
-iab <buffer> module <C-R>=<SID>SpecialAbbrev("module")<CR>
-iab <buffer> unless <C-R>=<SID>SpecialAbbrev("unless")<CR>
-iab <buffer> until <C-R>=<SID>SpecialAbbrev("until")<CR>
-iab <buffer> while <C-R>=<SID>SpecialAbbrev("while")<CR>
 
 function! s:SpecialAbbrev(string)
     if getline(line(".")) =~ '\S'  " Not a blank line.
@@ -98,6 +105,40 @@ function! s:For()
     endif
 endfunction
 
+function! s:It()
+    return "it \"tests_something\" do\<Esc>oend\<Esc>k2lv13l"
+endfunction
+
 function! s:Case()
     return "case\<Esc>owhen \<Esc>oend\<Esc>2kA"
 endfunction
+
+function! s:Class()
+  return "class < InheritsFrom\<Esc>o\<CR>end\<Esc>2kf<h"
+endfunction
+
+function! s:EachDo()
+     return "each do |item|\<Esc>oend\<Esc>kwfiv2l"
+endfunction
+
+function! s:Eachwithobject()
+     return "each_with_object(object) do |item,memo|\<Esc>oend\<Esc>kwf("
+endfunction
+
+function! s:EachBrace()
+     return "each { |item| }\<Esc>7h"
+endfunction
+
+function! s:MapBrace()
+     return "map { |item| }\<Esc>7hv3l"
+endfunction
+
+function! s:MapDo()
+     return "map do |item|\<Esc>oend\<Esc>kw3l"
+endfunction
+
+function! s:Times()
+     return "times do |counter|\<Esc>oend\<Esc>kfc"
+endfunction
+
+
